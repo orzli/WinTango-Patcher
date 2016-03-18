@@ -53,3 +53,4 @@ del "%FILENAME%-offline.7z"
 
 :cleanup
 rd /s /q "%tmpDir%"
+rd /s /q "%CURRDIR%\project\Themes"

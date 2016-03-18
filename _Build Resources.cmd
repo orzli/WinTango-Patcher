@@ -10,3 +10,6 @@ cd /d ".\project\_Resources"
 echo Compressing Resources...
 CALL _BuildRessources.exe
 move "%CURRDIR%\project\_Resources\_ARCHIVES\*.7z" "%CURRDIR%"
+
+:cleanup
+rd /s /q "%CURRDIR%\project\_Resources\_ARCHIVES"
