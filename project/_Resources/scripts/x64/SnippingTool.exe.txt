@@ -1,0 +1,13 @@
+[FILENAMES]  
+Exe = Backup\x64\SnippingTool.exe  
+SaveAs = NewFiles\x64\SnippingTool.exe  
+  
+[COMMANDS]
+;BITMAP
+-modify Resources\bitmaps\tweaked\SnippingTool.exe\130.bmp, BITMAP, 130,
+-modify Resources\bitmaps\tweaked\SnippingTool.exe\131.bmp, BITMAP, 131,
+-modify Resources\bitmaps\tweaked\SnippingTool.exe\134.bmp, BITMAP, 134,
+  
+;ICONGROUP
+-modify Resources\icons\actions\edit-cut_+24_256.ico, ICONGROUP, 165,
+-modify Resources\icons\apps\help-browser_16_20_24.ico, ICONGROUP, 166,

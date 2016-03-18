@@ -1,0 +1,7 @@
+[FILENAMES]
+Exe=      Backup\launcher.exe
+SaveAs=   NewFiles\launcher.exe
+
+[COMMANDS]
+;ICONGROUP
+-modify Resources\icons\apps\opera_+128_256.ico, ICONGROUP, 1,

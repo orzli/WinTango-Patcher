@@ -1,0 +1,63 @@
+[FILENAMES]  
+Exe = Backup\pnidui.dll  
+SaveAs = NewFiles\pnidui.dll  
+  
+[COMMANDS]  
+;ICONGROUP
+-modify Resources\icons\places\network-type-private_+24.ico, ICONGROUP, 2400,
+-modify Resources\icons\places\network-type-public_+24.ico, ICONGROUP, 2401,
+-modify Resources\icons\places\network-type-workplace.ico, ICONGROUP, 2402,
+-modify Resources\icons\devices\phone_+24.ico, ICONGROUP, 2404,
+-modify Resources\icons\places\network-workgroup.ico, ICONGROUP, 2407,
+-modify Resources\icons\places\network-workgroup_+64_256.ico, ICONGROUP, 3044,
+
+-modify Resources\icons\places\network-type-private_+256.ico, ICONGROUP, 40405,
+-modify Resources\icons\places\network-type-workplace_+256.ico, ICONGROUP, 40406,
+-modify Resources\icons\places\network-type-public_+24_128.ico, ICONGROUP, 40407,
+
+;tray icons
+-modify Resources\icons\symbolic\network-offline_16_20_24_32.ico, ICONGROUP, 3020,
+-modify Resources\icons\symbolic\network-wireless-000_16_20_24_32.ico, ICONGROUP, 3021,
+-modify Resources\icons\symbolic\network-wireless-025_16_20_24_32.ico, ICONGROUP, 3022,
+-modify Resources\icons\symbolic\network-wireless-050_16_20_24_32.ico, ICONGROUP, 3023,
+-modify Resources\icons\symbolic\network-wireless-050_16_20_24_32.ico, ICONGROUP, 3024,
+-modify Resources\icons\symbolic\network-wireless-075_16_20_24_32.ico, ICONGROUP, 3025,
+-modify Resources\icons\symbolic\network-wireless-100_16_20_24_32.ico, ICONGROUP, 3026,
+-modify Resources\icons\symbolic\network-wireless-000-warning_16_20_24_32.ico, ICONGROUP, 3027,
+-modify Resources\icons\symbolic\network-wireless-025-warning_16_20_24_32.ico, ICONGROUP, 3028,
+-modify Resources\icons\symbolic\network-wireless-050-warning_16_20_24_32.ico, ICONGROUP, 3029,
+-modify Resources\icons\symbolic\network-wireless-050-warning_16_20_24_32.ico, ICONGROUP, 3030,
+-modify Resources\icons\symbolic\network-wireless-075-warning_16_20_24_32.ico, ICONGROUP, 3031,
+-modify Resources\icons\symbolic\network-wireless-100-warning_16_20_24_32.ico, ICONGROUP, 3032,
+-modify Resources\icons\symbolic\network-offline_16_20_24_32.ico, ICONGROUP, 3035,
+-modify Resources\icons\symbolic\network-transmit-receive_16_20_24_32.ico, ICONGROUP, 3048,
+-modify Resources\icons\symbolic\network-error_16_20_24_32.ico, ICONGROUP, 3051,
+-modify Resources\icons\symbolic\network-error_16_20_24_32.ico, ICONGROUP, 3054,
+-modify Resources\icons\symbolic\network-wireless-new_16_20_24_32.ico, ICONGROUP, 3066,
+-modify Resources\icons\symbolic\network-wireless-offline_16_20_24_32.ico, ICONGROUP, 3067,
+-modify Resources\icons\symbolic\network-wireless-000_16_20_24_32.ico, ICONGROUP, 3091,
+-modify Resources\icons\symbolic\network-wireless-025_16_20_24_32.ico, ICONGROUP, 3092,
+-modify Resources\icons\symbolic\network-wireless-050_16_20_24_32.ico, ICONGROUP, 3093,
+-modify Resources\icons\symbolic\network-wireless-050_16_20_24_32.ico, ICONGROUP, 3094,
+-modify Resources\icons\symbolic\network-wireless-075_16_20_24_32.ico, ICONGROUP, 3095,
+-modify Resources\icons\symbolic\network-wireless-100_16_20_24_32.ico, ICONGROUP, 3096,
+;Connecting Animation WLAN
+-modify Resources\icons\symbolic\network-wireless-connecting-1_16_20_24_32.ico, ICONGROUP, 3071,
+-modify Resources\icons\symbolic\network-wireless-connecting-2_16_20_24_32.ico, ICONGROUP, 3072,
+-modify Resources\icons\symbolic\network-wireless-connecting-3_16_20_24_32.ico, ICONGROUP, 3073,
+-modify Resources\icons\symbolic\network-wireless-connecting-1_16_20_24_32.ico, ICONGROUP, 3074,
+-modify Resources\icons\symbolic\network-wireless-connecting-2_16_20_24_32.ico, ICONGROUP, 3075,
+-modify Resources\icons\symbolic\network-wireless-connecting-3_16_20_24_32.ico, ICONGROUP, 3076,
+-modify Resources\icons\symbolic\network-wireless-connecting-1_16_20_24_32.ico, ICONGROUP, 3077,
+-modify Resources\icons\symbolic\network-wireless-connecting-2_16_20_24_32.ico, ICONGROUP, 3078,
+-modify Resources\icons\symbolic\network-wireless-connecting-3_16_20_24_32.ico, ICONGROUP, 3079,
+;Connecting Animation LAN
+-modify Resources\icons\symbolic\network-connecting-1_16_20_24_32.ico, ICONGROUP, 3081,
+-modify Resources\icons\symbolic\network-connecting-2_16_20_24_32.ico, ICONGROUP, 3082,
+-modify Resources\icons\symbolic\network-connecting-3_16_20_24_32.ico, ICONGROUP, 3083,
+-modify Resources\icons\symbolic\network-connecting-1_16_20_24_32.ico, ICONGROUP, 3084,
+-modify Resources\icons\symbolic\network-connecting-2_16_20_24_32.ico, ICONGROUP, 3085,
+-modify Resources\icons\symbolic\network-connecting-3_16_20_24_32.ico, ICONGROUP, 3086,
+-modify Resources\icons\symbolic\network-connecting-1_16_20_24_32.ico, ICONGROUP, 3087,
+-modify Resources\icons\symbolic\network-connecting-2_16_20_24_32.ico, ICONGROUP, 3088,
+-modify Resources\icons\symbolic\network-connecting-3_16_20_24_32.ico, ICONGROUP, 3089,

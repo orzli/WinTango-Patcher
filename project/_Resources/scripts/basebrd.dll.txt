@@ -1,0 +1,12 @@
+[FILENAMES]  
+Exe = Backup\basebrd.dll  
+SaveAs = NewFiles\basebrd.dll  
+  
+[COMMANDS]  
+;BITMAP
+-modify Resources\bitmaps\tweaked\basebrd.dll\120.bmp, BITMAP, 120,
+-modify Resources\bitmaps\tweaked\basebrd.dll\121.bmp, BITMAP, 121,
+-modify Resources\bitmaps\tweaked\basebrd.dll\1120.bmp, BITMAP, 1120,
+-modify Resources\bitmaps\tweaked\basebrd.dll\1121.bmp, BITMAP, 1121,
+-modify Resources\bitmaps\tweaked\basebrd.dll\2120.bmp, BITMAP, 2120,
+-modify Resources\bitmaps\tweaked\basebrd.dll\2121.bmp, BITMAP, 2121,

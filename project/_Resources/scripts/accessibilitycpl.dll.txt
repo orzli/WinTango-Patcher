@@ -1,0 +1,16 @@
+[FILENAMES]  
+Exe = Backup\accessibilitycpl.dll  
+SaveAs = NewFiles\accessibilitycpl.dll  
+  
+[COMMANDS]  
+;BITMAP
+-modify Resources\bitmaps\tweaked\accessibilitycpl.dll\309.bmp, BITMAP, 309,
+
+;ICONGROUP
+-modify Resources\icons\apps\preferences-desktop-accessibility_+24_64_96.ico, ICONGROUP, 1,
+-modify Resources\icons\actions\system-search_+24_40_60_64_72_96_256.ico, ICONGROUP, 321,
+-modify Resources\icons\devices\input-mouse_+24_40_60_64_72_96_256.ico, ICONGROUP, 323,
+-modify Resources\icons\devices\input-keyboard_+24_40_60_64_72_96_256.ico, ICONGROUP, 324,
+-modify Resources\icons\actions\system-search_+24_40_60_64_72_96_256.ico, ICONGROUP, 327,
+-modify Resources\icons\apps\onboard_+24_40_60_64_72_96_256.ico, ICONGROUP, 329,
+-modify Resources\icons\status\dialog-information_+24_40_60_64_72_96_256.ico, ICONGROUP, 340,

@@ -1,0 +1,26 @@
+[FILENAMES]  
+Exe = Backup\netcenter.dll  
+SaveAs = NewFiles\netcenter.dll  
+  
+[COMMANDS]  
+;ICONGROUP
+-modify Resources\icons\categories\preferences-system-network_+256.ico, ICONGROUP, 1,
+-modify Resources\icons\devices\computer.ico, ICONGROUP, 2,
+-modify Resources\icons\devices\computer_+24_64_256.ico, ICONGROUP, 6,
+-modify Resources\icons\categories\applications-internet_+24_256.ico, ICONGROUP, 7,
+-modify Resources\icons\places\network-workgroup_+64_256.ico, ICONGROUP, 8,
+-modify Resources\icons\tweaked\netcenter.dll\11.ico, ICONGROUP, 11,
+-modify Resources\icons\status\network-wireless-000_32_48_256.ico, ICONGROUP, 14,
+-modify Resources\icons\status\network-wireless-025_32_48_256.ico, ICONGROUP, 15,
+-modify Resources\icons\status\network-wireless-050_32_48_256.ico, ICONGROUP, 16,
+-modify Resources\icons\status\network-wireless-050_32_48_256.ico, ICONGROUP, 17,
+-modify Resources\icons\status\network-wireless-075_32_48_256.ico, ICONGROUP, 18,
+-modify Resources\icons\status\network-wireless-100_32_48_256.ico, ICONGROUP, 19,
+-modify Resources\icons\actions\network-workgroup-new_+24_256.ico, ICONGROUP, 22,
+;besser ein symbol für "Connecting":
+-modify Resources\icons\actions\network-workgroup-new_+24_256.ico, ICONGROUP, 23,
+-modify Resources\icons\apps\gnome-nettool_+24.ico, ICONGROUP, 27,
+-modify Resources\icons\devices\tango-network-wired_+24_256.ico, ICONGROUP, 28,
+-modify Resources\icons\tweaked\netcenter.dll\504.ico, ICONGROUP, 504,
+-modify Resources\icons\tweaked\netcenter.dll\505.ico, ICONGROUP, 505,
+-modify Resources\icons\status\dialog-warning_+24_64_96_256.ico, ICONGROUP, 506,

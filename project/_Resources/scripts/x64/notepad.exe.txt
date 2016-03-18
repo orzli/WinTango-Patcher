@@ -1,0 +1,7 @@
+[FILENAMES]  
+Exe = Backup\x64\notepad.exe  
+SaveAs = NewFiles\x64\notepad.exe  
+  
+[COMMANDS]  
+;ICONGROUP
+-modify Resources\icons\apps\accessories-text-editor_+24_256.ico, ICONGROUP, 2,

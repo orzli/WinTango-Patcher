@@ -1,0 +1,8 @@
+[FILENAMES]  
+Exe = Backup\taskmgr.exe  
+SaveAs = NewFiles\taskmgr.exe  
+  
+[COMMANDS]  
+;ICONGROUP
+-modify Resources\icons\apps\utilities-system-monitor_+24.ico, ICONGROUP, 107,
+-modify Resources\icons\mimetypes\application-x-executable_16_32.ico, ICONGROUP, 118,

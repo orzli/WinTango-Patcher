@@ -1,0 +1,87 @@
+[FILENAMES]  
+Exe = Backup\authui.dll  
+SaveAs = NewFiles\authui.dll  
+
+[COMMANDS]  
+;BITMAP
+;Accessibility Button:
+-modify Resources\bitmaps\tweaked\authui.dll\accessibility.bmp, BITMAP, 12213,
+;OnScreen Keyboard:
+-modify Resources\bitmaps\apps\onboard_37x23.bmp, BITMAP, 12214,
+;Shutdown Button:
+-modify Resources\bitmaps\tweaked\authui.dll\shutdown.bmp, BITMAP, 12215,
+-modify Resources\bitmaps\tweaked\authui.dll\shutdown-updates.bmp, BITMAP, 12216,
+;User Picture Frame:
+-modify Resources\shiki\authui.dll\frame-focus.bmp, BITMAP, 12218,
+-modify Resources\shiki\authui.dll\frame-selected.bmp, BITMAP, 12219,
+-modify Resources\shiki\authui.dll\frame-focus.bmp, BITMAP, 12220,
+-modify Resources\shiki\authui.dll\frame-default.bmp, BITMAP, 12221,
+-modify Resources\shiki\authui.dll\frame-default.bmp, BITMAP, 12222,
+-modify Resources\shiki\authui.dll\frame-big.bmp, BITMAP, 12223,
+;Command Button:
+-modify Resources\bitmaps\actions\go-next_20.bmp, BITMAP, 12224,
+-modify Resources\bitmaps\actions\go-next_20.bmp, BITMAP, 12226,
+-modify Resources\bitmaps\actions\go-next_20.bmp, BITMAP, 12227,
+-modify Resources\bitmaps\actions\go-next-hover_20.bmp, BITMAP, 12225,
+;Command Button BG:
+-modify Resources\shiki\authui.dll\12228.bmp, BITMAP, 12228,
+-modify Resources\shiki\authui.dll\command-button-default.bmp, BITMAP, 12229,
+-modify Resources\shiki\authui.dll\command-button-pressed.bmp, BITMAP, 12230,
+-modify Resources\shiki\authui.dll\command-button-focus.bmp, BITMAP, 12231,
+;PW Go Button:
+-modify Resources\bitmaps\actions\go-next-hover_30.bmp, BITMAP, 12274,
+-modify Resources\bitmaps\actions\go-next-pressed_30.bmp, BITMAP, 12275,
+-modify Resources\bitmaps\actions\go-next_30.bmp, BITMAP, 12276,
+-modify Resources\bitmaps\actions\go-next-hover_30.bmp, BITMAP, 12280,
+-modify Resources\bitmaps\actions\go-next-pressed_30.bmp, BITMAP, 12281,
+-modify Resources\bitmaps\actions\go-next_30.bmp, BITMAP, 12282,
+-modify Resources\bitmaps\actions\go-next-hover_30.bmp, BITMAP, 12286,
+-modify Resources\bitmaps\actions\go-next-pressed_30.bmp, BITMAP, 12287,
+-modify Resources\bitmaps\actions\go-next_30.bmp, BITMAP, 12288,
+;PW BG:
+-modify Resources\shiki\authui.dll\password-field-default.bmp, BITMAP, 11000,
+-modify Resources\shiki\authui.dll\password-field-focus.bmp, BITMAP, 11001,
+-modify Resources\shiki\authui.dll\password-field-focus.bmp, BITMAP, 11002,
+-modify Resources\shiki\authui.dll\password-field-default.bmp, BITMAP, 11003,
+;Buttons BG:
+-modify Resources\shiki\authui.dll\button-focus.bmp, BITMAP, 12259,
+-modify Resources\shiki\authui.dll\button-focus.bmp, BITMAP, 12260,
+-modify Resources\shiki\authui.dll\button-focus.bmp, BITMAP, 12261,
+-modify Resources\shiki\authui.dll\button-pressed.bmp, BITMAP, 12262,
+-modify Resources\shiki\authui.dll\button-default.bmp, BITMAP, 12263,
+;Shut Down Button Options:
+-modify Resources\shiki\authui.dll\shutdown-options-focus.bmp, BITMAP, 12298,
+-modify Resources\shiki\authui.dll\shutdown-options-focus.bmp, BITMAP, 12299,
+-modify Resources\shiki\authui.dll\shutdown-options-focus.bmp, BITMAP, 12300,
+-modify Resources\shiki\authui.dll\shutdown-options-pressed.bmp, BITMAP, 12301,
+-modify Resources\shiki\authui.dll\shutdown-options-default.bmp, BITMAP, 12302,
+-modify Resources\shiki\authui.dll\shutdown-options-focus.bmp, BITMAP, 12309,
+-modify Resources\shiki\authui.dll\shutdown-options-focus.bmp, BITMAP, 12310,
+-modify Resources\shiki\authui.dll\shutdown-options-focus.bmp, BITMAP, 12311,
+-modify Resources\shiki\authui.dll\shutdown-options-pressed.bmp, BITMAP, 12312,
+-modify Resources\shiki\authui.dll\shutdown-options-default.bmp, BITMAP, 12313,
+-modify Resources\shiki\authui.dll\shutdown-options-focus.bmp, BITMAP, 12320,
+-modify Resources\shiki\authui.dll\shutdown-options-focus.bmp, BITMAP, 12321,
+-modify Resources\shiki\authui.dll\shutdown-options-focus.bmp, BITMAP, 12322,
+-modify Resources\shiki\authui.dll\shutdown-options-pressed.bmp, BITMAP, 12323,
+-modify Resources\shiki\authui.dll\shutdown-options-default.bmp, BITMAP, 12324,
+;Shut Down Button Main/Options:
+-modify Resources\shiki\authui.dll\shutdown-options-focus_21.bmp, BITMAP, 12292,
+-modify Resources\shiki\authui.dll\shutdown-options-focus_21.bmp, BITMAP, 12293,
+-modify Resources\shiki\authui.dll\shutdown-options-focus_21.bmp, BITMAP, 12294,
+-modify Resources\shiki\authui.dll\shutdown-options-pressed_21.bmp, BITMAP, 12295,
+-modify Resources\shiki\authui.dll\shutdown-options-default_21.bmp, BITMAP, 12296,
+;Shut Down Button Main:
+-modify Resources\shiki\authui.dll\shutdown-focus.bmp, BITMAP, 12303,
+-modify Resources\shiki\authui.dll\shutdown-focus.bmp, BITMAP, 12304,
+-modify Resources\shiki\authui.dll\shutdown-focus.bmp, BITMAP, 12305,
+-modify Resources\shiki\authui.dll\shutdown-pressed.bmp, BITMAP, 12306,
+-modify Resources\shiki\authui.dll\shutdown-default.bmp, BITMAP, 12307,
+-modify Resources\shiki\authui.dll\shutdown-focus.bmp, BITMAP, 12314,
+-modify Resources\shiki\authui.dll\shutdown-focus.bmp, BITMAP, 12315,
+-modify Resources\shiki\authui.dll\shutdown-focus.bmp, BITMAP, 12316,
+-modify Resources\shiki\authui.dll\shutdown-pressed.bmp, BITMAP, 12317,
+-modify Resources\shiki\authui.dll\shutdown-default.bmp, BITMAP, 12318,
+
+;ICONGROUP
+-modify Resources\icons\devices\computer_16_32.ico, ICONGROUP, 1008,

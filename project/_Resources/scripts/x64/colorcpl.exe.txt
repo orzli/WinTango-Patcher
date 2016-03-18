@@ -1,0 +1,7 @@
+[FILENAMES]  
+Exe = Backup\x64\colorcpl.exe
+SaveAs = NewFiles\x64\colorcpl.exe
+  
+[COMMANDS]  
+;ICONGROUP
+-modify Resources\icons\apps\preferences-color_+24_256.ico, ICONGROUP, 5,

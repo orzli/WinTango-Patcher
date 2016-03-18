@@ -1,0 +1,11 @@
+[FILENAMES]  
+Exe = Backup\appwiz.cpl  
+SaveAs = NewFiles\appwiz.cpl  
+  
+[COMMANDS]  
+;ICONGROUP
+-modify Resources\icons\apps\system-installer.ico, ICONGROUP, 250,
+-modify Resources\icons\apps\system-installer.ico, ICONGROUP, 1010,
+-modify Resources\icons\apps\system-installer_+256.ico, ICONGROUP, 1500,
+-modify Resources\icons\apps\system-installer_+256.ico, ICONGROUP, 1506,
+-modify Resources\icons\apps\system-software-update_+256.ico, ICONGROUP, 1507,

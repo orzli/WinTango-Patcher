@@ -1,0 +1,7 @@
+[FILENAMES]
+Exe=      Backup\x64\sdraw.exe
+SaveAs=   NewFiles\x64\sdraw.exe
+
+[COMMANDS]
+;ICONGROUP
+-modify Resources\icons\apps\libreoffice-draw_+128_256.ico, ICONGROUP, 1, 

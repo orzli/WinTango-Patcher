@@ -1,0 +1,23 @@
+[FILENAMES]
+Exe=      Backup\x64\dropbox.exe
+SaveAs=   NewFiles\x64\dropbox.exe
+
+[COMMANDS]
+;ICONGROUP
+-modify Resources\icons\apps\dropbox_+256.ico, ICONGROUP, 1, 
+-modify Resources\icons\overlays\emblem-dropbox-uptodate_+128_256.ico, ICONGROUP, 10,
+-modify Resources\icons\overlays\emblem-dropbox-syncing_+128_256.ico, ICONGROUP, 20,
+-modify Resources\icons\overlays\emblem-dropbox-unsyncable_+128_256.ico, ICONGROUP, 30,
+
+;main folder
+-modify Resources\icons\places\folder-dropbox.ico, ICONGROUP, 1001, 
+-modify Resources\icons\places\folder-dropbox_+256.ico, ICONGROUP, 2001, 
+;public
+-modify Resources\icons\places\folder-publicshare.ico, ICONGROUP, 1101, 
+-modify Resources\icons\places\folder-publicshare_+256.ico, ICONGROUP, 2101, 
+;pictures
+-modify Resources\icons\places\folder-pictures.ico, ICONGROUP, 1501, 
+-modify Resources\icons\places\folder-pictures_+256.ico, ICONGROUP, 2501, 
+;shared folder
+-modify Resources\icons\places\folder-publicshare.ico, ICONGROUP, 1301, 
+-modify Resources\icons\places\folder-publicshare_+256.ico, ICONGROUP, 2301, 

@@ -1,0 +1,12 @@
+[FILENAMES]
+Exe=      Backup\pptico.exe
+SaveAs=   NewFiles\pptico.exe
+
+[COMMANDS]
+;ICONGROUP
+;Filetype
+-modify Resources\icons\mimetypes\x-office-presentation_+256.ico, ICONGROUP, 1310, 
+-modify Resources\icons\mimetypes\x-office-presentation_+256.ico, ICONGROUP, 1317, 
+;Template
+-modify Resources\icons\mimetypes\x-office-presentation-template_+256.ico, ICONGROUP, 1302, 
+-modify Resources\icons\mimetypes\x-office-presentation-template_+256.ico, ICONGROUP, 1311, 

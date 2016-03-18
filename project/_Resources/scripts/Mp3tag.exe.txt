@@ -1,0 +1,42 @@
+[FILENAMES]
+Exe=      Backup\Mp3tag.exe
+SaveAs=   NewFiles\Mp3tag.exe
+
+[COMMANDS]
+;ICONGROUP
+-modify Resources\icons\apps\tag-editor.ico, ICONGROUP, 128, 
+-modify Resources\icons\tweaked\Mp3tag\1015.ico, ICONGROUP, 1015, 
+-modify Resources\icons\tweaked\Mp3tag\1016.ico, ICONGROUP, 1016, 
+-modify Resources\icons\tweaked\Mp3tag\1017.ico, ICONGROUP, 1017, 
+-modify Resources\icons\tweaked\Mp3tag\1020.ico, ICONGROUP, 1020, 
+-modify Resources\icons\tweaked\Mp3tag\1021.ico, ICONGROUP, 1021, 
+-modify Resources\icons\tweaked\Mp3tag\1053.ico, ICONGROUP, 1053, 
+-modify Resources\icons\tweaked\Mp3tag\1054.ico, ICONGROUP, 1054, 
+-modify Resources\icons\actions\application-exit_16.ico, ICONGROUP, 1098, 
+-modify Resources\icons\actions\document-save_16.ico, ICONGROUP, 1099, 
+-modify Resources\icons\actions\edit-delete_16.ico, ICONGROUP, 1100, 
+-modify Resources\icons\actions\edit-undo_16.ico, ICONGROUP, 1101, 
+-modify Resources\icons\places\folder_16.ico, ICONGROUP, 1102, 
+-modify Resources\icons\tweaked\Mp3tag\1103.ico, ICONGROUP, 1103, 
+-modify Resources\icons\actions\go-up_16.ico, ICONGROUP, 1104, 
+-modify Resources\icons\places\user-home_16.ico, ICONGROUP, 1105, 
+-modify Resources\icons\actions\view-refresh_16.ico, ICONGROUP, 1106, 
+-modify Resources\icons\actions\edit-cut_16.ico, ICONGROUP, 1107,
+-modify Resources\icons\actions\edit-copy_16.ico, ICONGROUP, 1108, 
+-modify Resources\icons\tweaked\Mp3tag\1117.ico, ICONGROUP, 1117, 
+-modify Resources\icons\tweaked\Mp3tag\1118.ico, ICONGROUP, 1118, 
+-modify Resources\icons\actions\system-search_16.ico, ICONGROUP, 1119, 
+-modify Resources\icons\categories\preferences-system_16.ico, ICONGROUP, 1120, 
+-modify Resources\icons\apps\help-browser_16.ico, ICONGROUP, 1121, 
+-modify Resources\icons\actions\edit-cut_16.ico, ICONGROUP, 1122, 
+-modify Resources\icons\actions\edit-copy_16.ico, ICONGROUP, 1123, 
+-modify Resources\icons\actions\edit-paste_16.ico, ICONGROUP, 1124, 
+-modify Resources\icons\actions\media-playback-start_16.ico, ICONGROUP, 1125, 
+-modify Resources\icons\apps\system-users_16.ico, ICONGROUP, 1126, 
+-modify Resources\icons\categories\applications-internet_16.ico, ICONGROUP, 1127, 
+-modify Resources\icons\tweaked\Mp3tag\1132.ico, ICONGROUP, 1132, 
+-modify Resources\icons\mimetypes\stock_playlist_16.ico, ICONGROUP, 1147, 
+-modify Resources\icons\tweaked\Mp3tag\1151.ico, ICONGROUP, 1151, 
+
+;BITMAPS
+-modify Resources\bitmaps\tweaked\Mp3Tag\1000.bmp, BITMAP, 1000, 

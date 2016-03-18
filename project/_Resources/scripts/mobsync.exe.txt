@@ -1,0 +1,7 @@
+[FILENAMES]  
+Exe = Backup\mobsync.exe  
+SaveAs = NewFiles\mobsync.exe
+  
+[COMMANDS]  
+;ICONGROUP
+-modify Resources\icons\apps\synccenter_+256.ico, ICONGROUP, 1,

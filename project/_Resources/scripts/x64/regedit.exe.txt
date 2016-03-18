@@ -1,0 +1,9 @@
+[FILENAMES]  
+Exe = Backup\x64\regedit.exe  
+SaveAs = NewFiles\x64\regedit.exe  
+  
+[COMMANDS]  
+;ICONGROUP
+-modify Resources\icons\apps\regedit.ico, ICONGROUP, 100,
+-modify Resources\icons\apps\regedit.ico, ICONGROUP, 101,
+-modify Resources\icons\actions\regedit-search_32.ico, ICONGROUP, 102,

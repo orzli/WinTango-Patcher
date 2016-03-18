@@ -1,0 +1,7 @@
+[FILENAMES]
+Exe=      Backup\x64\VirtualBox.exe
+SaveAs=   NewFiles\x64\VirtualBox.exe
+
+[COMMANDS]
+;ICONGROUP
+-modify Resources\icons\apps\virtualbox_+20_24_40_64_128_256.ico, ICONGROUP, IDI_ICON1,

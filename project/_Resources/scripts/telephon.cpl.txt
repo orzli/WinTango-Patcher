@@ -1,0 +1,7 @@
+[FILENAMES]  
+Exe = Backup\telephon.cpl  
+SaveAs = NewFiles\telephon.cpl  
+  
+[COMMANDS]  
+;ICONGROUP
+-modify Resources\icons\devices\modem_+24_256.ico, ICONGROUP, 100,

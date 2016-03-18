@@ -1,0 +1,14 @@
+[FILENAMES]  
+Exe = Backup\x64\taskbarcpl.dll  
+SaveAs = NewFiles\x64\taskbarcpl.dll  
+  
+[COMMANDS]  
+;ICONGROUP
+-modify Resources\icons\apps\gnome-panel-notification-area_+24_256.ico, ICONGROUP, 1,
+
+;tray icons
+-modify Resources\icons\actions\config-date_16_20_24_32.ico, ICONGROUP, 2,
+-modify Resources\icons\status\audio-volume-high_16_20_24_32.ico, ICONGROUP, 3,
+-modify Resources\icons\status\network-transmit-receive_16_20_24_32.ico, ICONGROUP, 4,
+-modify Resources\icons\apps\gnome-power-manager_16_24_32.ico, ICONGROUP, 5,
+-modify Resources\icons\status\security-main_16_20_24_32.ico, ICONGROUP, 6,

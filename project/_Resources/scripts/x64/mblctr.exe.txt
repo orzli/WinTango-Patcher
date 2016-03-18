@@ -1,0 +1,36 @@
+[FILENAMES]  
+Exe = Backup\x64\mblctr.exe  
+SaveAs = NewFiles\x64\mblctr.exe  
+  
+[COMMANDS]  
+;ICONGROUP
+-modify Resources\icons\apps\preferences-computer-laptop.ico, ICONGROUP, 100,
+-modify Resources\icons\apps\help-browser_+24.ico, ICONGROUP, 101,
+-modify Resources\icons\tweaked\mblctr.exe\133.ico, ICONGROUP, 133,
+;Monitor
+-modify Resources\icons\devices\video-display_32_48.ico, ICONGROUP, 134,
+;Brightness
+-modify Resources\icons\apps\gnome-brightness-applet_32.ico, ICONGROUP, 140,
+-modify Resources\icons\apps\gnome-brightness-applet_32.ico, ICONGROUP, 141,
+;Network
+-modify Resources\icons\status\network-wireless-offline_32_48.ico, ICONGROUP, 150,
+-modify Resources\icons\status\network-wireless-000_32_48.ico, ICONGROUP, 151,
+-modify Resources\icons\status\network-wireless-025_32_48.ico, ICONGROUP, 152,
+-modify Resources\icons\status\network-wireless-050_32_48.ico, ICONGROUP, 153,
+-modify Resources\icons\status\network-wireless-050_32_48.ico, ICONGROUP, 154,
+-modify Resources\icons\status\network-wireless-075_32_48.ico, ICONGROUP, 155,
+-modify Resources\icons\status\network-wireless-100_32_48.ico, ICONGROUP, 156,
+-modify Resources\icons\status\network-wireless-offline_32_48.ico, ICONGROUP, 157,
+;-modify Resources\icons\places\network-wired_+64.ico, ICONGROUP, 158,
+-modify Resources\icons\status\network-wireless-000_32_48.ico, ICONGROUP, 159,
+;Audio Volume
+-modify Resources\icons\status\audio-volume-high_+24_256.ico, ICONGROUP, 170,
+-modify Resources\icons\status\audio-volume-muted_32_48.ico, ICONGROUP, 171,
+;Sync Icons
+-modify Resources\icons\apps\synccenter_+20_24.ico, ICONGROUP, 180,
+-modify Resources\icons\status\synccenter-uptodate_+20_24.ico, ICONGROUP, 181,
+-modify Resources\icons\status\synccenter-warning_+20_24.ico, ICONGROUP, 182,
+-modify Resources\icons\status\synccenter-unsyncable_+20_24.ico, ICONGROUP, 183,
+-modify Resources\icons\apps\synccenter_+20_24.ico, ICONGROUP, 184,
+-modify Resources\icons\apps\synccenter_+20_24.ico, ICONGROUP, 185,
+-modify Resources\icons\apps\synccenter_+20_24.ico, ICONGROUP, 186,

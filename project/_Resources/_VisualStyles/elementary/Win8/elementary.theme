@@ -1,0 +1,44 @@
+[Theme]
+DisplayName=elementary
+SetLogonBackground=0
+
+[Control Panel\Cursors]
+Arrow=%SystemRoot%\Cursors\elementary\normal.cur
+Help=%SystemRoot%\Cursors\elementary\help.cur
+AppStarting=%SystemRoot%\Cursors\elementary\working.ani
+Wait=%SystemRoot%\Cursors\elementary\busy.ani
+Crosshair=%SystemRoot%\Cursors\elementary\precision.cur
+IBeam=%SystemRoot%\Cursors\elementary\text.cur
+NWPen=%SystemRoot%\Cursors\elementary\handwriting.cur
+No=%SystemRoot%\Cursors\elementary\unavailable.cur
+SizeNS=%SystemRoot%\Cursors\elementary\vertical.cur
+SizeWE=%SystemRoot%\Cursors\elementary\horizontal.cur
+SizeNWSE=%SystemRoot%\Cursors\elementary\diagonal1.cur
+SizeNESW=%SystemRoot%\Cursors\elementary\diagonal2.cur
+SizeAll=%SystemRoot%\Cursors\elementary\move.cur
+UpArrow=%SystemRoot%\Cursors\elementary\alternate.cur
+Hand=%SystemRoot%\Cursors\elementary\link.cur
+DefaultValue=elementary
+
+[Control Panel\Desktop]
+Wallpaper=%SystemRoot%\Web\Wallpaper\elementary OS\2.jpg
+Pattern=
+MultimonBackgrounds=0
+PicturePosition=4
+
+[VisualStyles]
+Path=%SystemRoot%\resources\Themes\elementary\elementary.msstyles
+ColorStyle=NormalColor
+Size=NormalSize
+AutoColorization=0
+VisualStyleVersion=10
+
+[boot]
+SCRNSAVE.EXE=
+
+[MasterThemeSelector]
+MTSM=RJSPBS
+
+[Sounds]
+; IDS_SCHEME_DEFAULT
+SchemeName=@%SystemRoot%\System32\mmres.dll,-801

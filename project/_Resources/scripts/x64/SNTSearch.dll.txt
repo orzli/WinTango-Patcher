@@ -1,0 +1,9 @@
+[FILENAMES]  
+Exe = Backup\x64\SNTSearch.dll  
+SaveAs = NewFiles\x64\SNTSearch.dll  
+  
+[COMMANDS]  
+;ICONGROUP
+-modify Resources\icons\apps\gnome-sticky-notes-applet_+24_64_256.ico, ICONGROUP, 100,
+-modify Resources\icons\apps\gnome-sticky-notes-applet_+24_64_256.ico, ICONGROUP, 101,
+-modify Resources\icons\tweaked\special_order\list-add_22_18.ico, ICONGROUP, 5000,

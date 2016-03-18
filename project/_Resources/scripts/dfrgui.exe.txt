@@ -1,0 +1,13 @@
+[FILENAMES]  
+Exe = Backup\dfrgui.exe  
+SaveAs = NewFiles\dfrgui.exe  
+  
+[COMMANDS]  
+;PNG
+-modify Resources\bitmaps\animations\process-working_24x432.png, PNG, 139,
+
+;ICONGROUP
+-modify Resources\icons\apps\defraggler_+256.ico, ICONGROUP, 130,
+-modify Resources\icons\emblems\emblem-default_16.ico, ICONGROUP, 136,
+-modify Resources\icons\actions\config-date_+256.ico, ICONGROUP, 137,
+-modify Resources\icons\status\dialog-warning_+24_64_96_128_256.ico, ICONGROUP, 141,

@@ -1,0 +1,14 @@
+[FILENAMES]  
+Exe = Backup\x64\imagesp1.dll  
+SaveAs = NewFiles\x64\imagesp1.dll  
+  
+[COMMANDS]  
+;ICONGROUP
+-modify Resources\icons\devices\drive-optical_+256.ico, ICONGROUP, 200,
+-modify Resources\icons\devices\drive-optical_+256.ico, ICONGROUP, 201,
+-modify Resources\icons\devices\media-optical_+256.ico, ICONGROUP, 202,
+-modify Resources\icons\devices\media-optical_+256.ico, ICONGROUP, 203,
+-modify Resources\icons\devices\media-optical_+256.ico, ICONGROUP, 204,
+-modify Resources\icons\devices\media-optical-bd_+256.ico, ICONGROUP, 205,
+-modify Resources\icons\devices\media-optical-bd_+256.ico, ICONGROUP, 206,
+-modify Resources\icons\devices\media-optical-bd_+256.ico, ICONGROUP, 207,

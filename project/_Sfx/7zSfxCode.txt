@@ -1,0 +1,5 @@
+﻿;!@Install@!UTF-8!
+InstallPath="%PROGRAMFILES%\\WinTango Patcher"
+Title="WinTango Patcher Setup"
+RunProgram="Patcher.exe"
+;!@InstallEnd@!

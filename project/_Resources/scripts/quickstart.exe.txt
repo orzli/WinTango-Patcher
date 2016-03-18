@@ -1,0 +1,7 @@
+[FILENAMES]
+Exe=      Backup\quickstart.exe
+SaveAs=   NewFiles\quickstart.exe
+
+[COMMANDS]
+;ICONGROUP
+-modify Resources\icons\apps\libreoffice-startcenter_+128_256.ico, ICONGROUP, 1, 

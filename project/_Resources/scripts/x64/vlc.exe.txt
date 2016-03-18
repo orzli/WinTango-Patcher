@@ -1,0 +1,7 @@
+[FILENAMES]
+Exe=      Backup\x64\vlc.exe
+SaveAs=   NewFiles\x64\vlc.exe
+
+[COMMANDS]
+;ICONGROUP
+-modify Resources\icons\apps\vlc_+256.ico, ICONGROUP, VLC_ICON,

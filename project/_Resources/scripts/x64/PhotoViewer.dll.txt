@@ -1,0 +1,40 @@
+[FILENAMES]  
+Exe = Backup\x64\PhotoViewer.dll  
+SaveAs = NewFiles\x64\PhotoViewer.dll  
+  
+[COMMANDS]  
+;ICONGROUP
+-modify Resources\icons\apps\multimedia-photo-manager_+64_256.ico, ICONGROUP, 0,
+-modify Resources\icons\apps\multimedia-photo-manager_+64_256.ico, ICONGROUP, 3005,
+-modify Resources\icons\apps\multimedia-photo-manager_+64_256.ico, ICONGROUP, 3009,
+
+;PNG
+-modify Resources\bitmaps\tweaked\PhotoViewer.dll\4000.png, PNG, 4000,
+-modify Resources\bitmaps\tweaked\PhotoViewer.dll\4003.png, PNG, 4003,
+-modify Resources\bitmaps\tweaked\PhotoViewer.dll\4006.png, PNG, 4006,
+-modify Resources\bitmaps\tweaked\PhotoViewer.dll\4009.png, PNG, 4009,
+-modify Resources\bitmaps\tweaked\PhotoViewer.dll\4012.png, PNG, 4012,
+-modify Resources\bitmaps\tweaked\PhotoViewer.dll\4015.png, PNG, 4015,
+-modify Resources\bitmaps\tweaked\PhotoViewer.dll\4019.png, PNG, 4019,
+
+-modify Resources\bitmaps\tweaked\PhotoViewer.dll\4124.png, PNG, 4124,
+-modify Resources\bitmaps\tweaked\PhotoViewer.dll\4178.png, PNG, 4178,
+-modify Resources\bitmaps\tweaked\PhotoViewer.dll\4179.png, PNG, 4179,
+
+-modify Resources\bitmaps\tweaked\PhotoViewer.dll\4221.png, PNG, 4221,
+-modify Resources\bitmaps\tweaked\PhotoViewer.dll\4224.png, PNG, 4224,
+-modify Resources\bitmaps\tweaked\PhotoViewer.dll\4227.png, PNG, 4227,
+-modify Resources\bitmaps\tweaked\PhotoViewer.dll\4230.png, PNG, 4230,
+-modify Resources\bitmaps\tweaked\PhotoViewer.dll\4233.png, PNG, 4233,
+-modify Resources\bitmaps\tweaked\PhotoViewer.dll\4236.png, PNG, 4236,
+-modify Resources\bitmaps\tweaked\PhotoViewer.dll\4239.png, PNG, 4239,
+-modify Resources\bitmaps\tweaked\PhotoViewer.dll\4245.png, PNG, 4245,
+-modify Resources\bitmaps\tweaked\PhotoViewer.dll\4248.png, PNG, 4248,
+-modify Resources\bitmaps\tweaked\PhotoViewer.dll\4272.png, PNG, 4272,
+
+-modify Resources\bitmaps\mimetypes\image-x-generic_48.png, PNG, 11045,
+-modify Resources\bitmaps\tweaked\PhotoViewer.dll\14029.png, PNG, 14029,
+
+-modify Resources\bitmaps\actions\edit-copy_16.png, PNG, 14053,
+-modify Resources\bitmaps\places\user-trash_16.png, PNG, 14054,
+-modify Resources\bitmaps\actions\document-print_16.png, PNG, 14055,

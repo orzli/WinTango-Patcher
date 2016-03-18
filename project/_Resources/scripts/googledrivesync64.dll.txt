@@ -1,0 +1,11 @@
+[FILENAMES]
+Exe=      Backup\googledrivesync64.dll
+SaveAs=   NewFiles\googledrivesync64.dll
+
+[COMMANDS]
+;ICONGROUP
+-modify Resources\icons\overlays\emblem-dropbox-uptodate_+128_256.ico, ICONGROUP, IDI_ICON1,
+-modify Resources\icons\overlays\emblem-dropbox-syncing_+128_256.ico, ICONGROUP, IDI_ICON2,
+-modify Resources\icons\overlays\emblem-dropbox-unsyncable_+128_256.ico, ICONGROUP, IDI_ICON3,
+-modify Resources\icons\overlays\emblem-dropbox-uptodate_+128_256.ico, ICONGROUP, IDI_ICON4,
+-modify Resources\icons\overlays\emblem-dropbox-uptodate_+128_256.ico, ICONGROUP, IDI_ICON5,

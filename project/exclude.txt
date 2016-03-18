@@ -1,0 +1,5 @@
+*.xcf
+*.reg
+*.svg
+*.au3
+thumbs.db

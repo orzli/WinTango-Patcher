@@ -1,0 +1,10 @@
+[FILENAMES]
+Exe=      Backup\thunderbird.exe
+SaveAs=   NewFiles\thunderbird.exe
+
+[COMMANDS]
+;ICONGROUP
+-modify Resources\icons\apps\thunderbird_+128_256.ico, ICONGROUP, 32512,
+-modify Resources\icons\status\mail-notification_16.ico, ICONGROUP, 32576,
+-modify Resources\icons\actions\mail-write_16.ico, ICONGROUP, 32577,
+-modify Resources\icons\mimetypes\x-office-address-book_16.ico, ICONGROUP, 32578,

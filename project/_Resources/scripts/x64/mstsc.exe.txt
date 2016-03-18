@@ -1,0 +1,29 @@
+[FILENAMES]  
+Exe = Backup\x64\mstsc.exe  
+SaveAs = NewFiles\x64\mstsc.exe  
+  
+[COMMANDS]  
+;BITMAP
+-modify Resources\bitmaps\tweaked\mstsc.exe\675.bmp, BITMAP, 675,
+-modify Resources\bitmaps\tweaked\mstsc.exe\676.bmp, BITMAP, 676,
+-modify Resources\bitmaps\tweaked\mstsc.exe\677.bmp, BITMAP, 677,
+-modify Resources\bitmaps\tweaked\mstsc.exe\684.bmp, BITMAP, 684,
+
+;ICONGROUP
+-modify Resources\icons\apps\preferences-desktop-remote-desktop_+24_64_128_256.ico, ICONGROUP, 101,
+-modify Resources\icons\status\network-transmit-receive_16.ico, ICONGROUP, 380,
+-modify Resources\icons\places\network-server_16.ico, ICONGROUP, 381,
+-modify Resources\icons\mimetypes\application-certificate_32_48.ico, ICONGROUP, 13000,
+-modify Resources\icons\categories\applications-internet.ico, ICONGROUP, 13001,
+-modify Resources\icons\apps\gnome-display-properties_32_48.ico, ICONGROUP, 13002,
+-modify Resources\icons\tweaked\special_order\input-keyboard_48_32.ico, ICONGROUP, 13003,
+-modify Resources\icons\devices\audio-speakers_32_48.ico, ICONGROUP, 13004,
+-modify Resources\icons\tweaked\special_order\folder_48_32.ico, ICONGROUP, 13005,
+-modify Resources\icons\tweaked\special_order\utilities-system-monitor_48_32.ico, ICONGROUP, 13006,
+-modify Resources\icons\tweaked\special_order\computer_48_32.ico, ICONGROUP, 13007,
+-modify Resources\icons\devices\printer_32_48.ico, ICONGROUP, 13008,
+-modify Resources\icons\tweaked\special_order\preferences-desktop-theme_48_32.ico, ICONGROUP, 13009,
+-modify Resources\icons\tweaked\special_order\system-run_48_32.ico, ICONGROUP, 13010,
+-modify Resources\icons\tweaked\special_order\dialog-password_48_32.ico, ICONGROUP, 13011,
+-modify Resources\icons\tweaked\special_order\system-users_48_32.ico, ICONGROUP, 13012,
+-modify Resources\icons\tweaked\special_order\audio-input-microphone_48_32.ico, ICONGROUP, 13013,

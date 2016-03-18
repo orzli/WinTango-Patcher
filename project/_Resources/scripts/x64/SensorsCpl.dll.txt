@@ -1,0 +1,7 @@
+[FILENAMES]  
+Exe = Backup\x64\SensorsCpl.dll  
+SaveAs = NewFiles\x64\SensorsCpl.dll  
+  
+[COMMANDS]  
+;ICONGROUP
+-modify Resources\icons\apps\gnome-maps_+24_256.ico, ICONGROUP, 1,

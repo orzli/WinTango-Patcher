@@ -1,0 +1,8 @@
+[FILENAMES]  
+Exe = Backup\x64\srchadmin.dll
+SaveAs = NewFiles\x64\srchadmin.dll
+  
+[COMMANDS]  
+;ICONGROUP
+-modify Resources\icons\actions\drive-harddisk-search_+24_256.ico, ICONGROUP, 201,
+-modify Resources\icons\tweaked\special_order\security-warning_48_32_16.ico, ICONGROUP, 202,

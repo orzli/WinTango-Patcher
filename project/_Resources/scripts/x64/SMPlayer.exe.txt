@@ -1,0 +1,8 @@
+[FILENAMES]
+Exe=      Backup\x64\SMPlayer.exe
+SaveAs=   NewFiles\x64\SMPlayer.exe
+
+[COMMANDS]
+;ICONGROUP
+-modify Resources\icons\apps\mplayer_+256.ico, ICONGROUP, IDI_ICON1,
+-modify Resources\icons\mimetypes\video-x-generic_+256.ico, ICONGROUP, IDI_ICON2,

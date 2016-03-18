@@ -1,0 +1,11 @@
+[FILENAMES]  
+Exe = Backup\rstrui.exe  
+SaveAs = NewFiles\rstrui.exe  
+  
+[COMMANDS]  
+;BITMAP
+-modify Resources\bitmaps\tweaked\rstrui.exe\session-properties_49x49.bmp, BITMAP, 105,
+-modify Resources\bitmaps\tweaked\rstrui.exe\session-properties_164x628.bmp, BITMAP, 106,
+
+;ICONGROUP
+-modify Resources\icons\apps\session-properties_+256.ico, ICONGROUP, 155,

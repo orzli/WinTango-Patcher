@@ -1,0 +1,7 @@
+[FILENAMES]  
+Exe = Backup\usercpl.dll  
+SaveAs = NewFiles\usercpl.dll  
+  
+[COMMANDS]  
+;ICONGROUP
+-modify Resources\icons\apps\system-users_+24_256.ico, ICONGROUP, 1,

@@ -1,0 +1,12 @@
+[FILENAMES]
+Exe=      Backup\x64\FoxitReader.exe
+SaveAs=   NewFiles\x64\FoxitReader.exe
+
+[COMMANDS]
+;ICONGROUP
+-modify Resources\icons\apps\foxit-reader.ico,  ICONGROUP, 128, 
+-modify Resources\icons\mimetypes\foxit-reader-pdf_+256.ico,  ICONGROUP, 129, 
+-modify Resources\icons\mimetypes\foxit-reader-pdf_+256.ico,  ICONGROUP, 130, 
+-modify Resources\icons\status\dialog-information_32.ico,  ICONGROUP, 254, 
+-modify Resources\icons\status\dialog-warning_32.ico,  ICONGROUP, 562, 
+-modify Resources\icons\status\dialog-question_32.ico,  ICONGROUP, 794, 

@@ -1,0 +1,8 @@
+[FILENAMES]
+Exe=      Backup\winamp.exe
+SaveAs=   NewFiles\winamp.exe
+
+[COMMANDS]
+;ICONGROUP
+-modify Resources\icons\apps\winamp_+24_64_256.ico, ICONGROUP, 102,
+-modify Resources\icons\mimetypes\audio-x-generic.ico, ICONGROUP, 131,

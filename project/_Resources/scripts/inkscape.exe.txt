@@ -1,0 +1,7 @@
+[FILENAMES]  
+Exe = Backup\inkscape.exe  
+SaveAs = NewFiles\inkscape.exe  
+  
+[COMMANDS]  
+;ICONGROUP
+-modify Resources\icons\apps\inkscape_+256.ico, ICONGROUP, APPLICATION_ICON,

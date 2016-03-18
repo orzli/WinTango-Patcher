@@ -1,0 +1,28 @@
+[FILENAMES]
+Exe=      Backup\Winyl.exe
+SaveAs=   NewFiles\Winyl.exe
+
+[COMMANDS]
+;ICONGROUP
+-modify Resources\icons\apps\multimedia-audio-player_+24_256.ico, ICONGROUP, 100, 
+-modify Resources\icons\apps\multimedia-audio-player_64.ico, ICONGROUP, 200, 
+-modify Resources\icons\apps\preferences-desktop-theme_16.ico, ICONGROUP, 201, 
+-modify Resources\icons\apps\accessories-character-map_16.ico, ICONGROUP, 202, 
+-modify Resources\icons\places\folder_16.ico, ICONGROUP, 203, 
+-modify Resources\icons\status\gtk-info_16.ico, ICONGROUP, 204, 
+-modify Resources\icons\actions\list-add_16.ico, ICONGROUP, 205, 
+-modify Resources\icons\emblems\emblem-uptodate_16.ico, ICONGROUP, 206, 
+-modify Resources\icons\emblems\emblem-sound_32.ico, ICONGROUP, 207, 
+-modify Resources\icons\actions\media-playback-start_16.ico, ICONGROUP, 208, 
+-modify Resources\icons\actions\media-playback-pause_16.ico, ICONGROUP, 209, 
+-modify Resources\icons\actions\media-playback-stop_16.ico, ICONGROUP, 210, 
+-modify Resources\icons\actions\media-skip-forward_16.ico, ICONGROUP, 211, 
+-modify Resources\icons\actions\media-skip-backward_16.ico, ICONGROUP, 212, 
+-modify Resources\icons\actions\application-exit_16.ico, ICONGROUP, 213, 
+-modify Resources\icons\actions\media-playback-start_16_20_24.ico, ICONGROUP, 214, 
+-modify Resources\icons\actions\media-playback-pause_16_20_24.ico, ICONGROUP, 215, 
+-modify Resources\icons\actions\media-playback-stop_16_20_24.ico, ICONGROUP, 216, 
+-modify Resources\icons\actions\media-skip-forward_16_20_24.ico, ICONGROUP, 217, 
+-modify Resources\icons\actions\media-skip-backward_16_20_24.ico, ICONGROUP, 218, 
+-modify Resources\icons\actions\go-next_24.ico, ICONGROUP, 219, 
+-modify Resources\icons\actions\go-previous_24.ico, ICONGROUP, 220, 

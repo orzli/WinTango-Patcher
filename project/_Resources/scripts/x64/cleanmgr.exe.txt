@@ -1,0 +1,9 @@
+[FILENAMES]  
+Exe = Backup\x64\cleanmgr.exe  
+SaveAs = NewFiles\x64\cleanmgr.exe  
+  
+[COMMANDS]  
+;ICONGROUP
+-modify Resources\icons\apps\clean-manager_+24_256.ico, ICONGROUP, 104,
+-modify Resources\icons\mimetypes\text-x-preview_+256.ico, ICONGROUP, 111,
+-modify Resources\icons\apps\clean-manager_+24_256.ico, ICONGROUP, 113,

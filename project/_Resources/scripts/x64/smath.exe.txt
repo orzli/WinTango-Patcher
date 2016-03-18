@@ -1,0 +1,7 @@
+[FILENAMES]
+Exe=      Backup\x64\smath.exe
+SaveAs=   NewFiles\x64\smath.exe
+
+[COMMANDS]
+;ICONGROUP
+-modify Resources\icons\apps\libreoffice-math_+128_256.ico,  ICONGROUP, 1, 

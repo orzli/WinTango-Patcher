@@ -1,0 +1,8 @@
+[FILENAMES]  
+Exe = Backup\zipfldr.dll  
+SaveAs = NewFiles\zipfldr.dll  
+  
+[COMMANDS]  
+;ICONGROUP
+-modify Resources\icons\mimetypes\package-x-generic_+256.ico, ICONGROUP, 101,
+-modify Resources\icons\mimetypes\package-x-generic_+256.ico, ICONGROUP, 123,

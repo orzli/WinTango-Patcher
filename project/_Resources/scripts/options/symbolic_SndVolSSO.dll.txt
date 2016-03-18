@@ -1,0 +1,15 @@
+[FILENAMES]  
+Exe = Backup\SndVolSSO.dll  
+SaveAs = NewFiles\SndVolSSO.dll  
+  
+[COMMANDS]  
+;ICONGROUP
+-modify Resources\icons\status\audio-volume-high.ico, ICONGROUP, 100,
+
+;tray icons
+-modify Resources\icons\symbolic\audio-volume-muted_16_20_24_32.ico, ICONGROUP, 120,
+-modify Resources\icons\symbolic\audio-volume-none_16_20_24_32.ico, ICONGROUP, 121,
+-modify Resources\icons\symbolic\audio-volume-low_16_20_24_32.ico, ICONGROUP, 122,
+-modify Resources\icons\symbolic\audio-volume-medium_16_20_24_32.ico, ICONGROUP, 123,
+-modify Resources\icons\symbolic\audio-volume-high_16_20_24_32.ico, ICONGROUP, 124,
+-modify Resources\icons\symbolic\audio-volume-error_16_20_24_32.ico, ICONGROUP, 125,

@@ -1,0 +1,15 @@
+[FILENAMES]  
+Exe = Backup\batmeter.dll  
+SaveAs = NewFiles\batmeter.dll  
+  
+[COMMANDS]  
+;BITMAP
+-modify Resources\bitmaps\tweaked\batmeter.dll\301.bmp, BITMAP, 301,
+;-modify Resources\bitmaps\tweaked\batmeter.dll\302.bmp, BITMAP, 302,
+-modify Resources\bitmaps\tweaked\batmeter.dll\301.bmp, BITMAP, 301,
+-modify Resources\bitmaps\tweaked\batmeter.dll\306.bmp, BITMAP, 306,
+
+;tray icons
+-modify Resources\icons\symbolic\battery_303.bmp, BITMAP, 303,
+;-modify Resources\icons\symbolic\battery_304.bmp, BITMAP, 304,
+-modify Resources\icons\symbolic\battery_305.bmp, BITMAP, 305,

@@ -1,0 +1,7 @@
+[FILENAMES]  
+Exe = Backup\StikyNot.exe  
+SaveAs = NewFiles\StikyNot.exe  
+  
+[COMMANDS]  
+;ICONGROUP
+-modify Resources\icons\apps\gnome-sticky-notes-applet_+24_64_256.ico, ICONGROUP, 101,

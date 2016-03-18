@@ -1,0 +1,8 @@
+[FILENAMES]  
+Exe = Backup\sysdm.cpl  
+SaveAs = NewFiles\sysdm.cpl  
+  
+[COMMANDS]  
+;ICONGROUP
+-modify Resources\icons\categories\preferences-system_+24_256.ico, ICONGROUP, 1,
+-modify Resources\icons\apps\system-users_+24_256.ico, ICONGROUP, 2,

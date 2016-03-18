@@ -1,0 +1,11 @@
+[FILENAMES]  
+Exe = Backup\x64\SoundRecorder.exe  
+SaveAs = NewFiles\x64\SoundRecorder.exe  
+  
+[COMMANDS]  
+;BITMAP
+-modify Resources\bitmaps\tweaked\SoundRecorder.exe\204+205.bmp, BITMAP, 204,
+-modify Resources\bitmaps\tweaked\SoundRecorder.exe\204+205.bmp, BITMAP, 205,
+
+;ICONGROUP
+-modify Resources\icons\apps\gnome-sound-recorder_+256.ico, ICONGROUP, 201,

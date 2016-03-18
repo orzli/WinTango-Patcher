@@ -1,0 +1,13 @@
+[FILENAMES]  
+Exe = Backup\main.cpl  
+SaveAs = NewFiles\main.cpl  
+  
+[COMMANDS]  
+;ICONGROUP
+-modify Resources\icons\devices\input-mouse_+256.ico, ICONGROUP, 100,
+-modify Resources\icons\devices\input-keyboard_+24_256.ico, ICONGROUP, 200,
+-modify Resources\icons\apps\preferences-desktop-font_+256.ico, ICONGROUP, 400,
+-modify Resources\icons\categories\preferences-system_+24.ico, ICONGROUP, 500,
+-modify Resources\icons\places\folder_32.ico, ICONGROUP, 605,
+-modify Resources\icons\status\folder-open_32.ico, ICONGROUP, 606,
+-modify Resources\icons\status\locked_32.ico, ICONGROUP, 607,

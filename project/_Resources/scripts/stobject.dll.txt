@@ -1,0 +1,8 @@
+[FILENAMES]  
+Exe = Backup\stobject.dll  
+SaveAs = NewFiles\stobject.dll  
+  
+[COMMANDS]  
+;ICONGROUP
+-modify Resources\icons\apps\gnome-power-manager_16_32.ico, ICONGROUP, 200,
+-modify Resources\icons\actions\media-eject_16_22_24_32.ico, ICONGROUP, 210,

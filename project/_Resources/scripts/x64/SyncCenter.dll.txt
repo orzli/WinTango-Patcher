@@ -1,0 +1,8 @@
+[FILENAMES]  
+Exe = Backup\x64\SyncCenter.dll  
+SaveAs = NewFiles\x64\SyncCenter.dll
+  
+[COMMANDS]  
+;ICONGROUP
+-modify Resources\icons\apps\synccenter_+256.ico, ICONGROUP, 1000,
+-modify Resources\icons\apps\synccenter_+24_256.ico, ICONGROUP, 1005,

@@ -1,0 +1,7 @@
+[FILENAMES]  
+Exe = Backup\x64\calc.exe  
+SaveAs = NewFiles\x64\calc.exe  
+  
+[COMMANDS]  
+;ICONGROUP
+-modify Resources\icons\apps\accessories-calculator_+24_64_256.ico, ICONGROUP, 234,

@@ -1,0 +1,50 @@
+[FILENAMES]  
+Exe = Backup\x64\netshell.dll  
+SaveAs = NewFiles\x64\netshell.dll  
+  
+[COMMANDS]  
+;ICONGROUP
+-modify Resources\icons\status\network-transmit-receive_16.ico, ICONGROUP, 190,
+-modify Resources\icons\status\network-transmit_16.ico, ICONGROUP, 191,
+-modify Resources\icons\status\network-receive_16.ico, ICONGROUP, 192,
+-modify Resources\icons\status\network-idle_16.ico, ICONGROUP, 193,
+-modify Resources\icons\status\network-offline_16.ico, ICONGROUP, 195,
+
+-modify Resources\icons\tweaked\special_order\emblem-shared_48_32_16.ico, ICONGROUP, 300,
+-modify Resources\icons\tweaked\netshell.dll\302.ico, ICONGROUP, 302,
+
+-modify Resources\icons\categories\applications-internet.ico, ICONGROUP, 1115,
+-modify Resources\icons\devices\computer.ico, ICONGROUP, 1117,
+
+-modify Resources\icons\actions\window-close_+256.ico, ICONGROUP, 1603,
+-modify Resources\icons\actions\window-close_16_24_32.ico, ICONGROUP, 1608,
+-modify Resources\icons\apps\bluetooth_+24_256.ico, ICONGROUP, 1613,
+
+-modify Resources\icons\overlays\emblem-modem_+256.ico, ICONGROUP, 1902,
+-modify Resources\icons\overlays\emblem-lan_+256.ico, ICONGROUP, 1903,
+-modify Resources\icons\overlays\emblem-modem_+256.ico, ICONGROUP, 1906,
+-modify Resources\icons\overlays\emblem-wireless-100_+256.ico, ICONGROUP, 1913,
+-modify Resources\icons\tweaked\netshell.dll\1915.ico, ICONGROUP, 1915,
+-modify Resources\icons\tweaked\netshell.dll\1916.ico, ICONGROUP, 1916,
+-modify Resources\icons\tweaked\netshell.dll\1917.ico, ICONGROUP, 1917,
+-modify Resources\icons\tweaked\netshell.dll\1918.ico, ICONGROUP, 1918,
+-modify Resources\icons\overlays\emblem-offline_32_48_256.ico, ICONGROUP, 1920,
+-modify Resources\icons\overlays\emblem-bluetooth_+256.ico, ICONGROUP, 1922,
+-modify Resources\icons\tweaked\netshell.dll\1924.ico, ICONGROUP, 1924,
+-modify Resources\icons\overlays\emblem-wireless-100_+256.ico, ICONGROUP, 1925,
+-modify Resources\icons\overlays\emblem-wireless-000_+256.ico, ICONGROUP, 1950,
+-modify Resources\icons\overlays\emblem-wireless-000_+256.ico, ICONGROUP, 1951,
+
+-modify Resources\icons\actions\go-up_16_24_32.ico, ICONGROUP, 2300,
+-modify Resources\icons\actions\go-down_16_24_32.ico, ICONGROUP, 2301,
+
+-modify Resources\icons\status\network-wireless-000_32_48_256.ico, ICONGROUP, 23510,
+-modify Resources\icons\status\network-wireless-025_32_48_256.ico, ICONGROUP, 23511,
+-modify Resources\icons\status\network-wireless-050_32_48_256.ico, ICONGROUP, 23512,
+-modify Resources\icons\status\network-wireless-050_32_48_256.ico, ICONGROUP, 23513,
+-modify Resources\icons\status\network-wireless-075_32_48_256.ico, ICONGROUP, 23514,
+-modify Resources\icons\status\network-wireless-100_32_48_256.ico, ICONGROUP, 23515,
+-modify Resources\icons\tweaked\netshell.dll\23520.ico, ICONGROUP, 23520,
+-modify Resources\icons\tweaked\netshell.dll\23521.ico, ICONGROUP, 23521,
+-modify Resources\icons\tweaked\netshell.dll\23522.ico, ICONGROUP, 23522,
+-modify Resources\icons\tweaked\netshell.dll\23523.ico, ICONGROUP, 23523,

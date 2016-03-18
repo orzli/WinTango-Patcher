@@ -1,0 +1,8 @@
+[FILENAMES]  
+Exe = Backup\TSWorkspace.dll
+SaveAs = NewFiles\TSWorkspace.dll
+  
+[COMMANDS]  
+;ICONGROUP
+-modify Resources\icons\apps\preferences-desktop-remote-desktop_+256.ico, ICONGROUP, 300,
+-modify Resources\icons\status\security-warning_32.ico, ICONGROUP, 301,

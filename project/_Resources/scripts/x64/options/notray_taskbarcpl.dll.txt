@@ -1,0 +1,7 @@
+[FILENAMES]  
+Exe = Backup\x64\taskbarcpl.dll  
+SaveAs = NewFiles\x64\taskbarcpl.dll  
+  
+[COMMANDS]  
+;ICONGROUP
+-modify Resources\icons\apps\gnome-panel-notification-area_+24_256.ico, ICONGROUP, 1,

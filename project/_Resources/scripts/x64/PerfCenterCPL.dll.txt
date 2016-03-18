@@ -1,0 +1,13 @@
+[FILENAMES]  
+Exe = Backup\x64\PerfCenterCPL.dll  
+SaveAs = NewFiles\x64\PerfCenterCPL.dll  
+  
+[COMMANDS]  
+;BITMAP
+-modify Resources\bitmaps\apps\help-browser_16.bmp, BITMAP, 62,
+-modify Resources\bitmaps\tweaked\PerfCenterCPL.dll\68.bmp, BITMAP, 68,
+-modify Resources\bitmaps\status\dialog-warning_16.bmp, BITMAP, 69,
+
+;ICONGROUP
+-modify Resources\icons\apps\utilities-system-monitor_+24_256.ico, ICONGROUP, 1,
+-modify Resources\icons\status\dialog-information_+24_128_256.ico, ICONGROUP, 71,

@@ -1,0 +1,7 @@
+[FILENAMES]  
+Exe = Backup\x64\fontext.dll  
+SaveAs = NewFiles\x64\fontext.dll  
+  
+[COMMANDS]  
+;ICONGROUP
+-modify Resources\icons\apps\preferences-desktop-font.ico, ICONGROUP, 410,

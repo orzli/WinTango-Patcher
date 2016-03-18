@@ -1,0 +1,7 @@
+[FILENAMES]
+Exe=      Backup\chrome.exe
+SaveAs=   NewFiles\chrome.exe
+
+[COMMANDS]
+;ICONGROUP
+-modify Resources\icons\apps\google-chrome_+256.ico, ICONGROUP, IDR_MAINFRAME,

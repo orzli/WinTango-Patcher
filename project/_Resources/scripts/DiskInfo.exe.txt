@@ -1,0 +1,13 @@
+[FILENAMES]
+Exe=      Backup\DiskInfo.exe
+SaveAs=   NewFiles\DiskInfo.exe
+
+[COMMANDS]
+;ICONGROUP
+-modify Resources\icons\actions\drive-harddisk-search_+24_256.ico, ICONGROUP, 128,
+-modify Resources\icons\status\indicator-blue_16.ico, ICONGROUP, 133,
+-modify Resources\icons\status\indicator-orange_16.ico, ICONGROUP, 134,
+-modify Resources\icons\status\indicator-red_16.ico, ICONGROUP, 135,
+-modify Resources\icons\status\indicator-grey_16.ico, ICONGROUP, 136,
+-modify Resources\icons\status\indicator-green_16.ico, ICONGROUP, 137,
+-modify Resources\icons\actions\drive-harddisk-search_16.ico, ICONGROUP, 145,

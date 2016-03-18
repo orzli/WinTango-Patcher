@@ -1,0 +1,7 @@
+[FILENAMES]  
+Exe = Backup\SndVolSSO.dll  
+SaveAs = NewFiles\SndVolSSO.dll  
+  
+[COMMANDS]  
+;ICONGROUP
+-modify Resources\icons\status\audio-volume-high.ico, ICONGROUP, 100,

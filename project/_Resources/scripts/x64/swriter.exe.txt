@@ -1,0 +1,7 @@
+[FILENAMES]
+Exe=      Backup\x64\swriter.exe
+SaveAs=   NewFiles\x64\swriter.exe
+
+[COMMANDS]
+;ICONGROUP
+-modify Resources\icons\apps\libreoffice-writer_+128_256.ico,  ICONGROUP, 1, 

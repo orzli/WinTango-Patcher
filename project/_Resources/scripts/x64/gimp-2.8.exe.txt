@@ -1,0 +1,8 @@
+[FILENAMES]  
+Exe = Backup\x64\gimp-2.8.exe  
+SaveAs = NewFiles\x64\gimp-2.8.exe  
+  
+[COMMANDS]  
+;ICONGROUP
+-modify Resources\icons\apps\gimp_+24_64_256.ico, ICONGROUP, 1,
+-modify Resources\icons\mimetypes\image-x-xcf_+256.ico, ICONGROUP, 2,

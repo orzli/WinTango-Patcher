@@ -1,0 +1,18 @@
+[FILENAMES]  
+Exe = Backup\x64\mmres.dll
+SaveAs = NewFiles\x64\mmres.dll
+  
+[COMMANDS]  
+;ICONGROUP
+-modify Resources\icons\apps\preferences-desktop-sound_+24_256.ico, ICONGROUP, 3004,
+-modify Resources\icons\apps\preferences-desktop-sound_+24.ico, ICONGROUP, 3010,
+-modify Resources\icons\devices\multimedia-headphones_+24.ico, ICONGROUP, 3011,
+-modify Resources\icons\devices\audio-input-microphone_+24.ico, ICONGROUP, 3014,
+-modify Resources\icons\devices\multimedia-headset_+24.ico, ICONGROUP, 3015,
+-modify Resources\icons\actions\call-start_+24.ico, ICONGROUP, 3016,
+-modify Resources\icons\apps\preferences-desktop-sound_16_24_32.ico, ICONGROUP, 3019,
+-modify Resources\icons\devices\audio-input-microphone_+24.ico, ICONGROUP, 3021,
+-modify Resources\icons\apps\preferences-desktop-sound_+24.ico, ICONGROUP, 3030,
+-modify Resources\icons\devices\multimedia-headphones_+24.ico, ICONGROUP, 3031,
+-modify Resources\icons\apps\preferences-desktop-sound_+24.ico, ICONGROUP, 3050,
+-modify Resources\icons\devices\multimedia-headphones_+24.ico, ICONGROUP, 3051,

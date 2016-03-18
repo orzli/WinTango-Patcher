@@ -1,0 +1,9 @@
+[FILENAMES]  
+Exe = Backup\SndVol.exe  
+SaveAs = NewFiles\SndVol.exe
+  
+[COMMANDS]  
+;ICONGROUP
+-modify Resources\icons\apps\preferences-desktop-sound.ico, ICONGROUP, 101,
+-modify Resources\icons\status\audio-volume-high_16_20_24_32.ico, ICONGROUP, 110,
+-modify Resources\icons\status\audio-volume-muted_16_20_24_32.ico, ICONGROUP, 111,

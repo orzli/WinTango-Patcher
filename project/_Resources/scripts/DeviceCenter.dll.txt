@@ -1,0 +1,9 @@
+[FILENAMES]  
+Exe = Backup\DeviceCenter.dll  
+SaveAs = NewFiles\DeviceCenter.dll  
+  
+[COMMANDS]  
+;ICONGROUP
+-modify Resources\icons\devices\printer_+64_256.ico, ICONGROUP, 1,
+-modify Resources\icons\overlays\emblem-warning_+256.ico, ICONGROUP, 160,
+-modify Resources\icons\emblems\emblem-default_+256.ico, ICONGROUP, 166,

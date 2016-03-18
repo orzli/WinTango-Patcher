@@ -1,0 +1,8 @@
+[FILENAMES]  
+Exe = Backup\x64\msinfo32.exe  
+SaveAs = NewFiles\x64\msinfo32.exe  
+  
+[COMMANDS]  
+;ICONGROUP
+-modify Resources\icons\apps\system-info_+24_256.ico, ICONGROUP, 399,
+-modify Resources\icons\apps\system-info_+24_256.ico, ICONGROUP, 10002,

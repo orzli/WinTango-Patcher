@@ -1,0 +1,13 @@
+[FILENAMES]  
+Exe = Backup\powercpl.dll  
+SaveAs = NewFiles\powercpl.dll  
+  
+[COMMANDS]  
+;ICONGROUP
+-modify Resources\icons\apps\gnome-power-manager_+256.ico, ICONGROUP, 1,
+-modify Resources\icons\status\battery-100_32_48.ico, ICONGROUP, 506,
+-modify Resources\icons\devices\ac-adapter_32_48.ico, ICONGROUP, 507,
+-modify Resources\icons\apps\preferences-system-time_+24.ico, ICONGROUP, 513,
+-modify Resources\icons\actions\system-hibernate_16_24_32.ico, ICONGROUP, 514,
+-modify Resources\icons\status\brightness-high_16_24_32.ico, ICONGROUP, 515,
+-modify Resources\icons\status\brightness-low_16_24_32.ico, ICONGROUP, 516,

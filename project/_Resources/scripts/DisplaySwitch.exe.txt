@@ -1,0 +1,7 @@
+[FILENAMES]  
+Exe = Backup\DisplaySwitch.exe  
+SaveAs = NewFiles\DisplaySwitch.exe  
+  
+[COMMANDS]  
+;ICONGROUP
+-modify Resources\icons\apps\gnome-display-properties_+24.ico, ICONGROUP, 101,

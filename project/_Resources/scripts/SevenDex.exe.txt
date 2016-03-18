@@ -1,0 +1,17 @@
+[FILENAMES]
+Exe=      Backup\SevenDex.exe
+SaveAs=   NewFiles\SevenDex.exe
+
+[COMMANDS]
+;ICONGROUP
+-modify Resources\icons\apps\gnome-panel-workspace-switcher.ico, ICONGROUP, 103,
+;settings
+-modify Resources\icons\apps\gnome-panel-window-list_16.ico, ICONGROUP, 130,
+;ICONGROUP, 131, ;Vollbildvorschau
+-modify Resources\icons\categories\preferences-system_16.ico, ICONGROUP, 132,
+;ICONGROUP, 133, ;Desktops konfigurieren
+;ICONGROUP, 134, ;Anwendungen zuweisen
+;ICONGROUP, 135, ;Desktop Manager
+;ICONGROUP, 136, ;Desktop Vorschau
+-modify Resources\icons\apps\preferences-system-windows_16.ico, ICONGROUP, 137,
+;ICONGROUP, 138, ;Desktop Regeln

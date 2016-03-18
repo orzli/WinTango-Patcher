@@ -1,0 +1,7 @@
+[FILENAMES]
+Exe=      Backup\scalc.exe
+SaveAs=   NewFiles\scalc.exe
+
+[COMMANDS]
+;ICONGROUP
+-modify Resources\icons\apps\libreoffice-calc_+128_256.ico, ICONGROUP, 1, 

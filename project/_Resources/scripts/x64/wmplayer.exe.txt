@@ -1,0 +1,8 @@
+[FILENAMES]  
+Exe = Backup\x64\wmplayer.exe  
+SaveAs = NewFiles\x64\wmplayer.exe  
+  
+[COMMANDS]  
+;ICONGROUP
+-modify Resources\icons\apps\windows-media-player_+24_64_256.ico, ICONGROUP, IDR_MAINFRAME,
+-modify Resources\icons\mimetypes\media-wmp_+24_256.ico, ICONGROUP, 120,

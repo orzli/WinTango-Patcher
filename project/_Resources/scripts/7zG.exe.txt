@@ -1,0 +1,7 @@
+[FILENAMES]
+Exe=      Backup\7zG.exe
+SaveAs=   NewFiles\7zG.exe
+
+[COMMANDS]
+;ICONGROUP
+-modify Resources\icons\apps\7zip.ico, ICONGROUP, 1, 

@@ -1,0 +1,15 @@
+[FILENAMES]  
+Exe = Backup\timedate.cpl  
+SaveAs = NewFiles\timedate.cpl  
+  
+[COMMANDS]  
+;ICONGROUP
+-modify Resources\icons\actions\config-date_+256.ico, ICONGROUP, 50,
+
+;PNGFILE
+-modify Resources\bitmaps\tweaked\timedate.cpl\5000+5010.png, PNGFILE, 5000,
+-modify Resources\bitmaps\tweaked\timedate.cpl\5002.png, PNGFILE, 5002,
+-modify Resources\bitmaps\tweaked\timedate.cpl\5004.png, PNGFILE, 5004,
+-modify Resources\bitmaps\tweaked\timedate.cpl\5006+5008.png, PNGFILE, 5006,
+-modify Resources\bitmaps\tweaked\timedate.cpl\5006+5008.png, PNGFILE, 5008,
+-modify Resources\bitmaps\tweaked\timedate.cpl\5000+5010.png, PNGFILE, 5010,

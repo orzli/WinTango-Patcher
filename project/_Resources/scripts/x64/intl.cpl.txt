@@ -1,0 +1,7 @@
+[FILENAMES]  
+Exe = Backup\x64\intl.cpl  
+SaveAs = NewFiles\x64\intl.cpl  
+  
+[COMMANDS]  
+;ICONGROUP
+-modify Resources\icons\apps\preferences-desktop-locale_+256.ico, ICONGROUP, 200,

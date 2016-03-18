@@ -1,0 +1,16 @@
+Changelog:
+------------
+
+15.11.09:
+- Update: Support for LibreOffice 5.x
+- Update: elementary Icon Theme
+- Update: Mozilla Firefox Theme compatibility Updates
+- Update: Removed Aero Fog on Tabbar of Mozilla Thunderbird
+- Update: WinTango Patcher GUIs
+- Update: Moved the whole documentation on the Homepage
+- Update: Small fixes for the Shiki-Colors Visual Style
+- New: Support for localization of the CPL GUI
+- New: elementaryOS cursors (credits to DMZ Cursors by Nighted)
+- New: RadioSure Skins for the elementary and Shiki-Colors styles
+- New: Support for Winyl and Flat Skins for all icon themes
+- Fix: Disabled patching of VirtualBox due to an error since version 5

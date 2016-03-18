@@ -1,0 +1,12 @@
+[FILENAMES]  
+Exe = Backup\mpc-hc64.exe  
+SaveAs = NewFiles\mpc-hc64.exe  
+  
+[COMMANDS]  
+;PNG
+-modify Resources\bitmaps\tweaked\mpc-hc.exe\210.png, PNG, 210,
+
+;ICONGROUP
+-modify Resources\icons\apps\pitivi_+24_256.ico, ICONGROUP, 128,
+-modify Resources\icons\apps\application-default-icon_32.ico, ICONGROUP, 300,
+-modify Resources\icons\apps\preferences-system-windows_32.ico, ICONGROUP, 301,

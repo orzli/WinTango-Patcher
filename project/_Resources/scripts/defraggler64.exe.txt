@@ -1,0 +1,13 @@
+[FILENAMES]
+Exe=      Backup\defraggler64.exe
+SaveAs=   NewFiles\defraggler64.exe
+
+[COMMANDS]
+;ICONS
+-modify Resources\icons\apps\defraggler_+256.ico, ICONGROUP, 128,
+
+;BITMAPS
+-modify Resources\bitmaps\apps\defraggler_128.bmp, BITMAP, 222, 
+-modify Resources\bitmaps\tweaked\defraggler\264+278.bmp, BITMAP, 264, 
+-modify Resources\bitmaps\tweaked\defraggler\272.bmp, BITMAP, 272, 
+-modify Resources\bitmaps\status\dialog-warning_32.bmp, BITMAP, 298, 

@@ -1,0 +1,7 @@
+[FILENAMES]  
+Exe = Backup\nvcplui.exe 
+SaveAs = NewFiles\nvcplui.exe
+  
+[COMMANDS]  
+;ICONGROUP
+-modify Resources\icons\apps\nvidia-cpl_+256.ico, ICONGROUP, 128,

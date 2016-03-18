@@ -1,0 +1,12 @@
+[FILENAMES]
+Exe=      Backup\x64\xlicons.exe
+SaveAs=   NewFiles\x64\xlicons.exe
+
+[COMMANDS]
+;ICONGROUP
+;Filetype
+-modify Resources\icons\mimetypes\x-office-spreadsheet_+256.ico, ICONGROUP, 258, 
+-modify Resources\icons\mimetypes\x-office-spreadsheet_+256.ico, ICONGROUP, 288, 
+;Template
+-modify Resources\icons\mimetypes\x-office-spreadsheet-template_+256.ico, ICONGROUP, 261, 
+-modify Resources\icons\mimetypes\x-office-spreadsheet-template_+256.ico, ICONGROUP, 289, 

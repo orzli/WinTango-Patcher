@@ -1,0 +1,15 @@
+[FILENAMES]  
+Exe = Backup\x64\pnidui.dll  
+SaveAs = NewFiles\x64\pnidui.dll  
+  
+[COMMANDS]  
+;ICONGROUP
+-modify Resources\icons\places\network-type-private_+24.ico, ICONGROUP, 2400,
+-modify Resources\icons\places\network-type-public_+24.ico, ICONGROUP, 2401,
+-modify Resources\icons\places\network-type-workplace.ico, ICONGROUP, 2402,
+-modify Resources\icons\devices\phone_+24.ico, ICONGROUP, 2404,
+-modify Resources\icons\places\network-workgroup.ico, ICONGROUP, 2407,
+
+-modify Resources\icons\places\network-type-private_+256.ico, ICONGROUP, 40405,
+-modify Resources\icons\places\network-type-workplace_+256.ico, ICONGROUP, 40406,
+-modify Resources\icons\places\network-type-public_+24_128.ico, ICONGROUP, 40407,

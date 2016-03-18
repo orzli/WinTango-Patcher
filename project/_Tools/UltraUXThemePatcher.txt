@@ -1,0 +1,1 @@
+silent mode: UltraUXThemePatcher.exe /S

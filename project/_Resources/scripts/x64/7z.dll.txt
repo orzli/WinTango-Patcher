@@ -1,0 +1,31 @@
+[FILENAMES]
+Exe=      Backup\x64\7z.dll
+SaveAs=   NewFiles\x64\7z.dll
+
+[COMMANDS]
+;ICONGROUP
+-modify Resources\icons\mimetypes\package-x-7zip.ico, ICONGROUP, 0,
+-modify Resources\icons\mimetypes\package-x-zip.ico, ICONGROUP, 1,
+-modify Resources\icons\mimetypes\package-x-generic.ico, ICONGROUP, 2,
+-modify Resources\icons\mimetypes\package-x-rar.ico, ICONGROUP, 3,
+-modify Resources\icons\mimetypes\package-x-generic.ico, ICONGROUP, 4,
+-modify Resources\icons\mimetypes\package-x-generic.ico, ICONGROUP, 5,
+-modify Resources\icons\mimetypes\package-x-lza-lha.ico, ICONGROUP, 6,
+-modify Resources\icons\mimetypes\package-x-cab.ico, ICONGROUP, 7,
+-modify Resources\icons\mimetypes\package-x-iso.ico, ICONGROUP, 8,
+-modify Resources\icons\mimetypes\package-x-split.ico, ICONGROUP, 9,
+-modify Resources\icons\mimetypes\package-x-generic.ico, ICONGROUP, 10,
+-modify Resources\icons\mimetypes\package-x-deb.ico, ICONGROUP, 11,
+-modify Resources\icons\mimetypes\package-x-generic.ico, ICONGROUP, 12,
+-modify Resources\icons\mimetypes\package-x-tar.ico, ICONGROUP, 13,
+-modify Resources\icons\mimetypes\package-x-gz-gzip-tgz-tpz.ico, ICONGROUP, 14,
+-modify Resources\icons\mimetypes\package-x-wim.ico, ICONGROUP, 15,
+-modify Resources\icons\mimetypes\package-x-generic.ico, ICONGROUP, 16,
+-modify Resources\icons\mimetypes\package-x-dmg.ico, ICONGROUP, 17,
+-modify Resources\icons\mimetypes\package-x-generic.ico, ICONGROUP, 18,
+-modify Resources\icons\mimetypes\package-x-generic.ico, ICONGROUP, 19,
+-modify Resources\icons\mimetypes\package-x-generic.ico, ICONGROUP, 20,
+-modify Resources\icons\mimetypes\package-x-generic.ico, ICONGROUP, 21,
+-modify Resources\icons\mimetypes\package-x-generic.ico, ICONGROUP, 22,
+-modify Resources\icons\mimetypes\package-x-generic.ico, ICONGROUP, 23,
+-modify Resources\icons\mimetypes\package-x-generic.ico, ICONGROUP, 24,

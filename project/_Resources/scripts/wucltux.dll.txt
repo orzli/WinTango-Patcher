@@ -1,0 +1,20 @@
+[FILENAMES]  
+Exe = Backup\wucltux.dll  
+SaveAs = NewFiles\wucltux.dll  
+  
+[COMMANDS]  
+;BITMAP
+-modify Resources\bitmaps\devices\printer_16.bmp, BITMAP, 8,
+-modify Resources\bitmaps\actions\view-refresh_16.bmp, BITMAP, 10,
+
+;ICONGROUP
+-modify Resources\icons\apps\system-software-update_+24_256.ico, ICONGROUP, 1,
+-modify Resources\icons\status\security-main_+24_64_96_128_256.ico, ICONGROUP, 14,
+-modify Resources\icons\status\dialog-information_+24_128_256.ico, ICONGROUP, 18,
+-modify Resources\icons\tweaked\wucltux.dll\45.ico, ICONGROUP, 45,
+-modify Resources\icons\tweaked\wucltux.dll\46.ico, ICONGROUP, 46,
+-modify Resources\icons\tweaked\wucltux.dll\47.ico, ICONGROUP, 47,
+-modify Resources\icons\status\gtk-info_+24_64.ico, ICONGROUP, 48,
+-modify Resources\icons\emblems\emblem-default.ico, ICONGROUP, 62,
+-modify Resources\icons\apps\system-software-update_+24_256.ico, ICONGROUP, 1020,
+-modify Resources\icons\apps\system-software-update_+24_256.ico, ICONGROUP, 1021,

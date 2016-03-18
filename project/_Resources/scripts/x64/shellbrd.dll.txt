@@ -1,0 +1,16 @@
+[FILENAMES]  
+Exe = Backup\x64\shellbrd.dll 
+SaveAs = NewFiles\x64\shellbrd.dll 
+  
+[COMMANDS]  
+;BITMAP
+-modify Resources\bitmaps\emblems\emblem-windows_16.bmp, BITMAP, 1041,
+-modify Resources\bitmaps\emblems\emblem-windows_20.bmp, BITMAP, 2041,
+-modify Resources\bitmaps\emblems\emblem-windows_24.bmp, BITMAP, 3041,
+-modify Resources\bitmaps\tweaked\shellbrd.dll\1050.bmp, BITMAP, 1050,
+-modify Resources\bitmaps\tweaked\shellbrd.dll\2050.bmp, BITMAP, 2050,
+-modify Resources\bitmaps\tweaked\shellbrd.dll\3050.bmp, BITMAP, 3050,
+
+;ICONGROUP
+-modify Resources\icons\places\start-here_+64_256.ico, ICONGROUP, 1075,
+-modify Resources\icons\emblems\emblem-windows_+256.ico, ICONGROUP, 1077,

@@ -1,0 +1,7 @@
+[FILENAMES]
+Exe=      Backup\x64\dexpot.exe
+SaveAs=   NewFiles\x64\dexpot.exe
+
+[COMMANDS]
+;ICONGROUP
+-modify Resources\icons\apps\gnome-panel-workspace-switcher_+256.ico, ICONGROUP, DEXPOTICON,

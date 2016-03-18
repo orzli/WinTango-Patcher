@@ -1,0 +1,12 @@
+[FILENAMES]
+Exe=      Backup\firefox.exe
+SaveAs=   NewFiles\firefox.exe
+
+[COMMANDS]
+;ICONGROUP
+-modify Resources\icons\apps\firefox_+256.ico, ICONGROUP, 1,
+-modify Resources\icons\mimetypes\text-html_+256.ico, ICONGROUP, 2,
+-modify Resources\icons\actions\window-new_16_32.ico, ICONGROUP, 3,
+-modify Resources\icons\actions\tab-new_16_32.ico, ICONGROUP, 4,
+-modify Resources\icons\emblems\privacy_16_32.ico, ICONGROUP, 5,
+-modify Resources\icons\apps\firefox_+256.ico, ICONGROUP, 32512,

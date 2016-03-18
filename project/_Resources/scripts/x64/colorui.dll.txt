@@ -1,0 +1,11 @@
+[FILENAMES]  
+Exe = Backup\x64\colorui.dll  
+SaveAs = NewFiles\x64\colorui.dll  
+  
+[COMMANDS]  
+;ICONGROUP
+-modify Resources\icons\apps\preferences-color_+24_256.ico, ICONGROUP, BLANKICON,
+-modify Resources\icons\apps\preferences-color_+24_256.ico, ICONGROUP, 5,
+-modify Resources\icons\devices\video-display.ico, ICONGROUP, 1114,
+-modify Resources\icons\devices\printer_+24_256.ico, ICONGROUP, 1115,
+-modify Resources\icons\devices\scanner_+24_256.ico, ICONGROUP, 1116,

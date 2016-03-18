@@ -1,0 +1,7 @@
+[FILENAMES]  
+Exe = Backup\x64\autoplay.dll  
+SaveAs = NewFiles\x64\autoplay.dll  
+  
+[COMMANDS]  
+;ICONGROUP
+-modify Resources\icons\apps\application-autostart_+24_256.ico, ICONGROUP, 1,

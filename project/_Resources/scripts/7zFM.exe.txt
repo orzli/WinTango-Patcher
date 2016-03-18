@@ -1,0 +1,41 @@
+[FILENAMES]
+Exe=      Backup\7zFM.exe
+SaveAs=   NewFiles\7zFM.exe
+
+[COMMANDS]
+;BITMAP
+-modify Resources\bitmaps\actions\archive-insert_48x36.bmp, BITMAP, 2002,
+-modify Resources\bitmaps\actions\archive-extract_48x36.bmp, BITMAP, 2003,
+-modify Resources\bitmaps\status\package-ok_48x36.bmp, BITMAP, 2004,
+-modify Resources\bitmaps\actions\package-copy_48x36.bmp, BITMAP, 2010,
+-modify Resources\bitmaps\actions\package-cut_48x36.bmp, BITMAP, 2011,
+-modify Resources\bitmaps\status\user-trash-full_48x36.bmp, BITMAP, 2012,
+-modify Resources\bitmaps\status\package-info_48x36.bmp, BITMAP, 2013,
+-modify Resources\bitmaps\actions\archive-insert_24.bmp, BITMAP, 2082,
+-modify Resources\bitmaps\actions\archive-extract_24.bmp, BITMAP, 2083,
+-modify Resources\bitmaps\actions\dialog-apply_24.bmp, BITMAP, 2084,
+-modify Resources\bitmaps\actions\edit-copy_24.bmp, BITMAP, 2090,
+-modify Resources\bitmaps\actions\edit-cut_24.bmp, BITMAP, 2091,
+-modify Resources\bitmaps\status\user-trash-full_24.bmp, BITMAP, 2092,
+-modify Resources\bitmaps\status\dialog-information_24.bmp, BITMAP, 2093,
+;new version 15.05 BETA
+-modify Resources\bitmaps\actions\archive-insert_48x36.bmp, BITMAP, 100,
+-modify Resources\bitmaps\actions\archive-extract_48x36.bmp, BITMAP, 101,
+-modify Resources\bitmaps\status\package-ok_48x36.bmp, BITMAP, 102,
+-modify Resources\bitmaps\actions\package-copy_48x36.bmp, BITMAP, 103,
+-modify Resources\bitmaps\actions\package-cut_48x36.bmp, BITMAP, 104,
+-modify Resources\bitmaps\status\user-trash-full_48x36.bmp, BITMAP, 105,
+-modify Resources\bitmaps\status\package-info_48x36.bmp, BITMAP, 106,
+-modify Resources\bitmaps\actions\archive-insert_24.bmp, BITMAP, 150,
+-modify Resources\bitmaps\actions\archive-extract_24.bmp, BITMAP, 151,
+-modify Resources\bitmaps\actions\dialog-apply_24.bmp, BITMAP, 152,
+-modify Resources\bitmaps\actions\edit-copy_24.bmp, BITMAP, 153,
+-modify Resources\bitmaps\actions\edit-cut_24.bmp, BITMAP, 154,
+-modify Resources\bitmaps\status\user-trash-full_24.bmp, BITMAP, 155,
+-modify Resources\bitmaps\status\dialog-information_24.bmp, BITMAP, 156,
+
+;ICONGROUP
+-modify Resources\icons\apps\7zip.ico, ICONGROUP, 1,
+-modify Resources\icons\tweaked\7zip\7zip-logo.ico, ICONGROUP, 138,
+;new version 15.05 BETA
+-modify Resources\icons\tweaked\7zip\7zip-logo.ico, ICONGROUP, 100,

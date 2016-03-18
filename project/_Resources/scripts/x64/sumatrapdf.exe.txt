@@ -1,0 +1,8 @@
+[FILENAMES]  
+Exe = Backup\x64\sumatrapdf.exe  
+SaveAs = NewFiles\x64\sumatrapdf.exe  
+  
+[COMMANDS]  
+;ICONGROUP
+-modify Resources\icons\apps\SumatraPDF.ico, ICONGROUP, 1, 
+-modify Resources\icons\mimetypes\application-pdf_+256.ico, ICONGROUP, 2,

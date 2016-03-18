@@ -1,0 +1,7 @@
+[FILENAMES]  
+Exe = Backup\cmd.exe  
+SaveAs = NewFiles\cmd.exe  
+  
+[COMMANDS]  
+;ICONGROUP
+-modify Resources\icons\apps\utilities-terminal_+256.ico, ICONGROUP, IDI_APPICON,

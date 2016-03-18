@@ -1,0 +1,9 @@
+[FILENAMES]  
+Exe = Backup\FirewallControlPanel.dll  
+SaveAs = NewFiles\FirewallControlPanel.dll  
+  
+[COMMANDS]  
+;ICONGROUP
+-modify Resources\icons\apps\firewall_+256.ico, ICONGROUP, 1,
+-modify Resources\icons\actions\edit-delete_+24.ico, ICONGROUP, 2,
+-modify Resources\icons\status\security-main_+24_64_96_128_256.ico, ICONGROUP, 1800,

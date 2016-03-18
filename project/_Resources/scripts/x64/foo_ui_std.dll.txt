@@ -1,0 +1,13 @@
+[FILENAMES]
+Exe=      Backup\x64\foo_ui_std.dll
+SaveAs=   NewFiles\x64\foo_ui_std.dll
+
+[COMMANDS]
+;ICONGROUP
+-modify Resources\icons\actions\media-skip-backward_16_20.ico, ICONGROUP, 123,
+-modify Resources\icons\actions\media-playback-start-question_16_20.ico, ICONGROUP, 124,
+-modify Resources\icons\actions\media-playback-stop_16_20.ico, ICONGROUP, 125,
+-modify Resources\icons\actions\media-skip-forward_16_20.ico, ICONGROUP, 127,
+-modify Resources\icons\actions\media-playback-pause_16_20.ico, ICONGROUP, 128,
+-modify Resources\icons\actions\media-playback-start_16_20.ico, ICONGROUP, 129,
+-modify Resources\icons\status\question_16_20.ico, ICONGROUP, 148,

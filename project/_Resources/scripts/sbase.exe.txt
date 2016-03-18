@@ -1,0 +1,7 @@
+[FILENAMES]
+Exe=      Backup\sbase.exe
+SaveAs=   NewFiles\sbase.exe
+
+[COMMANDS]
+;ICONGROUP
+-modify Resources\icons\apps\libreoffice-base_+128_256.ico, ICONGROUP, 1, 

@@ -1,0 +1,7 @@
+[FILENAMES]
+Exe=      Backup\DropboxExt.28.dll
+SaveAs=   NewFiles\DropboxExt.28.dll
+
+[COMMANDS]
+;ICONGROUP
+-modify Resources\icons\apps\dropbox_16.ico, ICONGROUP, 201, 

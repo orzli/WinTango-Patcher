@@ -1,0 +1,7 @@
+[FILENAMES]
+Exe=      Backup\sweb.exe
+SaveAs=   NewFiles\sweb.exe
+
+[COMMANDS]
+;ICONGROUP
+-modify Resources\icons\apps\libreoffice-writer_+128_256.ico, ICONGROUP, 1, 

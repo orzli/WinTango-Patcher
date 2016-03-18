@@ -1,0 +1,21 @@
+[FILENAMES]
+Exe=      Backup\soffice.bin
+SaveAs=   NewFiles\soffice.bin
+
+[COMMANDS]
+;app icon
+-modify Resources\icons\apps\libreoffice-startcenter_+128_256.ico, ICONGROUP, 1, 
+;ODT mimetypes
+-modify Resources\icons\mimetypes\x-office-document_+256.ico, ICONGROUP, 2, 
+-modify Resources\icons\mimetypes\x-office-document-template_+256.ico, ICONGROUP, 3, 
+-modify Resources\icons\mimetypes\x-office-spreadsheet_+256.ico, ICONGROUP, 4, 
+-modify Resources\icons\mimetypes\x-office-spreadsheet-template_+256.ico, ICONGROUP, 5, 
+-modify Resources\icons\mimetypes\x-office-drawing_+256.ico, ICONGROUP, 6, 
+-modify Resources\icons\mimetypes\x-office-drawing-template_+256.ico, ICONGROUP, 7, 
+-modify Resources\icons\mimetypes\x-office-presentation_+256.ico, ICONGROUP, 8, 
+-modify Resources\icons\mimetypes\x-office-presentation-template_+256.ico, ICONGROUP, 9, 
+;ooo-writer several pics icon? -> 10
+;ooo-web file type icon -> 11
+-modify Resources\icons\mimetypes\x-office-database_+256.ico, ICONGROUP, 12, 
+;ooo-math file type icon -> 13
+-modify Resources\icons\mimetypes\ooo-extension.ico, ICONGROUP, 14,

@@ -1,0 +1,26 @@
+[FILENAMES]  
+Exe = Backup\x64\mmsys.cpl  
+SaveAs = NewFiles\x64\mmsys.cpl  
+  
+[COMMANDS]  
+;PNG
+-modify Resources\bitmaps\tweaked\mmsys.cpl\202.png, PNG, 202,
+-modify Resources\bitmaps\tweaked\mmsys.cpl\205.png, PNG, 205,
+-modify Resources\bitmaps\tweaked\mmsys.cpl\206.png, PNG, 206,
+-modify Resources\bitmaps\tweaked\mmsys.cpl\207.png, PNG, 207,
+-modify Resources\bitmaps\tweaked\mmsys.cpl\210.png, PNG, 210,
+-modify Resources\bitmaps\emblems\emblem-ok_20.png, PNG, 240,
+-modify Resources\bitmaps\emblems\emblem-ok-disabled_20.png, PNG, 241,
+-modify Resources\bitmaps\emblems\emblem-ok_20.png, PNG, 242,
+-modify Resources\bitmaps\emblems\emblem-ok-disabled_20.png, PNG, 243,
+-modify Resources\bitmaps\emblems\emblem-offline-disabled_16.png, PNG, 248,
+-modify Resources\bitmaps\emblems\emblem-offline_16.png, PNG, 249,
+
+;ICONGROUP
+-modify Resources\icons\apps\preferences-desktop-sound_+256.ico, ICONGROUP, 100,
+-modify Resources\icons\tweaked\mmsys.cpl\110.ico, ICONGROUP, 110,
+-modify Resources\icons\tweaked\mmsys.cpl\111.ico, ICONGROUP, 111,
+-modify Resources\icons\tweaked\mmsys.cpl\112.ico, ICONGROUP, 112,
+-modify Resources\icons\tweaked\mmsys.cpl\113.ico, ICONGROUP, 113,
+-modify Resources\icons\actions\call-start_+24.ico, ICONGROUP, 114,
+-modify Resources\icons\apps\preferences-desktop-sound_+256.ico, ICONGROUP, 3004,

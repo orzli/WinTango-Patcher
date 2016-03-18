@@ -1,0 +1,37 @@
+[FILENAMES]  
+Exe = Backup\x64\explorer.exe  
+SaveAs = NewFiles\x64\explorer.exe  
+  
+[COMMANDS]  
+;ICONGROUP
+-modify Resources\icons\apps\system-file-manager_+24_64_128_256.ico, ICONGROUP, ICO_MYCOMPUTER,
+-modify Resources\icons\actions\go-up_16_24_32.ico, ICONGROUP, 101,
+-modify Resources\icons\tweaked\special_order\printer_32_16_48.ico, ICONGROUP, 102,
+-modify Resources\icons\places\user-desktop.ico, ICONGROUP, 103,
+-modify Resources\icons\apps\alacarte_16_32.ico, ICONGROUP, 107,
+-modify Resources\icons\status\user-trash-full.ico, ICONGROUP, 108,
+-modify Resources\icons\tweaked\special_order\dialog-information_48_16_32.ico, ICONGROUP, 109,
+-modify Resources\icons\tweaked\special_order\dialog-warning_48_16_32.ico, ICONGROUP, 110,
+-modify Resources\icons\tweaked\special_order\dialog-error_48_16_32.ico, ICONGROUP, 111,
+-modify Resources\icons\devices\computer.ico, ICONGROUP, 205,
+-modify Resources\icons\places\folder.ico, ICONGROUP, 252,
+-modify Resources\icons\categories\applications-internet.ico, ICONGROUP, 253,
+-modify Resources\icons\apps\internet-mail_+24.ico, ICONGROUP, 254,
+-modify Resources\icons\apps\alacarte_16_32.ico, ICONGROUP, 257,
+-modify Resources\icons\apps\preferences-system-windows_+24_256.ico, ICONGROUP, 258,
+-modify Resources\icons\apps\emesene_+24_256.ico, ICONGROUP, 261,
+
+;BITMAPS
+;Start-Orb
+-modify Resources\bitmaps\tweaked\explorer.exe\54x162_small.bmp, BITMAP, 6801,
+-modify Resources\bitmaps\tweaked\explorer.exe\66x198.bmp, BITMAP, 6802,
+-modify Resources\bitmaps\tweaked\explorer.exe\81x243.bmp, BITMAP, 6803,
+-modify Resources\bitmaps\tweaked\explorer.exe\106x318.bmp, BITMAP, 6804,
+-modify Resources\bitmaps\tweaked\explorer.exe\54x162.bmp, BITMAP, 6805,
+-modify Resources\bitmaps\tweaked\explorer.exe\66x198.bmp, BITMAP, 6806,
+-modify Resources\bitmaps\tweaked\explorer.exe\81x243.bmp, BITMAP, 6807,
+-modify Resources\bitmaps\tweaked\explorer.exe\106x318.bmp, BITMAP, 6808,
+-modify Resources\bitmaps\tweaked\explorer.exe\54x162.bmp, BITMAP, 6809,
+-modify Resources\bitmaps\tweaked\explorer.exe\66x198.bmp, BITMAP, 6810,
+-modify Resources\bitmaps\tweaked\explorer.exe\81x243.bmp, BITMAP, 6811,
+-modify Resources\bitmaps\tweaked\explorer.exe\106x318.bmp, BITMAP, 6812,

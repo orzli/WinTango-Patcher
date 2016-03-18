@@ -1,0 +1,7 @@
+[FILENAMES]  
+Exe = Backup\fvecpl.dll  
+SaveAs = NewFiles\fvecpl.dll
+  
+[COMMANDS]  
+;ICONGROUP
+-modify Resources\icons\status\drive-harddisk-locked_+24_256.ico, ICONGROUP, 1,

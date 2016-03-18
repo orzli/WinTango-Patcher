@@ -1,0 +1,8 @@
+[FILENAMES]  
+Exe = Backup\icardres.dll.mui  
+SaveAs = NewFiles\icardres.dll.mui 
+  
+[COMMANDS]  
+;ICONGROUP
+-modify Resources\icons\apps\contact-multi_+256.ico, ICONGROUP, 301,
+-modify Resources\icons\apps\contact-multi_+256.ico, ICONGROUP, 4096,

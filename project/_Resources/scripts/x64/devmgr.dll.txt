@@ -1,0 +1,13 @@
+[FILENAMES]  
+Exe = Backup\x64\devmgr.dll  
+SaveAs = NewFiles\x64\devmgr.dll  
+  
+[COMMANDS]  
+;ICONGROUP
+-modify Resources\icons\mimetypes\application-certificate_16_32.ico, ICONGROUP, 40,
+-modify Resources\icons\mimetypes\application-certificate_16_32.ico, ICONGROUP, 43,
+-modify Resources\icons\apps\hwbrowser_+256.ico, ICONGROUP, 201,
+
+;BITMAP
+-modify Resources\bitmaps\apps\hwbrowser_16.bmp, BITMAP, 347,
+-modify Resources\bitmaps\apps\hwbrowser_32.bmp, BITMAP, 348,

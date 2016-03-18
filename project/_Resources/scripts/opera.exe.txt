@@ -1,0 +1,7 @@
+[FILENAMES]
+Exe=      Backup\opera.exe
+SaveAs=   NewFiles\opera.exe
+
+[COMMANDS]
+;ICONGROUP
+-modify Resources\icons\apps\opera_+128_256.ico, ICONGROUP, 1,

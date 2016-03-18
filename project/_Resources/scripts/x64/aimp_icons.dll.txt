@@ -1,0 +1,19 @@
+[FILENAMES]
+Exe=      Backup\x64\aimp_icons.dll
+SaveAs=   NewFiles\x64\aimp_icons.dll
+
+[COMMANDS]
+;ICONGROUP
+-modify Resources\icons\mimetypes\audio-aimp-aac.ico, ICONGROUP, 1, 
+-modify Resources\icons\mimetypes\audio-aimp-audio.ico, ICONGROUP, 2, 
+-modify Resources\icons\mimetypes\audio-aimp-audio.ico, ICONGROUP, 3, 
+-modify Resources\icons\mimetypes\audio-aimp-flac.ico, ICONGROUP, 4, 
+-modify Resources\icons\mimetypes\audio-aimp-m4a.ico, ICONGROUP, 5, 
+-modify Resources\icons\mimetypes\audio-aimp-mod.ico, ICONGROUP, 6, 
+-modify Resources\icons\mimetypes\audio-aimp-mp3.ico, ICONGROUP, 7, 
+-modify Resources\icons\mimetypes\audio-aimp-mpc.ico, ICONGROUP, 8, 
+-modify Resources\icons\mimetypes\audio-aimp-ogg.ico, ICONGROUP, 9, 
+-modify Resources\icons\mimetypes\audio-aimp-list.ico, ICONGROUP, 10, 
+-modify Resources\icons\mimetypes\audio-aimp-skin.ico, ICONGROUP, 11, 
+-modify Resources\icons\mimetypes\audio-aimp-wav.ico, ICONGROUP, 12, 
+-modify Resources\icons\mimetypes\audio-aimp-wma.ico, ICONGROUP, 13, 

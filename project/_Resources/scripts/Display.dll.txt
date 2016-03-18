@@ -1,0 +1,7 @@
+[FILENAMES]  
+Exe = Backup\Display.dll  
+SaveAs = NewFiles\Display.dll  
+  
+[COMMANDS]  
+;ICONGROUP
+-modify Resources\icons\apps\gnome-display-properties_+24_128_256.ico, ICONGROUP, 1,

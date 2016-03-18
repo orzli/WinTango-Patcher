@@ -1,0 +1,12 @@
+[FILENAMES]  
+Exe = Backup\networkmap.dll
+SaveAs = NewFiles\networkmap.dll
+
+[COMMANDS]  
+;ICONGROUP
+-modify Resources\icons\status\network-wireless-000_32_48_256.ico, ICONGROUP, 216,
+-modify Resources\icons\status\network-wireless-025_32_48_256.ico, ICONGROUP, 217,
+-modify Resources\icons\status\network-wireless-050_32_48_256.ico, ICONGROUP, 218,
+-modify Resources\icons\status\network-wireless-050_32_48_256.ico, ICONGROUP, 219,
+-modify Resources\icons\status\network-wireless-075_32_48_256.ico, ICONGROUP, 220,
+-modify Resources\icons\status\network-wireless-100_32_48_256.ico, ICONGROUP, 221,

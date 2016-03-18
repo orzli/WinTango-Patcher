@@ -1,0 +1,10 @@
+[FILENAMES]  
+Exe = Backup\x64\vault.dll
+SaveAs = NewFiles\x64\vault.dll
+  
+[COMMANDS]  
+;ICONGROUP
+-modify Resources\icons\apps\gdm_+24_256.ico, ICONGROUP, 1,
+-modify Resources\icons\apps\deja-dup_+24_256.ico, ICONGROUP, 2,
+-modify Resources\icons\apps\deja-dup_+24_256.ico, ICONGROUP, 3,
+-modify Resources\icons\apps\deja-dup_+24_256.ico, ICONGROUP, 4,

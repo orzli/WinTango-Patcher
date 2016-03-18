@@ -1,0 +1,7 @@
+[FILENAMES]  
+Exe = Backup\x64\batt.dll  
+SaveAs = NewFiles\x64\batt.dll  
+  
+[COMMANDS]  
+;ICONGROUP
+-modify Resources\icons\apps\gnome-power-manager_+256.ico, ICONGROUP, 2,

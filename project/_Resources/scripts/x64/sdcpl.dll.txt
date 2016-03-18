@@ -1,0 +1,7 @@
+[FILENAMES]  
+Exe = Backup\x64\sdcpl.dll  
+SaveAs = NewFiles\x64\sdcpl.dll  
+  
+[COMMANDS]  
+;ICONGROUP
+-modify Resources\icons\apps\backup_+64_256.ico, ICONGROUP, 1,

@@ -1,0 +1,12 @@
+[FILENAMES]  
+Exe = Backup\DiagCpl.dll  
+SaveAs = NewFiles\DiagCpl.dll  
+  
+[COMMANDS]  
+;ICONGROUP
+-modify Resources\icons\apps\bug-buddy_+24_256.ico, ICONGROUP, 1,
+-modify Resources\icons\apps\system-installer_+24_256.ico, ICONGROUP, 500,
+-modify Resources\icons\devices\audio-card_+24_256.ico, ICONGROUP, 501,
+-modify Resources\icons\apps\gnome-nettool_+24_256.ico, ICONGROUP, 503,
+-modify Resources\icons\apps\preferences-desktop-theme_+24_256.ico, ICONGROUP, 508,
+-modify Resources\icons\categories\preferences-system_+24_256.ico, ICONGROUP, 509,

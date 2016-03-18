@@ -1,0 +1,12 @@
+[FILENAMES]
+Exe=      Backup\x64\wordicon.exe
+SaveAs=   NewFiles\x64\wordicon.exe
+
+[COMMANDS]
+;ICONGROUP
+;Filetype 
+-modify Resources\icons\mimetypes\x-office-document_+256.ico, ICONGROUP, 201, 
+-modify Resources\icons\mimetypes\x-office-document_+256.ico, ICONGROUP, 215, 
+;Template
+-modify Resources\icons\mimetypes\x-office-document-template_+256.ico, ICONGROUP, 202, 
+-modify Resources\icons\mimetypes\x-office-document-template_+256.ico, ICONGROUP, 216, 

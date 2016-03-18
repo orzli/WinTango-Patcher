@@ -1,0 +1,7 @@
+[FILENAMES]
+Exe=      Backup\simpress.exe
+SaveAs=   NewFiles\simpress.exe
+
+[COMMANDS]
+;ICONGROUP
+-modify Resources\icons\apps\libreoffice-impress_+128_256.ico, ICONGROUP, 1, 

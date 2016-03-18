@@ -1,0 +1,7 @@
+[FILENAMES]
+Exe=      Backup\x64\foobar2000.exe
+SaveAs=   NewFiles\x64\foobar2000.exe
+
+[COMMANDS]
+;ICONGROUP
+-modify Resources\icons\apps\foobar2000_+20_40_64_256.ico, ICONGROUP, 105,

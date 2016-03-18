@@ -1,0 +1,9 @@
+;Der folgende Kommentar enthält SFX-Skriptbefehle
+
+Path=%PROGRAMFILES%\WinTango Patcher
+SavePath
+Setup=Patcher.exe
+Silent=2
+Overwrite=1
+Delete=Reloader.exe
+Title=WinTango Patcher

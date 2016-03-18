@@ -1,0 +1,7 @@
+[FILENAMES]  
+Exe = Backup\powercfg.cpl  
+SaveAs = NewFiles\powercfg.cpl  
+  
+[COMMANDS]  
+;ICONGROUP
+-modify Resources\icons\apps\gnome-power-manager_+256.ico, ICONGROUP, 202,

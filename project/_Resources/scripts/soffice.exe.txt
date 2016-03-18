@@ -1,0 +1,7 @@
+[FILENAMES]
+Exe=      Backup\soffice.exe
+SaveAs=   NewFiles\soffice.exe
+
+[COMMANDS]
+;ICONROUP
+-modify Resources\icons\apps\libreoffice-startcenter_+128_256.ico, ICONGROUP, 1, 

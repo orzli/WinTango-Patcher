@@ -1,0 +1,7 @@
+[FILENAMES]
+Exe=      Backup\FlashPlayerCPLApp.cpl
+SaveAs=   NewFiles\FlashPlayerCPLApp.cpl
+
+[COMMANDS]
+;ICONGROUP
+-modify Resources\icons\apps\flash-player-properties_16_24_32.ico, ICONGROUP, 201,

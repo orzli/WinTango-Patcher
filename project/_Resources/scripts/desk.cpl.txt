@@ -1,0 +1,7 @@
+[FILENAMES]  
+Exe = Backup\desk.cpl  
+SaveAs = NewFiles\desk.cpl  
+  
+[COMMANDS]  
+;ICONGROUP
+-modify Resources\icons\apps\preferences-desktop-wallpaper_+256.ico, ICONGROUP, 100,
