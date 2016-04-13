@@ -1,6 +1,9 @@
 Changelog:
 ------------
 
+16.04.XX:
+- Update: AIMP3 Icons
+
 16.01.07:
 - Update: Several elementary icons & bitmaps
 - Update: elementaryOS Skin for Winyl (source by vicing | http://vicing.deviantart.com/)
