@@ -1,20 +1,14 @@
-Func DlAndExResources()
+Func ExtractResources()
    #Region: Scripts
-   ;Check for updates
-   $FilesToUpdate_Scripts = 0
-   If StringInStr($sFilesToUpdate, "scripts") <> 0 or $sFilesToUpdate = "all" Then $FilesToUpdate_Scripts = 1
-
    $sResName = "ResHacker Scripts"
    $sResFileLocal = @ScriptDir & '\Themes\scripts.7z'
-   $sResFileServer = $FilesURL & "/scripts.7z"
-   If not FileExists($sResFileLocal) or $FilesToUpdate_Scripts = 1 Then DownloadResources($sResName, $sResFileLocal, $sResFileServer)
 
    ;Extract resources
    InstallMsg("Extracting: " & $sResName)
    If FileExists($sResFileLocal) Then
 	  RunWait($ToolsDir & '\7z.exe x -yo"' & $ResourcesDir & '" "' & $sResFileLocal & '"', @ScriptDir ,@SW_HIDE)
    Else
-	  DownloadError($sResFileLocal)
+	  ;Some kind of Errorchecking needed?
    EndIf
    InstallMsg("done")
 
@@ -24,15 +18,9 @@ Func DlAndExResources()
 
 
    #Region: Icons
-   ;Check for Updates
-   $FilesToUpdate_Icons = 0
-   If StringInStr($sFilesToUpdate, "icons") <> 0 or $sFilesToUpdate = "all" Then $FilesToUpdate_Icons = 1
-
    $sResName = "Icon Resources"
    If $SelectedTheme = "gnome" Then
 	  $sResFileLocal = @ScriptDir & '\Themes\icons-' & $SelectedTheme & '.7z'
-	  $sResFileServer = $FilesURL & "/icons-" & $SelectedTheme & ".7z"
-	  If not FileExists($sResFileLocal) or $FilesToUpdate_Icons = 1 Then DownloadResources($sResName & " (" & $SelectedTheme & ")", $sResFileLocal, $sResFileServer)
 
 	  $sResFileLocal2 = ""
 	  $sResFileLocal3 = ""
@@ -40,21 +28,15 @@ Func DlAndExResources()
    ElseIf $SelectedTheme = "cheser" or $SelectedTheme = "gnome-brave" or $SelectedTheme = "tango" or $SelectedTheme = "elementary" Then
 	  ;base icons
 	  $sResFileLocal = @ScriptDir & '\Themes\icons-gnome.7z'
-	  $sResFileServer = $FilesURL & "/icons-gnome.7z"
-	  If not FileExists($sResFileLocal) or $FilesToUpdate_Icons = 1 Then DownloadResources($sResName & " (Gnome)", $sResFileLocal, $sResFileServer)
 
 	  ;specific icons
 	  $sResFileLocal2 = @ScriptDir & '\Themes\icons-' & $SelectedTheme & '.7z'
-	  $sResFileServer = $FilesURL & "/icons-" & $SelectedTheme & ".7z"
-	  If not FileExists($sResFileLocal2) or $FilesToUpdate_Icons = 1 Then DownloadResources($sResName & " (" & $SelectedTheme & ")", $sResFileLocal2, $sResFileServer)
 
 	  $sResFileLocal3 = ""
 
    Else
 	  ;base icons
 	  $sResFileLocal = @ScriptDir & '\Themes\icons-gnome.7z'
-	  $sResFileServer = $FilesURL & "/icons-gnome.7z"
-	  If not FileExists($sResFileLocal) or $FilesToUpdate_Icons = 1 Then DownloadResources($sResName & " (Gnome)", $sResFileLocal, $sResFileServer)
 
 	  ;2nd base icons
 	  If $SelectedTheme = "tangerine" Then
@@ -65,13 +47,9 @@ Func DlAndExResources()
 		 $parent_theme = "gnome-brave"
 	  EndIf
 	  $sResFileLocal2 = @ScriptDir & '\Themes\icons-' & $parent_theme & '.7z'
-	  $sResFileServer = $FilesURL & "/icons-" & $parent_theme & ".7z"
-	  If not FileExists($sResFileLocal2) or $FilesToUpdate_Icons = 1 Then DownloadResources($sResName & " (" & $parent_theme & ")", $sResFileLocal2, $sResFileServer)
 
 	  ;specific icons
 	  $sResFileLocal3 = @ScriptDir & '\Themes\icons-' & $SelectedTheme & '.7z'
-	  $sResFileServer = $FilesURL & "/icons-" & $SelectedTheme & ".7z"
-	  If not FileExists($sResFileLocal3) or $FilesToUpdate_Icons = 1 Then DownloadResources($sResName & " (" & $SelectedTheme & ")", $sResFileLocal3, $sResFileServer)
 
    EndIf
 
@@ -82,7 +60,7 @@ Func DlAndExResources()
 	  If $sResFileLocal2 <> "" Then RunWait($ToolsDir & '\7z.exe x -yo"' & $ResourcesDir & '" "' & $sResFileLocal2 & '"', @ScriptDir ,@SW_HIDE)
 	  If $sResFileLocal3 <> "" Then RunWait($ToolsDir & '\7z.exe x -yo"' & $ResourcesDir & '" "' & $sResFileLocal3 & '"', @ScriptDir ,@SW_HIDE)
    Else
-	  DownloadError($sResFileLocal)
+	  ;Some kind of Errorchecking needed?
    EndIf
    InstallMsg("done")
 
@@ -92,15 +70,9 @@ Func DlAndExResources()
 
 
    #Region: Bitmaps
-   ;Check for Updates
-   $FilesToUpdate_Bitmaps = 0
-   If StringInStr($sFilesToUpdate, "bitmaps") <> 0 or $sFilesToUpdate = "all" Then $FilesToUpdate_Bitmaps = 1
-
    $sResName = "Bitmap Resources"
    If $SelectedTheme = "gnome" Then
 	  $sResFileLocal = @ScriptDir & '\Themes\bitmaps-' & $SelectedTheme & '.7z'
-	  $sResFileServer = $FilesURL & "/bitmaps-" & $SelectedTheme & ".7z"
-	  If not FileExists($sResFileLocal) or $FilesToUpdate_Bitmaps = 1 Then DownloadResources($sResName & " (" & $SelectedTheme & ")", $sResFileLocal, $sResFileServer)
 
 	  $sResFileLocal2 = ""
 	  $sResFileLocal3 = ""
@@ -108,21 +80,15 @@ Func DlAndExResources()
    ElseIf $SelectedTheme = "cheser" or $SelectedTheme = "gnome-brave" or $SelectedTheme = "tango" or $SelectedTheme = "elementary" Then
 	  ;base icons
 	  $sResFileLocal = @ScriptDir & '\Themes\bitmaps-gnome.7z'
-	  $sResFileServer = $FilesURL & "/bitmaps-gnome.7z"
-	  If not FileExists($sResFileLocal) or $FilesToUpdate_Bitmaps = 1 Then DownloadResources($sResName & " (Gnome)", $sResFileLocal, $sResFileServer)
 
 	  ;specific icons
 	  $sResFileLocal2 = @ScriptDir & '\Themes\bitmaps-' & $SelectedTheme & '.7z'
-	  $sResFileServer = $FilesURL & "/bitmaps-" & $SelectedTheme & ".7z"
-	  If not FileExists($sResFileLocal2) or $FilesToUpdate_Bitmaps = 1 Then DownloadResources($sResName & " (" & $SelectedTheme & ")", $sResFileLocal2, $sResFileServer)
 
 	  $sResFileLocal3 = ""
 
    Else
 	  ;base icons
 	  $sResFileLocal = @ScriptDir & '\Themes\bitmaps-gnome.7z'
-	  $sResFileServer = $FilesURL & "/bitmaps-gnome.7z"
-	  If not FileExists($sResFileLocal) or $FilesToUpdate_Bitmaps = 1 Then DownloadResources($sResName & " (Gnome)", $sResFileLocal, $sResFileServer)
 
 	  ;2nd base icons
 	  If $SelectedTheme = "tangerine" Then
@@ -133,13 +99,9 @@ Func DlAndExResources()
 		 $parent_theme = "gnome-brave"
 	  EndIf
 	  $sResFileLocal2 = @ScriptDir & '\Themes\bitmaps-' & $parent_theme & '.7z'
-	  $sResFileServer = $FilesURL & "/bitmaps-" & $parent_theme & ".7z"
-	  If not FileExists($sResFileLocal2) or $FilesToUpdate_Bitmaps = 1 Then DownloadResources($sResName & " (" & $parent_theme & ")", $sResFileLocal2, $sResFileServer)
 
 	  ;specific icons
 	  $sResFileLocal3 = @ScriptDir & '\Themes\bitmaps-' & $SelectedTheme & '.7z'
-	  $sResFileServer = $FilesURL & "/bitmaps-" & $SelectedTheme & ".7z"
-	  If not FileExists($sResFileLocal3) or $FilesToUpdate_Bitmaps = 1 Then DownloadResources($sResName & " (" & $SelectedTheme & ")", $sResFileLocal3, $sResFileServer)
 
    EndIf
 
@@ -150,7 +112,7 @@ Func DlAndExResources()
 	  If $sResFileLocal2 <> "" Then RunWait($ToolsDir & '\7z.exe x -yo"' & $ResourcesDir & '" "' & $sResFileLocal2 & '"', @ScriptDir ,@SW_HIDE)
 	  If $sResFileLocal3 <> "" Then RunWait($ToolsDir & '\7z.exe x -yo"' & $ResourcesDir & '" "' & $sResFileLocal3 & '"', @ScriptDir ,@SW_HIDE)
    Else
-	  DownloadError($sResFileLocal)
+	  ;Some kind of Errorchecking needed?
    EndIf
    InstallMsg("done")
 
@@ -161,23 +123,14 @@ Func DlAndExResources()
 
 
    #Region Themes-Apps
-   ;Check for Updates
-   $FilesToUpdate_Apps = 0
-   If StringInStr($sFilesToUpdate, "theme-apps") <> 0 or $sFilesToUpdate = "all" Then $FilesToUpdate_Apps = 1
-
    $sResName = "Application Theme Files"
 
-   ;Download
    ;step1: GNOME base
    $sResFileLocal = @ScriptDir & '\Themes\theme-apps-gnome.7z'
-   $sResFileServer = $FilesURL & "/theme-apps/theme-apps-gnome.7z"
-   If not FileExists($sResFileLocal) or $FilesToUpdate_Apps = 1 Then DownloadResources($sResName & " (Gnome)", $sResFileLocal, $sResFileServer)
 
    ;step2: specific theme
    If $SelectedTheme <> "gnome" Then
 	  $sResFileLocal2 = @ScriptDir & '\Themes\theme-apps-' & $SelectedTheme & '.7z'
-	  $sResFileServer = $FilesURL & "/theme-apps/theme-apps-" & $SelectedTheme & ".7z"
-	  If not FileExists($sResFileLocal2) or $FilesToUpdate_Apps = 1 Then DownloadResources($sResName & " (" & $SelectedTheme & ")", $sResFileLocal2, $sResFileServer)
    Else
 	  $sResFileLocal2 = ""
    EndIf
@@ -188,7 +141,7 @@ Func DlAndExResources()
 	  RunWait($ToolsDir & '\7z.exe x -yo"' & $ResourcesDir & '" "' & $sResFileLocal & '"', @ScriptDir ,@SW_HIDE)
 	  If $sResFileLocal2 <> "" Then RunWait($ToolsDir & '\7z.exe x -yo"' & $ResourcesDir & '" "' & $sResFileLocal2 & '"', @ScriptDir ,@SW_HIDE)
    Else
-	  DownloadError($sResFileLocal)
+	  ;Some kind of Errorchecking needed?
    EndIf
    InstallMsg("done")
    #EndRegion
@@ -252,23 +205,15 @@ EndFunc
 Func Apply_Notepad2()
    ;Replace MS Notepad with Notepad2
 
-   ;Check for Updates
-   $FilesToUpdate_Notepad2 = 0
-   If StringInStr($sFilesToUpdate, "notepad2") <> 0 or $sFilesToUpdate = "all" Then $FilesToUpdate_Notepad2 = 1
-
    $sResName = "Notepad2"
-
-   ;Download
    $sResFileLocal = @ScriptDir & '\Themes\files-notepad2-' & $SelectedTheme & '.7z'
-   $sResFileServer = $FilesURL & "/tools/files-notepad2-" & $SelectedTheme & ".7z"
-   If not FileExists($sResFileLocal) or $FilesToUpdate_Notepad2 = 1 Then DownloadResources($sResName, $sResFileLocal, $sResFileServer)
 
    ;Extract
    InstallMsg("Extracting: " & $sResName)
    If FileExists($sResFileLocal) Then
 	  RunWait($ToolsDir & '\7z.exe x -yo"' & $ResourcesDir & '" "' & $sResFileLocal & '"', @ScriptDir ,@SW_HIDE)
    Else
-	  DownloadError($sResFileLocal)
+	  ;Some kind of Errorchecking needed?
    EndIf
    InstallMsg("done")
 
@@ -291,32 +236,22 @@ EndFunc
 
 Func Apply_Desktops()
    ;Install Sysinternals Desktops
-
-   ;Check for Updates
-   $FilesToUpdate_Desktops = 0
-   If StringInStr($sFilesToUpdate, "desktops") <> 0 or $sFilesToUpdate = "all" Then $FilesToUpdate_Desktops = 1
-
    $sResName = "Sysinternals Desktops"
 
-   ;Download
    If $SelectedTheme = "gnome" or $SelectedTheme = "cheser" or $SelectedTheme = "elementary" or $SelectedTheme = "tango" Then
 	  $sResFileLocal = @ScriptDir & '\Themes\files-desktops-gnome-brave.7z'
-	  $sResFileServer = $FilesURL & "/tools/files-desktops-gnome-brave.7z"
    ElseIf $SelectedTheme = "tangerine" Then
 	  $sResFileLocal = @ScriptDir & '\Themes\files-desktops-gnome-human.7z'
-	  $sResFileServer = $FilesURL & "/tools/files-desktops-gnome-human.7z"
    Else
 	  $sResFileLocal = @ScriptDir & '\Themes\files-desktops-' & $SelectedTheme & '.7z'
-	  $sResFileServer = $FilesURL & "/tools/files-desktops-" & $SelectedTheme & ".7z"
    EndIf
-   If not FileExists($sResFileLocal) or $FilesToUpdate_Desktops = 1 Then DownloadResources($sResName, $sResFileLocal, $sResFileServer)
 
    ;Extract
    InstallMsg("Extracting: " & $sResName)
    If FileExists($sResFileLocal) Then
 	  RunWait($ToolsDir & '\7z.exe x -yo"' & $ResourcesDir & '" "' & $sResFileLocal & '"', @ScriptDir ,@SW_HIDE)
    Else
-	  DownloadError($sResFileLocal)
+	  ;Some kind of Errorchecking needed?
    EndIf
    InstallMsg("done")
 
@@ -343,10 +278,10 @@ Func Apply_ReloaderStartup()
    ;Automatically Reload on Boot
    InstallMsg("Applying: Automatically Reload on Startup")
 
-	  FileDelete(@StartupCommonDir & "\" & $AppName & " Reloader.lnk")
-	  FileCreateShortcut(@ScriptDir & "\Patcher.exe", @StartupDir & "\" & $AppName & " Reloader.lnk", @ScriptDir, "/reload /S")
+   FileDelete(@StartupCommonDir & "\" & $AppName & " Reloader.lnk")
+   FileCreateShortcut(@ScriptDir & "\Patcher.exe", @StartupDir & "\" & $AppName & " Reloader.lnk", @ScriptDir, "/reload /S")
 
-	  InstallMsg("done")
+   InstallMsg("done")
 EndFunc
 
 ;Windows: Theme
@@ -369,24 +304,15 @@ EndFunc
 
 Func ApplyTheme_Wallpapers()
    ;Matching Wallpapers for the VS
-
-   ;Check for Updates
-   $FilesToUpdate_Wallpapers = 0
-   If StringInStr($sFilesToUpdate, "wallpapers") <> 0 or $sFilesToUpdate = "all" Then $FilesToUpdate_Wallpapers = 1
-
    $sResName = "Wallpapers"
-
-   ;Download
    $sResFileLocal = @ScriptDir & '\Themes\wallpapers.7z'
-   $sResFileServer = $FilesURL & "/theme-win/wallpapers.7z"
-   If not FileExists($sResFileLocal) or $FilesToUpdate_Wallpapers = 1 Then DownloadResources($sResName, $sResFileLocal, $sResFileServer)
 
    ;Extract
    InstallMsg("Extracting: " & $sResName)
    If FileExists($sResFileLocal) Then
 	  RunWait($ToolsDir & '\7z.exe x -yo"' & $ResourcesDir & '" "' & $sResFileLocal & '"', @ScriptDir ,@SW_HIDE)
    Else
-	  DownloadError($sResFileLocal)
+	  ;Some kind of Errorchecking needed?
    EndIf
    InstallMsg("done")
 
@@ -400,24 +326,15 @@ EndFunc
 
 Func ApplyTheme_Cursors($Cursor_Style)
    ;Ubuntu Classic Cursors
-
-   ;Check for Updates
-   $FilesToUpdate_Cursors = 0
-   If StringInStr($sFilesToUpdate, "cursors") <> 0 or $sFilesToUpdate = "all" Then $FilesToUpdate_Cursors = 1
-
    $sResName = $Cursor_Style & " Cursors"
-
-   ;Download
    $sResFileLocal = @ScriptDir & '\Themes\cursors-' & $Cursor_Style & '.7z'
-   $sResFileServer = $FilesURL & "/theme-win/cursors-" & $Cursor_Style & ".7z"
-   If not FileExists($sResFileLocal) or $FilesToUpdate_Cursors = 1 Then DownloadResources($sResName, $sResFileLocal, $sResFileServer)
 
    ;Extract
    InstallMsg("Extracting: " & $sResName)
    If FileExists($sResFileLocal) Then
 	  RunWait($ToolsDir & '\7z.exe x -yo"' & $ResourcesDir & '" "' & $sResFileLocal & '"', @ScriptDir ,@SW_HIDE)
    Else
-	  DownloadError($sResFileLocal)
+	  ;Some kind of Errorchecking needed?
    EndIf
    InstallMsg("done")
 
@@ -450,29 +367,21 @@ EndFunc
 
 Func ApplyTheme_VisualStyle($VS_Name)
    ;VisualStyle
-
-   ;Check for Updates
-   $FilesToUpdate_ThemeWin = 0
-   If StringInStr($sFilesToUpdate, "theme-win") <> 0 or $sFilesToUpdate = "all" Then $FilesToUpdate_ThemeWin = 1
-
    $sResName = "Visual Style for Windows"
 
    ;Definitions
    If $VS_Name = "elementary" Then
 	  $sResFileLocal = @ScriptDir & '\Themes\visualstyle-elementary.7z'
-	  $sResFileServer = $FilesURL & "/theme-win/visualstyle-elementary.7z"
 
 	  $VS_FileName = "elementary"
 
    ElseIf $VS_Name = "Ubuntu" Then
 	  $sResFileLocal = @ScriptDir & '\Themes\visualstyle-ubuntu.7z'
-	  $sResFileServer = $FilesURL & "/theme-win/visualstyle-ubuntu.7z"
 
 	  $VS_FileName = "Ubuntu"
 
    ElseIf $VS_Name = "Shiki-Colors" Then
 	  $sResFileLocal = @ScriptDir & '\Themes\visualstyle-shikicolors.7z'
-	  $sResFileServer = $FilesURL & "/theme-win/visualstyle-shikicolors.7z"
 
 	  If $SelectedTheme = "gnome" Then
 		 $VS_FileName = "Shiki-Colors Dust"
@@ -485,15 +394,12 @@ Func ApplyTheme_VisualStyle($VS_Name)
 	  EndIf
    EndIf
 
-   ;Download
-   If not FileExists($sResFileLocal) or $FilesToUpdate_ThemeWin = 1 Then DownloadResources($sResName, $sResFileLocal, $sResFileServer)
-
    ;Extract
    InstallMsg("Extracting: " & $sResName)
    If FileExists($sResFileLocal) Then
 	  RunWait($ToolsDir & '\7z.exe x -yo"' & $ResourcesDir & '" "' & $sResFileLocal & '"', @ScriptDir ,@SW_HIDE)
    Else
-	  DownloadError($sResFileLocal)
+	  ;Some kind of Errorchecking needed?
    EndIf
    InstallMsg("done")
 
@@ -682,28 +588,6 @@ EndFunc
 ;3rd Party Apps: Themes
 Func ApplyTheme_Aimp()
    ;Theme - no need for a backup
-   If FileExists($ProgramFiles & "\AIMP3\AIMP3.exe") or FileExists($ProgramFiles & "\AIMP\AIMP.exe") Then
-	  ;Check for Updates
-	  $FilesToUpdate_Aimp = 0
-	  If StringInStr($sFilesToUpdate, "theme-aimp") <> 0 or $sFilesToUpdate = "all" Then $FilesToUpdate_Aimp = 1
-
-	  $sResName = "Aimp Theme Files"
-
-	  ;Download
-	  $sResFileLocal = @ScriptDir & '\Themes\theme-Aimp-' & $SelectedTheme & '.7z'
-	  $sResFileServer = $FilesURL & "/theme-apps/theme-Aimp-" & $SelectedTheme & ".7z"
-	  If not FileExists($sResFileLocal) or $FilesToUpdate_Aimp = 1 Then DownloadResources($sResName, $sResFileLocal, $sResFileServer)
-
-	  ;Extract
-	  InstallMsg("Extracting: " & $sResName)
-	  If FileExists($sResFileLocal) Then
-		 RunWait($ToolsDir & '\7z.exe x -yo"' & $ResourcesDir & '" "' & $sResFileLocal & '"', @ScriptDir ,@SW_HIDE)
-	  Else
-		 DownloadError($sResFileLocal)
-	  EndIf
-	  InstallMsg("done")
-   EndIf
-
    If FileExists($ProgramFiles & "\AIMP3\AIMP3.exe") Then
 	  ;Install
 	  InstallMsg("Installing Theme: Aimp")
@@ -749,26 +633,6 @@ EndFunc
 Func ApplyTheme_jDownloader()
    ;Theme - no need for a backup
    If FileExists($ProgramFiles & "\jDownloader\jDownloader.exe") Then
-	  ;Check for Updates
-	  $FilesToUpdate_jDownloader = 0
-	  If StringInStr($sFilesToUpdate, "theme-jdownloader") <> 0 or $sFilesToUpdate = "all" Then $FilesToUpdate_jDownloader = 1
-
-	  $sResName = "jDownloader Theme Files"
-
-	  ;Download
-	  $sResFileLocal = @ScriptDir & '\Themes\theme-jDownloader-' & $SelectedTheme & '.7z'
-	  $sResFileServer = $FilesURL & "/theme-apps/theme-jDownloader-" & $SelectedTheme & ".7z"
-	  If not FileExists($sResFileLocal) or $FilesToUpdate_jDownloader = 1 Then DownloadResources($sResName, $sResFileLocal, $sResFileServer)
-
-	  ;Extract
-	  InstallMsg("Extracting: " & $sResName)
-	  If FileExists($sResFileLocal) Then
-		 RunWait($ToolsDir & '\7z.exe x -yo"' & $ResourcesDir & '" "' & $sResFileLocal & '"', @ScriptDir ,@SW_HIDE)
-	  Else
-		 DownloadError($sResFileLocal)
-	  EndIf
-	  InstallMsg("done")
-
 	  ;Install
 	  InstallMsg("Installing Theme: jDownloader")
 
@@ -783,26 +647,6 @@ EndFunc
 Func ApplyTheme_Firefox()
    ;Theme - no need for a backup
    If FileExists($ProgramFiles & "\Mozilla Firefox\firefox.exe") or FileExists($ProgramFiles64 & "\Mozilla Firefox\firefox.exe") Then
-	  ;Check for Updates
-	  $FilesToUpdate_Mozilla = 0
-	  If StringInStr($sFilesToUpdate, "theme-firefox-thunderbird") <> 0 or $sFilesToUpdate = "all" Then $FilesToUpdate_Mozilla = 1
-
-	  $sResName = "Firefox/Thunderbird Theme Files"
-
-	  ;Download
-	  $sResFileLocal = @ScriptDir & '\Themes\theme-firefox-thunderbird-' & $SelectedTheme & '.7z'
-	  $sResFileServer = $FilesURL & "/theme-apps/theme-firefox-thunderbird-" & $SelectedTheme & ".7z"
-	  If not FileExists($sResFileLocal) or $FilesToUpdate_Mozilla = 1 Then DownloadResources($sResName, $sResFileLocal, $sResFileServer)
-
-	  ;Extract
-	  InstallMsg("Extracting: " & $sResName)
-	  If FileExists($sResFileLocal) Then
-		 RunWait($ToolsDir & '\7z.exe x -yo"' & $ResourcesDir & '" "' & $sResFileLocal & '"', @ScriptDir ,@SW_HIDE)
-	  Else
-		 DownloadError($sResFileLocal)
-	  EndIf
-	  InstallMsg("done")
-
 	  ;Install
 	  InstallMsg("Installing Theme: Mozilla Firefox")
 
@@ -819,66 +663,23 @@ EndFunc
 
 Func ApplyTheme_Thunderbird()
    ;Theme - no need for a backup
-	  If FileExists($ProgramFiles & "\Mozilla Thunderbird\thunderbird.exe") Then
-		 ;Check for Updates
-		 $FilesToUpdate_Mozilla = 0
-		 If StringInStr($sFilesToUpdate, "theme-firefox-thunderbird") <> 0 or $sFilesToUpdate = "all" Then $FilesToUpdate_Mozilla = 1
+   If FileExists($ProgramFiles & "\Mozilla Thunderbird\thunderbird.exe") Then
+	  ;Install
+	  InstallTheme("Mozilla Thunderbird", $ProgramFiles & "\Mozilla Thunderbird\thunderbird.exe", $ProgramFiles & "\Mozilla Thunderbird\chrome\icons\default", "abcardWindow.ico", $ResourcesDir & "\themes\Firefox-Thunderbird\Thunderbird\abcardWindow.ico")
+	  InstallTheme("Mozilla Thunderbird", $ProgramFiles & "\Mozilla Thunderbird\thunderbird.exe", $ProgramFiles & "\Mozilla Thunderbird\chrome\icons\default", "addressbookWindow.ico", $ResourcesDir & "\themes\Firefox-Thunderbird\Thunderbird\addressbookWindow.ico")
+	  InstallTheme("Mozilla Thunderbird", $ProgramFiles & "\Mozilla Thunderbird\thunderbird.exe", $ProgramFiles & "\Mozilla Thunderbird\chrome\icons\default", "messengerWindow.ico", $ResourcesDir & "\themes\Firefox-Thunderbird\Thunderbird\messengerWindow.ico")
+	  InstallTheme("Mozilla Thunderbird", $ProgramFiles & "\Mozilla Thunderbird\thunderbird.exe", $ProgramFiles & "\Mozilla Thunderbird\chrome\icons\default", "msgcomposeWindow.ico", $ResourcesDir & "\themes\Firefox-Thunderbird\Thunderbird\msgcomposeWindow.ico")
 
-		 $sResName = "Firefox/Thunderbird Theme Files"
+	  InstallMsg("Installing Theme: Mozilla Thunderbird")
 
-		 ;Download
-		 $sResFileLocal = @ScriptDir & '\Themes\theme-firefox-thunderbird-' & $SelectedTheme & '.7z'
-		 $sResFileServer = $FilesURL & "/theme-apps/theme-firefox-thunderbird-" & $SelectedTheme & ".7z"
-		 If not FileExists($sResFileLocal) or $FilesToUpdate_Mozilla = 1 Then DownloadResources($sResName, $sResFileLocal, $sResFileServer)
+	  CheckAndCloseProcess("thunderbird.exe", "Mozilla Thunderbird")
 
-		 ;Extract
-		 InstallMsg("Extracting: " & $sResName)
-		 If FileExists($sResFileLocal) Then
-			RunWait($ToolsDir & '\7z.exe x -yo"' & $ResourcesDir & '" "' & $sResFileLocal & '"', @ScriptDir ,@SW_HIDE)
-		 Else
-			DownloadError($sResFileLocal)
-		 EndIf
-		 InstallMsg("done")
-
-		 ;Install
-		 InstallTheme("Mozilla Thunderbird", $ProgramFiles & "\Mozilla Thunderbird\thunderbird.exe", $ProgramFiles & "\Mozilla Thunderbird\chrome\icons\default", "abcardWindow.ico", $ResourcesDir & "\themes\Firefox-Thunderbird\Thunderbird\abcardWindow.ico")
-		 InstallTheme("Mozilla Thunderbird", $ProgramFiles & "\Mozilla Thunderbird\thunderbird.exe", $ProgramFiles & "\Mozilla Thunderbird\chrome\icons\default", "addressbookWindow.ico", $ResourcesDir & "\themes\Firefox-Thunderbird\Thunderbird\addressbookWindow.ico")
-		 InstallTheme("Mozilla Thunderbird", $ProgramFiles & "\Mozilla Thunderbird\thunderbird.exe", $ProgramFiles & "\Mozilla Thunderbird\chrome\icons\default", "messengerWindow.ico", $ResourcesDir & "\themes\Firefox-Thunderbird\Thunderbird\messengerWindow.ico")
-		 InstallTheme("Mozilla Thunderbird", $ProgramFiles & "\Mozilla Thunderbird\thunderbird.exe", $ProgramFiles & "\Mozilla Thunderbird\chrome\icons\default", "msgcomposeWindow.ico", $ResourcesDir & "\themes\Firefox-Thunderbird\Thunderbird\msgcomposeWindow.ico")
-
-		 InstallMsg("Installing Theme: Mozilla Thunderbird")
-
-		 CheckAndCloseProcess("thunderbird.exe", "Mozilla Thunderbird")
-
-		 FileCopy($ResourcesDir & "\themes\Firefox-Thunderbird\*.xpi", $ProgramFiles & "\Mozilla Thunderbird\extensions", 1)
-		 InstallMsg("done")
-	  EndIf
+	  FileCopy($ResourcesDir & "\themes\Firefox-Thunderbird\*.xpi", $ProgramFiles & "\Mozilla Thunderbird\extensions", 1)
+	  InstallMsg("done")
+   EndIf
 EndFunc
 
 Func ApplyTheme_SMPlayer()
-   ;Download
-   If FileExists($ProgramFiles & "\SMPlayer\SMPlayer.exe") or FileExists($ProgramFiles64 & "\SMPlayer\SMPlayer.exe") Then
-	  ;Check for Updates
-	  $FilesToUpdate_SMPlayer = 0
-	  If StringInStr($sFilesToUpdate, "theme-smplayer") <> 0 or $sFilesToUpdate = "all" Then $FilesToUpdate_SMPlayer = 1
-
-	  $sResName = "SMPlayer Theme Files"
-
-	  ;Download
-	  $sResFileLocal = @ScriptDir & '\Themes\theme-SMPlayer-' & $SelectedTheme & '.7z'
-	  $sResFileServer = $FilesURL & "/theme-apps/theme-SMPlayer-" & $SelectedTheme & ".7z"
-	  If not FileExists($sResFileLocal) or $FilesToUpdate_SMPlayer = 1 Then DownloadResources($sResName, $sResFileLocal, $sResFileServer)
-
-	  ;Extract
-	  InstallMsg("Extracting: " & $sResName)
-	  If FileExists($sResFileLocal) Then
-		 RunWait($ToolsDir & '\7z.exe x -yo"' & $ResourcesDir & '" "' & $sResFileLocal & '"', @ScriptDir ,@SW_HIDE)
-	  Else
-		 DownloadError($sResFileLocal)
-	  EndIf
-	  InstallMsg("done")
-   EndIf
-
    ;Theme - no need for a backup
    If $SelectedTheme = "gnome-brave" or $SelectedTheme = "gnome-human" or $SelectedTheme = "gnome-noble" or $SelectedTheme = "gnome-wine" or $SelectedTheme = "gnome-wise" Then
 	  $theme_SMPlayer = "gnome-" &  $SelectedTheme

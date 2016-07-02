@@ -15,24 +15,15 @@
 #AutoIt3Wrapper_Res_requestedExecutionLevel=requireAdministrator ;Permissions
 
 Defines() ;Global Standards
-$AppTitle = $AppName & " Updater"
-$AppVersionInst = RegRead($AppRegKey, "Version")
-$AppVersionLatest = ""
+Global $AppTitle = $AppName & " Updater"
+Global $AppVersionInst = RegRead($AppRegKey, "Version")
+Global $AppVersionLatest
 _Strings_Updater() ;localized Strings
 
 ;Mode: Silent
 Global $SilentInstall = 0
 If not $CmdLine[0] = 0 Then
    If _StringInArray($CmdLine, '/S') Then $SilentInstall = 1
-EndIf
-
-;Option: Also install BETA Versions
-If RegRead($AppRegKey, "Beta") = 1 or StringInStr($FilesURL, "BETA") > 0 Then
-   $OptUpdateBeta = 1
-   $FilesURL = $FilesURL_Beta
-Else
-   $OptUpdateBeta = 0
-   $FilesURL = $FilesURL_Stable
 EndIf
 
 
@@ -52,13 +43,13 @@ DirCreate(@ScriptDir & "\Themes")
 GUICtrlSetData($lblCurrent,$string_msgChecking)
 $AppVersionLatest = _CheckForUpdate()
 
-If $AppVersionInst = $AppVersionLatest Then
+If $AppVersionInst = $AppVersionLatest[0] Then
    GUICtrlSetData($lblOverall, $string_msgNoUpdate)
    If $SilentInstall = 0 Then Sleep(3000)
    Exit
 EndIf
 
-If $AppVersionInst <> $AppVersionLatest Then
+If $AppVersionInst <> $AppVersionLatest[0] Then
    $sDataChangelog = FileRead(@ScriptDir & "\Changelog.txt")
 
    $queryUpdate = MsgBox(4, $string_msgYesUpdate, $AppName & " " & $AppVersionLatest & " " & $string_msgYesUpdate_msg1 & @LF & @LF & $string_msgYesUpdate_msg2 & @LF & @LF & $sDataChangelog)
@@ -73,8 +64,8 @@ EndIf
 ;Download
 GUICtrlSetData($lblCurrent, $string_msgDownloading)
 
-$sUrl = $FilesURL & "/" & StringReplace($AppName, " ", "-") & "-LATEST.7z"
-$sDest = @TempDir & "\" & StringReplace($AppName, " ", "-") & "-LATEST.7z"
+$sUrl = $AppVersionLatest[1]
+$sDest = @TempDir & "\" & StringReplace($AppName, " ", "-") & "-LATEST.exe"
 _DownloadLatestVersion($sUrl, $sDest)
 
 GUICtrlSetData($lblOverall, $string_msgDownloadDone)

@@ -1,8 +1,10 @@
 Changelog:
 ------------
 
-16.04.XX:
+16.06.XX:
 - Update: AIMP3 Icons
+- Update: Mozilla Firefox / Thunderbird Theme compatibility Updates
+- Fix: Updater will now simply download the latest Offline-Installer from ZippyShare. No more updating of parts due to bandwith limitations of Dropbox. 
 
 16.01.07:
 - Update: Several elementary icons & bitmaps

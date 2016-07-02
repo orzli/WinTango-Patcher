@@ -111,11 +111,7 @@ _ActionImages("bitmaps")
 _ActionImages("icons")
 
 ;Apps
-_ActionApps("aimp", "all", 1)
-_ActionMozilla()
-_ActionApps("smplayer", "all", 1)
-_ActionApps("jdownloader", "all", 1)
-_ActionAppsMisc() ;misc in one pak
+_ActionApps() ;misc in one pak
 
 DirRemove($TempDirMain, 1)
 
@@ -182,56 +178,7 @@ Func _RoutineByTheme($dirSource, $dirTemp, $sFileOut, $sTheme)
 EndFunc
 
 
-Func _ActionApps($sApp, $sThemes, $vRoutine = 1)
-   If StringInStr($sThemes, "tango") > 0 or $sThemes = "all" Then _RoutineApps($sApp, "tango", $vRoutine)
-   If StringInStr($sThemes, "tangerine") > 0 or $sThemes = "all" Then _RoutineApps($sApp, "tangerine", $vRoutine)
-   If StringInStr($sThemes, "gnome") > 0 or $sThemes = "all" Then _RoutineApps($sApp, "gnome", $vRoutine)
-   If StringInStr($sThemes, "cheser") > 0 or $sThemes = "all" Then _RoutineApps($sApp, "cheser", $vRoutine)
-   If StringInStr($sThemes, "gnome-brave") > 0 or $sThemes = "all" Then _RoutineApps($sApp, "gnome-brave", $vRoutine)
-   If StringInStr($sThemes, "gnome-human") > 0 or $sThemes = "all" Then _RoutineApps($sApp, "gnome-human", $vRoutine)
-   If StringInStr($sThemes, "gnome-noble") > 0 or $sThemes = "all" Then _RoutineApps($sApp, "gnome-noble", $vRoutine)
-   If StringInStr($sThemes, "gnome-wine") > 0 or $sThemes = "all" Then _RoutineApps($sApp, "gnome-wine", $vRoutine)
-   If StringInStr($sThemes, "gnome-wise") > 0 or $sThemes = "all" Then _RoutineApps($sApp, "gnome-wise", $vRoutine)
-   If StringInStr($sThemes, "elementary") > 0 or $sThemes = "all" Then _RoutineApps($sApp, "elementary", $vRoutine)
-   If StringInStr($sThemes, "humanity") > 0 or $sThemes = "all" Then _RoutineApps($sApp, "humanity", $vRoutine)
-EndFunc
-
-Func _ActionMozilla()
-   _RoutineApps("firefox", "tango", 1, 1)
-   _RoutineApps("firefox-thunderbird", "tango", 2, 0)
-
-   _RoutineApps("firefox", "tangerine", 1, 1)
-   _RoutineApps("firefox-thunderbird", "tangerine", 2, 0)
-
-   _RoutineApps("firefox", "gnome", 1, 1)
-   _RoutineApps("firefox-thunderbird", "gnome", 2, 0)
-
-   _RoutineApps("firefox", "cheser", 1, 1)
-   _RoutineApps("firefox-thunderbird", "cheser", 2, 0)
-
-   _RoutineApps("firefox", "gnome-brave", 1, 1)
-   _RoutineApps("firefox-thunderbird", "gnome-brave", 2, 0)
-
-   _RoutineApps("firefox", "gnome-human", 1, 1)
-   _RoutineApps("firefox-thunderbird", "gnome-human", 2, 0)
-
-   _RoutineApps("firefox", "gnome-noble", 1, 1)
-   _RoutineApps("firefox-thunderbird", "gnome-noble", 2, 0)
-
-   _RoutineApps("firefox", "gnome-wine", 1, 1)
-   _RoutineApps("firefox-thunderbird", "gnome-wine", 2, 0)
-
-   _RoutineApps("firefox", "gnome-wise", 1, 1)
-   _RoutineApps("firefox-thunderbird", "gnome-wise", 2, 0)
-
-   _RoutineApps("firefox", "elementary", 1, 1)
-   _RoutineApps("firefox-thunderbird", "elementary", 2, 0)
-
-   _RoutineApps("firefox", "humanity", 1, 1)
-   _RoutineApps("firefox-thunderbird", "humanity", 2, 0)
-EndFunc
-
-Func _ActionAppsMisc()
+Func _ActionApps()
    $sTheme = "tango"
    _RoutineApps("crystaldiskinfo", $sTheme, 2, 1)
    ;_RoutineApps("foobar2000", $sTheme, 2, 1) ;only GNOME
@@ -246,6 +193,13 @@ Func _ActionAppsMisc()
    _RoutineApps("utorrent", $sTheme, 2, 1)
    _RoutineApps("radiosure", $sTheme, 2, 1)
    _RoutineApps("winyl", $sTheme, 2, 1)
+
+   _RoutineApps("aimp", $sTheme, 1, 1)
+   _RoutineApps("smplayer", $sTheme, 1, 1)
+   _RoutineApps("jdownloader", $sTheme, 1, 1)
+   _RoutineApps("firefox", $sTheme, 1, 1)
+   _RoutineApps("firefox-thunderbird", $sTheme, 2, 1)
+
    _Compress("theme-apps-" & $sTheme & ".7z")
    DirRemove($TempDirMain, 1)
 
@@ -263,6 +217,13 @@ Func _ActionAppsMisc()
    _RoutineApps("utorrent", $sTheme, 2, 1)
    _RoutineApps("radiosure", $sTheme, 2, 1)
    _RoutineApps("winyl", $sTheme, 2, 1)
+
+   _RoutineApps("aimp", $sTheme, 1, 1)
+   _RoutineApps("smplayer", $sTheme, 1, 1)
+   _RoutineApps("jdownloader", $sTheme, 1, 1)
+   _RoutineApps("firefox", $sTheme, 1, 1)
+   _RoutineApps("firefox-thunderbird", $sTheme, 2, 1)
+
    _Compress("theme-apps-" & $sTheme & ".7z")
    DirRemove($TempDirMain, 1)
 
@@ -280,6 +241,13 @@ Func _ActionAppsMisc()
    _RoutineApps("utorrent", $sTheme, 2, 1)
    _RoutineApps("radiosure", $sTheme, 2, 1)
    _RoutineApps("winyl", $sTheme, 2, 1)
+
+   _RoutineApps("aimp", $sTheme, 1, 1)
+   _RoutineApps("smplayer", $sTheme, 1, 1)
+   _RoutineApps("jdownloader", $sTheme, 1, 1)
+   _RoutineApps("firefox", $sTheme, 1, 1)
+   _RoutineApps("firefox-thunderbird", $sTheme, 2, 1)
+
    _Compress("theme-apps-" & $sTheme & ".7z")
    DirRemove($TempDirMain, 1)
 
@@ -297,6 +265,13 @@ Func _ActionAppsMisc()
    _RoutineApps("utorrent", $sTheme, 2, 1)
    ;_RoutineApps("radiosure", $sTheme, 2, 1) ;not CHESER
    ;_RoutineApps("winyl", $sTheme, 2, 1) ;not CHESER
+
+   _RoutineApps("aimp", $sTheme, 1, 1)
+   _RoutineApps("smplayer", $sTheme, 1, 1)
+   _RoutineApps("jdownloader", $sTheme, 1, 1)
+   _RoutineApps("firefox", $sTheme, 1, 1)
+   _RoutineApps("firefox-thunderbird", $sTheme, 2, 1)
+
    _Compress("theme-apps-" & $sTheme & ".7z")
    DirRemove($TempDirMain, 1)
 
@@ -314,6 +289,13 @@ Func _ActionAppsMisc()
    _RoutineApps("utorrent", $sTheme, 2, 1)
    _RoutineApps("radiosure", $sTheme, 2, 1)
    _RoutineApps("winyl", $sTheme, 2, 1)
+
+   _RoutineApps("aimp", $sTheme, 1, 1)
+   _RoutineApps("smplayer", $sTheme, 1, 1)
+   _RoutineApps("jdownloader", $sTheme, 1, 1)
+   _RoutineApps("firefox", $sTheme, 1, 1)
+   _RoutineApps("firefox-thunderbird", $sTheme, 2, 1)
+
    _Compress("theme-apps-" & $sTheme & ".7z")
    DirRemove($TempDirMain, 1)
 
@@ -331,6 +313,13 @@ Func _ActionAppsMisc()
    _RoutineApps("utorrent", $sTheme, 2, 1)
    _RoutineApps("radiosure", $sTheme, 2, 1)
    _RoutineApps("winyl", $sTheme, 2, 1)
+
+   _RoutineApps("aimp", $sTheme, 1, 1)
+   _RoutineApps("smplayer", $sTheme, 1, 1)
+   _RoutineApps("jdownloader", $sTheme, 1, 1)
+   _RoutineApps("firefox", $sTheme, 1, 1)
+   _RoutineApps("firefox-thunderbird", $sTheme, 2, 1)
+
    _Compress("theme-apps-" & $sTheme & ".7z")
    DirRemove($TempDirMain, 1)
 
@@ -348,6 +337,13 @@ Func _ActionAppsMisc()
    _RoutineApps("utorrent", $sTheme, 2, 1)
    _RoutineApps("radiosure", $sTheme, 2, 1)
    _RoutineApps("winyl", $sTheme, 2, 1)
+
+   _RoutineApps("aimp", $sTheme, 1, 1)
+   _RoutineApps("smplayer", $sTheme, 1, 1)
+   _RoutineApps("jdownloader", $sTheme, 1, 1)
+   _RoutineApps("firefox", $sTheme, 1, 1)
+   _RoutineApps("firefox-thunderbird", $sTheme, 2, 1)
+
    _Compress("theme-apps-" & $sTheme & ".7z")
    DirRemove($TempDirMain, 1)
 
@@ -365,6 +361,13 @@ Func _ActionAppsMisc()
    _RoutineApps("utorrent", $sTheme, 2, 1)
    _RoutineApps("radiosure", $sTheme, 2, 1)
    _RoutineApps("winyl", $sTheme, 2, 1)
+
+   _RoutineApps("aimp", $sTheme, 1, 1)
+   _RoutineApps("smplayer", $sTheme, 1, 1)
+   _RoutineApps("jdownloader", $sTheme, 1, 1)
+   _RoutineApps("firefox", $sTheme, 1, 1)
+   _RoutineApps("firefox-thunderbird", $sTheme, 2, 1)
+
    _Compress("theme-apps-" & $sTheme & ".7z")
    DirRemove($TempDirMain, 1)
 
@@ -382,6 +385,13 @@ Func _ActionAppsMisc()
    _RoutineApps("utorrent", $sTheme, 2, 1)
    _RoutineApps("radiosure", $sTheme, 2, 1)
    _RoutineApps("winyl", $sTheme, 2, 1)
+
+   _RoutineApps("aimp", $sTheme, 1, 1)
+   _RoutineApps("smplayer", $sTheme, 1, 1)
+   _RoutineApps("jdownloader", $sTheme, 1, 1)
+   _RoutineApps("firefox", $sTheme, 1, 1)
+   _RoutineApps("firefox-thunderbird", $sTheme, 2, 1)
+
    _Compress("theme-apps-" & $sTheme & ".7z")
    DirRemove($TempDirMain, 1)
 
@@ -400,6 +410,13 @@ Func _ActionAppsMisc()
    _RoutineApps("radiosure", $sTheme, 2, 1)
    _RoutineApps("vlc", $sTheme, 2, 1)
    _RoutineApps("winyl", $sTheme, 2, 1)
+
+   _RoutineApps("aimp", $sTheme, 1, 1)
+   _RoutineApps("smplayer", $sTheme, 1, 1)
+   _RoutineApps("jdownloader", $sTheme, 1, 1)
+   _RoutineApps("firefox", $sTheme, 1, 1)
+   _RoutineApps("firefox-thunderbird", $sTheme, 2, 1)
+
    _Compress("theme-apps-" & $sTheme & ".7z")
    DirRemove($TempDirMain, 1)
 
@@ -417,6 +434,13 @@ Func _ActionAppsMisc()
    _RoutineApps("utorrent", $sTheme, 2, 1)
    _RoutineApps("radiosure", $sTheme, 2, 1)
    _RoutineApps("winyl", $sTheme, 2, 1)
+
+   _RoutineApps("aimp", $sTheme, 1, 1)
+   _RoutineApps("smplayer", $sTheme, 1, 1)
+   _RoutineApps("jdownloader", $sTheme, 1, 1)
+   _RoutineApps("firefox", $sTheme, 1, 1)
+   _RoutineApps("firefox-thunderbird", $sTheme, 2, 1)
+
    _Compress("theme-apps-" & $sTheme & ".7z")
    DirRemove($TempDirMain, 1)
 EndFunc

@@ -77,15 +77,6 @@ If _Singleton($AppName,1) = 0 Then
    Exit
 EndIf
 
-;Option: Also install BETA Versions
-If RegRead($AppRegKey, "Beta") = 1 or StringInStr($FilesURL, "BETA") > 0 Then
-   $OptUpdateBeta = 1
-   $FilesURL = $FilesURL_Beta
-Else
-   $OptUpdateBeta = 0
-   $FilesURL = $FilesURL_Stable
-EndIf
-
 ;COM-Error Handler
 $oMyError = ObjEvent("AutoIt.Error","MyErrFunc") ;Initialize a COM error handler
 Func MyErrFunc() ;This is my custom defined error handler
@@ -187,9 +178,6 @@ ElseIf $Modus = "Reloader" Then
    PatcherGUI("Reloader")
 
 Else
-   ;Check if Updater was previously run and resources need to be updated
-   Global $sFilesToUpdate = RegRead($AppRegKey, "UpdatedPaks")
-
    ;MainGUI
    PatcherGUI("Patcher")
 EndIf
@@ -407,9 +395,9 @@ Func Patch()
    If $OsArch = "x64" Then DirCreate($LogsDir64)
 
    ;Download all the needed resources
-   Debug("=== Download/Extract Basics Start ===")
-   DlAndExResources()
-   Debug("=== Download/Extract Basics End ===")
+   Debug("=== Extract Basics Start ===")
+   ExtractResources()
+   Debug("=== Extract Basics End ===")
 
    ;The patching magic:
    Debug("=== ApplyOptions Start ===")

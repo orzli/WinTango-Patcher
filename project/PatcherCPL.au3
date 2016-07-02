@@ -19,10 +19,10 @@
 #AutoIt3Wrapper_Res_requestedExecutionLevel=requireAdministrator ;Permissions
 
 Defines() ;Global Standards
-$AppTitle = $AppName & " CPL"
-$AppVersionInst = RegRead($AppRegKey, "Version")
-$AppVersionLatest = ""
-$InstalledTheme = RegRead($AppRegKey, "IconTheme")
+GLobal $AppTitle = $AppName & " CPL"
+Global $AppVersionInst = RegRead($AppRegKey, "Version")
+Global $AppVersionLatest
+Global $InstalledTheme = RegRead($AppRegKey, "IconTheme")
 _Strings_CPL() ;localized Strings
 
 ;Check: Only one Instance of the App should run
@@ -46,15 +46,6 @@ If FileExists(@StartupDir & "\" & $AppName & " Reloader.lnk") Then
    $OptReloaderStartup = 1
 Else
    $OptReloaderStartup = 0
-EndIf
-
-;Option: Also install BETA Versions
-If RegRead($AppRegKey, "Beta") = 1 or StringInStr($FilesURL, "BETA") > 0 Then
-   $OptUpdateBeta = 1
-   $FilesURL = $FilesURL_Beta
-Else
-   $OptUpdateBeta = 0
-   $FilesURL = $FilesURL_Stable
 EndIf
 
 
@@ -101,13 +92,13 @@ While 1
 		 If $UpdateAvailable = 0 Then ;Update available = false
 			$AppVersionInst = RegRead($AppRegKey, "Version")
 			$AppVersionLatest = _CheckForUpdate()
-			GUICtrlSetData($lblVersionLatest, $string_lblVersionLatest & " " & $AppVersionLatest)
+			GUICtrlSetData($lblVersionLatest, $string_lblVersionLatest & " " & $AppVersionLatest[0])
 			;Check local version vs. server and highlight accordingly if there is a difference or not
-			If $AppVersionLatest <> $AppVersionInst and $AppVersionLatest <> "" Then
+			If $AppVersionLatest[0] <> $AppVersionInst and $AppVersionLatest[0] <> "" Then
 			   GUICtrlSetColor($lblVersionInst, $COLOR_RED)
 			   GUICtrlSetData($btnUpdate, $string_btnUpdate_b)
 			   $UpdateAvailable = 1
-			ElseIf $AppVersionLatest = $AppVersionInst Then
+			ElseIf $AppVersionLatest[0] = $AppVersionInst Then
 			   GUICtrlSetColor($lblVersionInst, $COLOR_GREEN)
 			EndIf
 
@@ -115,8 +106,8 @@ While 1
 			GUICtrlSetState($prgbarUpdate, $GUI_SHOW)
 			GUICtrlSetState($btnUpdate, $GUI_HIDE)
 			;Download Latest Version...
-			$sUrl = $FilesURL & "/" & StringReplace($AppName, " ", "-") & "-LATEST.7z"
-			$sDest = @TempDir & "\" & StringReplace($AppName, " ", "-") & "-LATEST.7z"
+			$sUrl = $AppVersionLatest[1]
+			$sDest = @TempDir & "\" & StringReplace($AppName, " ", "-") & "-LATEST.exe"
 			_DownloadLatestVersion($sUrl, $sDest)
 			;...and install it
 			_RunDownload($sDest)
@@ -133,22 +124,6 @@ While 1
 			GUICtrlSetImage($icoUpdateStartup, $SwitchIconOn)
 			FileCreateShortcut(@ScriptDir & "\Updater.exe", @StartupDir & "\" & $AppName & " Updatecheck.lnk", @ScriptDir, "/S")
 			$OptUpdateStartup = 1
-		 EndIf
-
-	  Case $icoUpdateBeta
-		 If $OptUpdateBeta = 1 Then ;Install BETA = true
-			GUICtrlSetImage($icoUpdateBeta, $SwitchIconOff)
-			RegWrite($AppRegKey, "Beta", "REG_SZ", "0")
-			$FilesURL = $FilesURL_Stable
-			$OptUpdateBeta = 0
-		 Else ;Install BETA = false
-			GUICtrlSetImage($icoUpdateBeta, $SwitchIconOn)
-			RegWrite($AppRegKey, "Beta", "REG_SZ", "1")
-			$FilesURL = $FilesURL_Beta
-			$OptUpdateBeta = 1
-			;reset Update Button
-			GUICtrlSetData($btnUpdate, $string_btnUpdate_a)
-			$UpdateAvailable = 0
 		 EndIf
 
 	  Case $btnUninstall
@@ -259,11 +234,6 @@ Func PatcherGUI()
    $lblUpdateStartup = GUICtrlCreateLabel($string_lblUpdateStartup, 68, $lbl_item_top, $lbl_width_max, $lbl_height)
    Global $icoUpdateStartup = GUICtrlCreateIcon($SwitchIconOn, -1, $btn_left+60, $lbl_item_top+3, 43, 16)
    If $OptUpdateStartup = 0 Then GUICtrlSetImage($icoUpdateStartup, $SwitchIconOff)
-
-   $lbl_item_top = $lbl_group_top+(4*$lbl_height)+2
-   $lblUpdateBeta = GUICtrlCreateLabel($string_lblUpdateBeta, 68, $lbl_item_top, $lbl_width_max, $lbl_height)
-   Global $icoUpdateBeta = GUICtrlCreateIcon($SwitchIconOff, -1, $btn_left+60, $lbl_item_top+3, 43, 16)
-   If $OptUpdateBeta = 1 Then GUICtrlSetImage($icoUpdateBeta, $SwitchIconOn)
 
    $lbl_group_end = $lbl_item_top+$lbl_height
 

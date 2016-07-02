@@ -1,5 +1,7 @@
 Func _CheckForUpdate()
-   $sVerLatest = ""
+   Local $sVerLatest[2]
+   ;[0] = Version
+   ;[1] = URL
 
    ;Check Database for new Version
    $sUrl = $FilesURL & "/LatestVersion.ini"
@@ -10,24 +12,26 @@ Func _CheckForUpdate()
    $sData = IniRead($sDest, "Updater", "MainApp", "") ;Version Latest
    $sVer = RegRead($AppRegKey, "Version") ;Version Installed
 
-   $sUpdatedPaks = IniRead($sDest, "Updater", "UpdatedPaks", "all")
-
    FileDelete($sDest) ;Delete the Infofile
 
-   If $sData <> $sVer Then
+   If $sData = "" Then
+	  ;MsgBox(0, "error", "download error")
+	  $sVerLatest[0] = $sVer
+
+   ElseIf $sData <> $sVer Then
 	  $sUrlChangelog = $FilesURL & "/Changelog.txt"
 	  $sDestChangelog = @ScriptDir & "\Changelog.txt"
 
 	  InetGet($sUrlChangelog,$sDestChangelog) ;Download Changelog to view
 
-	  RegWrite($AppRegKey, "UpdatedPaks", "REG_SZ", $sUpdatedPaks) ;Tell the patcher which files are new
-
-	  $sVerLatest = $sData
+	  $sVerLatest[0] = $sData
 
    ElseIf $sData = $sVer Then
-	  $sVerLatest = $sVer
+	  $sVerLatest[0] = $sVer
 
    EndIf
+
+   $sVerLatest[1] = IniRead($sDest, "Updater", "URL", "") ;URL for Installer
 
    Return $sVerLatest ;Return Latest Version Number
 EndFunc
@@ -56,8 +60,7 @@ EndFunc
 
 Func _RunDownload($sDest)
    If FileExists($sDest) Then
-	  RunWait($ToolsDir & '\7z.exe x -yo"' & @TempDir & '" "' & $sDest & '"', @ScriptDir ,@SW_HIDE)
-	  Run(StringTrimRight($sDest, 2) & "exe")
+	  Run($sDest)
    Else
 	  $errorMsg = "There seems to be a problem with the downloaded file. The following file cannot be found: " & $sDest
 	  $query = MsgBox(20,"File Missing",$errorMsg & @CRLF & @CRLF & "Please visit: " & $AppWebsite & " to manually download the Installer." & @CRLF & @CRLF & "Do you want to open this URL now?")

@@ -2,7 +2,7 @@ Func Defines()
    ;This defines all the globally used Variables
 
    Global $AppName = "WinTango Patcher"
-   Global $AppVersion = "16.01.07"
+   Global $AppVersion = "16.06.XX"
    Global $AppPublisher = "heebijeebi"
    Global $AppRegKey = "HKLM\Software\" & $AppName
 
@@ -34,10 +34,7 @@ Func Defines()
    Global $UninstallRegKey = "HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\" & $AppName
 
    ;URLs
-   Global $FilesURL_Stable = "https://dl.dropboxusercontent.com/u/825387/WinTango-Patcher"
-   Global $FilesURL_Beta = "https://dl.dropboxusercontent.com/u/825387/WinTango-Patcher_BETA"
-
-   Global $FilesURL = $FilesURL_Beta ;$FilesURL_Stable ;define which is the main source
+   Global $FilesURL = "https://dl.dropboxusercontent.com/u/825387/WinTango-Patcher"
 
    ;Folders
    Global $ResourcesDir = @ScriptDir & "\Resources"
@@ -74,82 +71,3 @@ Func Defines()
    Global $UXServiceReg = "HKLM\Software\Windows X\UXTheme Multi-Patcher"
    Global $UXServiceFile = $ProgramFiles & "\UXTheme Multi-Patcher\themeengine.exe"
 EndFunc
-
-
-#Region Download Routines
-Func DownloadResources($sName, $sFileLocal, $sFileServer)
-   If FileExists($sFileLocal) Then FileDelete($sFileLocal)
-   InstallMsg("Downloading: " & $sName)
-   $sURL = $sFileServer
-   $iSize = InetGetSize($sUrl)
-   $hDL = InetGet($sURL, $sFileLocal, 1, 1)
-   Do
-	  $hIndexLastEntry = _GUICtrlListBox_GetCount($lstPatchStatus)-1
-	  $sTextLastEntry = _GUICtrlListBox_GetText($lstPatchStatus, $hIndexLastEntry)
-
-	  $aInfo = InetGetInfo($hDL)
-	  Sleep(500)
-	  $iPercent = Round($aInfo[0] / $iSize * 100)
-
-	  $sDlPercentageText = "Downloading: " & $sName & " (" & $iPercent & " %)..."
-	  _GUICtrlListBox_ReplaceString($lstPatchStatus, $hIndexLastEntry, $sDlPercentageText)
-	  ControlCommand($MainGUI, "", $lstPatchStatus, "SelectString", $sDlPercentageText)
-
-	  ;GUICtrlSetData($lstPatchStatus, "")
-	  ;GUICtrlSetData($lstPatchStatus, "Downloading: " & $sName & " (" & $iPercent & " %)...")
-   Until $aInfo[2]
-   InetClose($hDL) ;Handle schließen um die Resourcen freizugeben
-
-   ;retry once if filesizes differ
-   If FileGetSize($sFileLocal) < $iSize Then
-	  InstallMsg("Error Downloading: " & $sName)
-	  InstallMsg("Re-Downloading: " & $sName)
-	  $sURL = $sFileServer
-	  $iSize = InetGetSize($sUrl)
-	  $hDL = InetGet($sURL, $sFileLocal, 1, 1)
-	  Do
-		 $hIndexLastEntry = _GUICtrlListBox_GetCount($lstPatchStatus)-1
-		 $sTextLastEntry = _GUICtrlListBox_GetText($lstPatchStatus, $hIndexLastEntry)
-
-		 $aInfo = InetGetInfo($hDL)
-		 Sleep(500)
-		 $iPercent = Round($aInfo[0] / $iSize * 100)
-
-		 $sDlPercentageText = "Re-Downloading: " & $sName & " (" & $iPercent & " %)..."
-		 _GUICtrlListBox_ReplaceString($lstPatchStatus, $hIndexLastEntry, $sDlPercentageText)
-		 ControlCommand($MainGUI, "", $lstPatchStatus, "SelectString", $sDlPercentageText)
-
-		 ;GUICtrlSetData($lstPatchStatus, "")
-		 ;GUICtrlSetData($lstPatchStatus, "Re-Downloading: " & $sName & " (" & $iPercent & " %)...")
-	  Until $aInfo[2]
-	  InetClose($hDL) ;Handle schließen um die Resourcen freizugeben
-   EndIf
-
-   ;if still not right -> Error Msg
-   If FileGetSize($sFileLocal) < $iSize Then
-	  DownloadError($sFileLocal, "missing")
-   EndIf
-
-   InstallMsg("done")
-EndFunc
-
-Func DownloadError($sErrorFile, $sErrorType = "missing")
-   InstallMsg("Error Downloading: " & $sErrorFile)
-
-   If $sErrorType = "size" Then
-	  $errorMsg = "There seems to be a problem with the downloaded file. The filesize of the downloaded file differs from the source-file."
-	  Debug("File Download Error: " & $errorMsg)
-	  $query = MsgBox(20,"Filesize Error",$errorMsg & @CRLF & @CRLF & "Please visit: " & $AppWebsite & " to download the Offline-Installer." & @CRLF & @CRLF & "Do you want to open this URL now?")
-	  If $query = 6 Then ShellExecute($AppWebsite)
-	  Exit
-
-   Else
-	  $errorMsg = "There seems to be a problem with the downloaded file. The following file cannot be found: " & $sErrorFile
-	  Debug("File Missing Error: " & $errorMsg)
-	  $query = MsgBox(20,"File Missing",$errorMsg & @CRLF & @CRLF & "Please visit: " & $AppWebsite & " to download the Offline-Installer." & @CRLF & @CRLF & "Do you want to open this URL now?")
-	  If $query = 6 Then ShellExecute($AppWebsite)
-	  Exit
-
-   EndIf
-EndFunc
-#EndRegion
