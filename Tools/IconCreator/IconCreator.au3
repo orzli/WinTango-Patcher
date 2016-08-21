@@ -13,29 +13,32 @@ Global $OutputPath = @ScriptDir
 Global $convert_exe = @ScriptDir & "\convert.exe"
 
 #Region FileIncludes
-FileInstall("D:\Software\_Temp\WinTango_Patcher\icon-themes\_src\convert.exe", $convert_exe)
-FileInstall("D:\Software\_Temp\WinTango_Patcher\icon-themes\_src\CORE_RL_bzlib_.dll", @ScriptDir & "\CORE_RL_bzlib_.dll")
-FileInstall("D:\Software\_Temp\WinTango_Patcher\icon-themes\_src\CORE_RL_cairo_.dll", @ScriptDir & "\CORE_RL_cairo_.dll")
-FileInstall("D:\Software\_Temp\WinTango_Patcher\icon-themes\_src\CORE_RL_exr_.dll", @ScriptDir & "\CORE_RL_exr_.dll")
-FileInstall("D:\Software\_Temp\WinTango_Patcher\icon-themes\_src\CORE_RL_glib_.dll", @ScriptDir & "\CORE_RL_glib_.dll")
-FileInstall("D:\Software\_Temp\WinTango_Patcher\icon-themes\_src\CORE_RL_jp2_.dll", @ScriptDir & "\CORE_RL_jp2_.dll")
-FileInstall("D:\Software\_Temp\WinTango_Patcher\icon-themes\_src\CORE_RL_jpeg_.dll", @ScriptDir & "\CORE_RL_jpeg_.dll")
-FileInstall("D:\Software\_Temp\WinTango_Patcher\icon-themes\_src\CORE_RL_lcms_.dll", @ScriptDir & "\CORE_RL_lcms_.dll")
-FileInstall("D:\Software\_Temp\WinTango_Patcher\icon-themes\_src\CORE_RL_librsvg_.dll", @ScriptDir & "\CORE_RL_librsvg_.dll")
-FileInstall("D:\Software\_Temp\WinTango_Patcher\icon-themes\_src\CORE_RL_libxml_.dll", @ScriptDir & "\CORE_RL_libxml_.dll")
-FileInstall("D:\Software\_Temp\WinTango_Patcher\icon-themes\_src\CORE_RL_lqr_.dll", @ScriptDir & "\CORE_RL_lqr_.dll")
-FileInstall("D:\Software\_Temp\WinTango_Patcher\icon-themes\_src\CORE_RL_magick_.dll", @ScriptDir & "\CORE_RL_magick_.dll")
-FileInstall("D:\Software\_Temp\WinTango_Patcher\icon-themes\_src\CORE_RL_Magick++_.dll", @ScriptDir & "\CORE_RL_Magick++_.dll")
-FileInstall("D:\Software\_Temp\WinTango_Patcher\icon-themes\_src\CORE_RL_openjpeg_.dll", @ScriptDir & "\CORE_RL_openjpeg_.dll")
-FileInstall("D:\Software\_Temp\WinTango_Patcher\icon-themes\_src\CORE_RL_pango_.dll", @ScriptDir & "\CORE_RL_pango_.dll")
-FileInstall("D:\Software\_Temp\WinTango_Patcher\icon-themes\_src\CORE_RL_png_.dll", @ScriptDir & "\CORE_RL_png_.dll")
-FileInstall("D:\Software\_Temp\WinTango_Patcher\icon-themes\_src\CORE_RL_tiff_.dll", @ScriptDir & "\CORE_RL_tiff_.dll")
-FileInstall("D:\Software\_Temp\WinTango_Patcher\icon-themes\_src\CORE_RL_ttf_.dll", @ScriptDir & "\CORE_RL_ttf_.dll")
-FileInstall("D:\Software\_Temp\WinTango_Patcher\icon-themes\_src\CORE_RL_wand_.dll", @ScriptDir & "\CORE_RL_wand_.dll")
-FileInstall("D:\Software\_Temp\WinTango_Patcher\icon-themes\_src\CORE_RL_webp_.dll", @ScriptDir & "\CORE_RL_webp_.dll")
-FileInstall("D:\Software\_Temp\WinTango_Patcher\icon-themes\_src\CORE_RL_zlib_.dll", @ScriptDir & "\CORE_RL_zlib_.dll")
-FileInstall("D:\Software\_Temp\WinTango_Patcher\icon-themes\_src\msvcr120.dll", @ScriptDir & "\msvcr120.dll")
-FileInstall("D:\Software\_Temp\WinTango_Patcher\icon-themes\_src\vcomp120.dll", @ScriptDir & "\vcomp120.dll")
+FileInstall("D:\WinTango_Project\WinTango-Patcher\Tools\IconCreator\_src\convert.exe", $convert_exe)
+FileInstall("D:\WinTango_Project\WinTango-Patcher\Tools\IconCreator\_src\CORE_RL_bzlib_.dll", @ScriptDir & "\CORE_RL_bzlib_.dll")
+FileInstall("D:\WinTango_Project\WinTango-Patcher\Tools\IconCreator\_src\CORE_RL_cairo_.dll", @ScriptDir & "\CORE_RL_cairo_.dll")
+FileInstall("D:\WinTango_Project\WinTango-Patcher\Tools\IconCreator\_src\CORE_RL_exr_.dll", @ScriptDir & "\CORE_RL_exr_.dll")
+FileInstall("D:\WinTango_Project\WinTango-Patcher\Tools\IconCreator\_src\CORE_RL_flif_.dll", @ScriptDir & "\CORE_RL_flif_.dll")
+FileInstall("D:\WinTango_Project\WinTango-Patcher\Tools\IconCreator\_src\CORE_RL_glib_.dll", @ScriptDir & "\CORE_RL_glib_.dll")
+FileInstall("D:\WinTango_Project\WinTango-Patcher\Tools\IconCreator\_src\CORE_RL_jp2_.dll", @ScriptDir & "\CORE_RL_jp2_.dll")
+FileInstall("D:\WinTango_Project\WinTango-Patcher\Tools\IconCreator\_src\CORE_RL_jpeg_.dll", @ScriptDir & "\CORE_RL_jpeg_.dll")
+FileInstall("D:\WinTango_Project\WinTango-Patcher\Tools\IconCreator\_src\CORE_RL_lcms_.dll", @ScriptDir & "\CORE_RL_lcms_.dll")
+FileInstall("D:\WinTango_Project\WinTango-Patcher\Tools\IconCreator\_src\CORE_RL_librsvg_.dll", @ScriptDir & "\CORE_RL_librsvg_.dll")
+FileInstall("D:\WinTango_Project\WinTango-Patcher\Tools\IconCreator\_src\CORE_RL_libxml_.dll", @ScriptDir & "\CORE_RL_libxml_.dll")
+FileInstall("D:\WinTango_Project\WinTango-Patcher\Tools\IconCreator\_src\CORE_RL_lqr_.dll", @ScriptDir & "\CORE_RL_lqr_.dll")
+FileInstall("D:\WinTango_Project\WinTango-Patcher\Tools\IconCreator\_src\CORE_RL_magick_.dll", @ScriptDir & "\CORE_RL_magick_.dll")
+FileInstall("D:\WinTango_Project\WinTango-Patcher\Tools\IconCreator\_src\CORE_RL_Magick++_.dll", @ScriptDir & "\CORE_RL_Magick++_.dll")
+FileInstall("D:\WinTango_Project\WinTango-Patcher\Tools\IconCreator\_src\CORE_RL_MagickCore_.dll", @ScriptDir & "\CORE_RL_MagickCore_.dll")
+FileInstall("D:\WinTango_Project\WinTango-Patcher\Tools\IconCreator\_src\CORE_RL_MagickWand_.dll", @ScriptDir & "\CORE_RL_MagickWand_.dll")
+FileInstall("D:\WinTango_Project\WinTango-Patcher\Tools\IconCreator\_src\CORE_RL_openjpeg_.dll", @ScriptDir & "\CORE_RL_openjpeg_.dll")
+FileInstall("D:\WinTango_Project\WinTango-Patcher\Tools\IconCreator\_src\CORE_RL_pango_.dll", @ScriptDir & "\CORE_RL_pango_.dll")
+FileInstall("D:\WinTango_Project\WinTango-Patcher\Tools\IconCreator\_src\CORE_RL_png_.dll", @ScriptDir & "\CORE_RL_png_.dll")
+FileInstall("D:\WinTango_Project\WinTango-Patcher\Tools\IconCreator\_src\CORE_RL_tiff_.dll", @ScriptDir & "\CORE_RL_tiff_.dll")
+FileInstall("D:\WinTango_Project\WinTango-Patcher\Tools\IconCreator\_src\CORE_RL_ttf_.dll", @ScriptDir & "\CORE_RL_ttf_.dll")
+FileInstall("D:\WinTango_Project\WinTango-Patcher\Tools\IconCreator\_src\CORE_RL_wand_.dll", @ScriptDir & "\CORE_RL_wand_.dll")
+FileInstall("D:\WinTango_Project\WinTango-Patcher\Tools\IconCreator\_src\CORE_RL_webp_.dll", @ScriptDir & "\CORE_RL_webp_.dll")
+FileInstall("D:\WinTango_Project\WinTango-Patcher\Tools\IconCreator\_src\CORE_RL_zlib_.dll", @ScriptDir & "\CORE_RL_zlib_.dll")
+FileInstall("D:\WinTango_Project\WinTango-Patcher\Tools\IconCreator\_src\msvcr120.dll", @ScriptDir & "\msvcr120.dll")
+FileInstall("D:\WinTango_Project\WinTango-Patcher\Tools\IconCreator\_src\vcomp120.dll", @ScriptDir & "\vcomp120.dll")
 #EndRegion
 
 Global $App_Temp_Dir = @TempDir & "\IconCreator"
@@ -278,7 +281,7 @@ While 1
 		 If $selFilePath_10 <> "0" Then
 			GUICtrlSetState($chk10px, $GUI_ENABLE)
 			GUICtrlSetFont($chk10px, $font_Size, $font_Weight_FileExists)
-		 ElseIf $selFilePath_16 <> "0" Then
+		 ElseIf $selFilePath_16 <> "0" or $selFilePath_16_svg <> "0" Then
 			GUICtrlSetState($chk10px, $GUI_ENABLE)
 			GUICtrlSetFont($chk10px, $font_Size, $font_Weight_FileNotExists, $font_Attribute_FileNotExists)
 		 EndIf
@@ -287,7 +290,7 @@ While 1
 		 If $selFilePath_20 <> "0" Then
 			GUICtrlSetState($chk20px, $GUI_ENABLE)
 			GUICtrlSetFont($chk20px, $font_Size, $font_Weight_FileExists)
-		 ElseIf $selFilePath_16 <> "0" Then
+		 ElseIf $selFilePath_16 <> "0" or $selFilePath_16_svg <> "0" Then
 			GUICtrlSetState($chk20px, $GUI_ENABLE)
 			GUICtrlSetFont($chk20px, $font_Size, $font_Weight_FileNotExists, $font_Attribute_FileNotExists)
 		 EndIf
@@ -297,7 +300,7 @@ While 1
 		 If $selFilePath_22 <> "0" or $selFilePath_22_svg <> "0" Then
 			GUICtrlSetState($chk22px, $GUI_ENABLE)
 			GUICtrlSetFont($chk22px, $font_Size, $font_Weight_FileExists)
-		 ElseIf $selFilePath_16 <> "0" Then
+		 ElseIf $selFilePath_16 <> "0" or $selFilePath_16_svg <> "0" Then
 			GUICtrlSetState($chk22px, $GUI_ENABLE)
 			GUICtrlSetFont($chk22px, $font_Size, $font_Weight_FileNotExists, $font_Attribute_FileNotExists)
 		 EndIf
@@ -306,7 +309,7 @@ While 1
 		 If $selFilePath_40 <> "0" Then
 			GUICtrlSetState($chk40px, $GUI_ENABLE)
 			GUICtrlSetFont($chk40px, $font_Size, $font_Weight_FileExists)
-		 ElseIf $selFilePath_32 <> "0" Then
+		 ElseIf $selFilePath_32 <> "0" or $selFilePath_32_svg <> "0" Then
 			GUICtrlSetState($chk40px, $GUI_ENABLE)
 			GUICtrlSetFont($chk40px, $font_Size, $font_Weight_FileNotExists, $font_Attribute_FileNotExists)
 		 EndIf
@@ -316,7 +319,7 @@ While 1
 		 If $selFilePath_60 <> "0" or $selFilePath_60_svg <> "0" Then
 			GUICtrlSetState($chk60px, $GUI_ENABLE)
 			GUICtrlSetFont($chk60px, $font_Size, $font_Weight_FileExists)
-		 ElseIf $selFilePath_48 <> "0" Then
+		 ElseIf $selFilePath_48_svg <> "0" Then
 			GUICtrlSetState($chk60px, $GUI_ENABLE)
 			GUICtrlSetFont($chk60px, $font_Size, $font_Weight_FileNotExists, $font_Attribute_FileNotExists)
 		 EndIf
@@ -326,7 +329,7 @@ While 1
 		 If $selFilePath_64 <> "0" or $selFilePath_64_svg <> "0" Then
 			GUICtrlSetState($chk64px, $GUI_ENABLE)
 			GUICtrlSetFont($chk64px, $font_Size, $font_Weight_FileExists)
-		 ElseIf $selFilePath_48 <> "0" Then
+		 ElseIf $selFilePath_48_svg <> "0" Then
 			GUICtrlSetState($chk64px, $GUI_ENABLE)
 			GUICtrlSetFont($chk64px, $font_Size, $font_Weight_FileNotExists, $font_Attribute_FileNotExists)
 		 EndIf
@@ -335,7 +338,7 @@ While 1
 		 If $selFilePath_72 <> "0" Then
 			GUICtrlSetState($chk72px, $GUI_ENABLE)
 			GUICtrlSetFont($chk72px, $font_Size, $font_Weight_FileExists)
-		 ElseIf $selFilePath_64 <> "0" or $selFilePath_48 <> "0" Then
+		 ElseIf $selFilePath_64_svg <> "0" or $selFilePath_48_svg <> "0" Then
 			GUICtrlSetState($chk72px, $GUI_ENABLE)
 			GUICtrlSetFont($chk72px, $font_Size, $font_Weight_FileNotExists, $font_Attribute_FileNotExists)
 		 EndIf
@@ -344,7 +347,7 @@ While 1
 		 If $selFilePath_96 <> "0" Then
 			GUICtrlSetState($chk96px, $GUI_ENABLE)
 			GUICtrlSetFont($chk96px, $font_Size, $font_Weight_FileExists)
-		 ElseIf $selFilePath_64 <> "0" or $selFilePath_48 <> "0" Then
+		 ElseIf $selFilePath_64_svg <> "0" or $selFilePath_48_svg <> "0" Then
 			GUICtrlSetState($chk96px, $GUI_ENABLE)
 			GUICtrlSetFont($chk96px, $font_Size, $font_Weight_FileNotExists, $font_Attribute_FileNotExists)
 		 EndIf
@@ -354,7 +357,7 @@ While 1
 		 If $selFilePath_128 <> "0" or $selFilePath_128_svg <> "0" Then
 			GUICtrlSetState($chk128px, $GUI_ENABLE)
 			GUICtrlSetFont($chk128px, $font_Size, $font_Weight_FileExists)
-		 ElseIf $selFilePath_64 <> "0" or $selFilePath_48 <> "0" Then
+		 ElseIf $selFilePath_64_svg <> "0" or $selFilePath_48_svg <> "0" Then
 			GUICtrlSetState($chk128px, $GUI_ENABLE)
 			GUICtrlSetFont($chk128px, $font_Size, $font_Weight_FileNotExists, $font_Attribute_FileNotExists)
 		 EndIf
@@ -363,18 +366,33 @@ While 1
 		 If $selFilePath_196 <> "0" Then
 			GUICtrlSetState($chk196px, $GUI_ENABLE)
 			GUICtrlSetFont($chk196px, $font_Size, $font_Weight_FileExists)
-		 ElseIf $selFilePath_128 <> "0" or $selFilePath_64 <> "0" or $selFilePath_48 <> "0" Then
+		 ElseIf $selFilePath_128_svg <> "0" or $selFilePath_64_svg <> "0" or $selFilePath_48_svg <> "0" Then
 			GUICtrlSetState($chk196px, $GUI_ENABLE)
 			GUICtrlSetFont($chk196px, $font_Size, $font_Weight_FileNotExists, $font_Attribute_FileNotExists)
 		 EndIf
 
+		 $selFilePath_256 = _Find($selFile & ".png", $inPath & "\" & $cat & "\256")
+		 $selFilePath_256_svg = _Find($selFile & ".svg", $inPath & "\" & $cat & "\256")
+		 If $selFilePath_256 <> "0" or $selFilePath_256_svg <> "0" Then
+			GUICtrlSetState($chk256px, $GUI_ENABLE)
+			GUICtrlSetFont($chk256px, $font_Size, $font_Weight_FileExists)
+		 ElseIf $selFilePath_128_svg <> "0" or $selFilePath_64_svg <> "0" or $selFilePath_48_svg <> "0" Then
+			GUICtrlSetState($chk256px, $GUI_ENABLE)
+			GUICtrlSetFont($chk256px, $font_Size, $font_Weight_FileNotExists, $font_Attribute_FileNotExists)
+		 EndIf
 
-		 $selFilePath = $selFilePath_48
+
+		 $selFilePath = $selFilePath_48_svg
+		 If $selFilePath = "0" Then $selFilePath = $selFilePath_48
+		 If $selFilePath = "0" Then $selFilePath = $selFilePath_32_svg
 		 If $selFilePath = "0" Then $selFilePath = $selFilePath_32
+		 If $selFilePath = "0" Then $selFilePath = $selFilePath_24_svg
 		 If $selFilePath = "0" Then $selFilePath = $selFilePath_24
+		 If $selFilePath = "0" Then $selFilePath = $selFilePath_16_Svg
 		 If $selFilePath = "0" Then $selFilePath = $selFilePath_16
 
-		 ShellExecuteWait($convert_exe, "-background none " & $selFilePath & " " & $App_Temp_Dir & "\preview.ico", @ScriptDir, "", @SW_HIDE)
+		 ;MsgBox(0, "debug", $convert_exe & " -background none " & $selFilePath & " " & $App_Temp_Dir & "\preview.ico")
+		 ShellExecuteWait($convert_exe, " -background none " & $selFilePath & " " & $App_Temp_Dir & "\preview.ico", @ScriptDir, "", @SW_HIDE)
 
 		 $picPreview = GUICtrlCreateIcon($App_Temp_Dir & "\preview.ico", -1, 64, 70, 48, 48)
 
