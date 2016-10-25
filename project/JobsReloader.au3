@@ -33,10 +33,10 @@ Func ReAppearance()
    UpdateTheme("LibreOffice", $ProgramFiles & "\LibreOffice 4.0\program\soffice.exe", $ProgramFiles & "\LibreOffice 4.0\program", "intro.png", $ResourcesDir & "\themes\LibreOffice\intro.png")
 
    ;Mozilla Thunderbird Icons
-   UpdateTheme("Mozilla Thunderbird", $ProgramFiles & "\Mozilla Thunderbird\thunderbird.exe", $ProgramFiles & "\Mozilla Thunderbird\chrome\icons\default", "abcardWindow.ico", $ResourcesDir & "\themes\Firefox-Thunderbird\Thunderbird\abcardWindow.ico")
-   UpdateTheme("Mozilla Thunderbird", $ProgramFiles & "\Mozilla Thunderbird\thunderbird.exe", $ProgramFiles & "\Mozilla Thunderbird\chrome\icons\default", "addressbookWindow.ico", $ResourcesDir & "\themes\Firefox-Thunderbird\Thunderbird\addressbookWindow.ico")
-   UpdateTheme("Mozilla Thunderbird", $ProgramFiles & "\Mozilla Thunderbird\thunderbird.exe", $ProgramFiles & "\Mozilla Thunderbird\chrome\icons\default", "messengerWindow.ico", $ResourcesDir & "\themes\Firefox-Thunderbird\Thunderbird\messengerWindow.ico")
-   UpdateTheme("Mozilla Thunderbird", $ProgramFiles & "\Mozilla Thunderbird\thunderbird.exe", $ProgramFiles & "\Mozilla Thunderbird\chrome\icons\default", "msgcomposeWindow.ico", $ResourcesDir & "\themes\Firefox-Thunderbird\Thunderbird\msgcomposeWindow.ico")
+   UpdateTheme("Mozilla Thunderbird", $ProgramFiles & "\Mozilla Thunderbird\thunderbird.exe", $ProgramFiles & "\Mozilla Thunderbird\chrome\icons\default", "abcardWindow.ico", $ResourcesDir & "\themes\Thunderbird\icons\abcardWindow.ico")
+   UpdateTheme("Mozilla Thunderbird", $ProgramFiles & "\Mozilla Thunderbird\thunderbird.exe", $ProgramFiles & "\Mozilla Thunderbird\chrome\icons\default", "addressbookWindow.ico", $ResourcesDir & "\themes\Thunderbird\icons\addressbookWindow.ico")
+   UpdateTheme("Mozilla Thunderbird", $ProgramFiles & "\Mozilla Thunderbird\thunderbird.exe", $ProgramFiles & "\Mozilla Thunderbird\chrome\icons\default", "messengerWindow.ico", $ResourcesDir & "\themes\Thunderbird\icons\messengerWindow.ico")
+   UpdateTheme("Mozilla Thunderbird", $ProgramFiles & "\Mozilla Thunderbird\thunderbird.exe", $ProgramFiles & "\Mozilla Thunderbird\chrome\icons\default", "msgcomposeWindow.ico", $ResourcesDir & "\themes\Thunderbird\icons\msgcomposeWindow.ico")
 EndFunc
 
 

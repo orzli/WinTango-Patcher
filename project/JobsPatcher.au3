@@ -665,16 +665,18 @@ Func ApplyTheme_Thunderbird()
    ;Theme - no need for a backup
    If FileExists($ProgramFiles & "\Mozilla Thunderbird\thunderbird.exe") Then
 	  ;Install
-	  InstallTheme("Mozilla Thunderbird", $ProgramFiles & "\Mozilla Thunderbird\thunderbird.exe", $ProgramFiles & "\Mozilla Thunderbird\chrome\icons\default", "abcardWindow.ico", $ResourcesDir & "\themes\Firefox-Thunderbird\Thunderbird\abcardWindow.ico")
-	  InstallTheme("Mozilla Thunderbird", $ProgramFiles & "\Mozilla Thunderbird\thunderbird.exe", $ProgramFiles & "\Mozilla Thunderbird\chrome\icons\default", "addressbookWindow.ico", $ResourcesDir & "\themes\Firefox-Thunderbird\Thunderbird\addressbookWindow.ico")
-	  InstallTheme("Mozilla Thunderbird", $ProgramFiles & "\Mozilla Thunderbird\thunderbird.exe", $ProgramFiles & "\Mozilla Thunderbird\chrome\icons\default", "messengerWindow.ico", $ResourcesDir & "\themes\Firefox-Thunderbird\Thunderbird\messengerWindow.ico")
-	  InstallTheme("Mozilla Thunderbird", $ProgramFiles & "\Mozilla Thunderbird\thunderbird.exe", $ProgramFiles & "\Mozilla Thunderbird\chrome\icons\default", "msgcomposeWindow.ico", $ResourcesDir & "\themes\Firefox-Thunderbird\Thunderbird\msgcomposeWindow.ico")
+	  InstallTheme("Mozilla Thunderbird", $ProgramFiles & "\Mozilla Thunderbird\thunderbird.exe", $ProgramFiles & "\Mozilla Thunderbird\chrome\icons\default", "abcardWindow.ico", $ResourcesDir & "\themes\Thunderbird\icons\abcardWindow.ico")
+	  InstallTheme("Mozilla Thunderbird", $ProgramFiles & "\Mozilla Thunderbird\thunderbird.exe", $ProgramFiles & "\Mozilla Thunderbird\chrome\icons\default", "addressbookWindow.ico", $ResourcesDir & "\themes\Thunderbird\icons\addressbookWindow.ico")
+	  InstallTheme("Mozilla Thunderbird", $ProgramFiles & "\Mozilla Thunderbird\thunderbird.exe", $ProgramFiles & "\Mozilla Thunderbird\chrome\icons\default", "messengerWindow.ico", $ResourcesDir & "\themes\Thunderbird\icons\messengerWindow.ico")
+	  InstallTheme("Mozilla Thunderbird", $ProgramFiles & "\Mozilla Thunderbird\thunderbird.exe", $ProgramFiles & "\Mozilla Thunderbird\chrome\icons\default", "msgcomposeWindow.ico", $ResourcesDir & "\themes\Thunderbird\icons\msgcomposeWindow.ico")
 
 	  InstallMsg("Installing Theme: Mozilla Thunderbird")
 
 	  CheckAndCloseProcess("thunderbird.exe", "Mozilla Thunderbird")
 
 	  FileCopy($ResourcesDir & "\themes\Firefox-Thunderbird\*.xpi", $ProgramFiles & "\Mozilla Thunderbird\extensions", 1)
+	  FileCopy($ResourcesDir & "\themes\Thunderbird\*.xpi", $ProgramFiles & "\Mozilla Thunderbird\extensions", 1)
+
 	  InstallMsg("done")
    EndIf
 EndFunc
