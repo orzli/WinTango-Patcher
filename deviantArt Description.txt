@@ -1,0 +1,24 @@
+<b>NOTE: This is for Windows 7/8 (x86/x64)! It has been successfully tested by myself in a VirtualBox and on my own Computer(s).
+If you find any bugs or problems please report them to me.</b>
+
+The WinTango Patcher is a mostly self-explanatory graphical wizard designed to make simple the process of modifying your system files with resources developed by the Gnome-Colors Project, which is mostly inspired/based on Tango, GNOME, Elementary, Tango-Generator and many other open-source projects. It currently includes implementations of the basic Gnome icon set and the Gnome-Colors icon sets, rounded out with various pieces of artwork created by myself and others. Additionally, it includes a Reloader module to re-modify your files if they are overwritten, allowing system updates to be performed without breaking the theme.
+
+<b>Changelog:</b>
+
+<b>15.02.06:</b>
+- New: BETA Support for Windows 10
+- New: Support for: Crystal Disk Info
+- New: Crystal Disk Info Shiki-Colors Theme
+- Update: Gnome-Icon Theme 3.15; Cheser-Icon Theme 3.14
+- Update: CCleaner 5.x, Firefox & Thunderbird Themes, SMPlayer Themes
+- New: Elementary Icon Theme
+- New: Humanity Icon Theme (BETA)
+- Updated: Renamed the Project to “WinTango Patcher”. Because of the inclusion of Elementary & Humanity and due to the icon style focus being on Tango-Styled-Icons this name fits better.
+
+<b>Tools:</b>
+You might want to use Windows 7 Aero Blur Tweaker by Kishan-Bagaria in order to fix the border transparency for the included Shiki-Colors Visual Style!
+
+<b>Download</b> <a href="http://wintango.blogspot.de/p/download.html" target="_blank">on the Official Blog</a>
+
+<b>For Bugreports and further information please visit the <a href="https://http://wintango.blogspot.de" target="_blank">Project Blog</a>.
+<br>
