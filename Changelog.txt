@@ -1,8 +1,8 @@
 Changelog:
 ------------
 
-16.08.XX:
-- Update: elementary icon theme 4.0
+16.11.XX:
+- Update: elementary icon theme
 - Update: AIMP3 Icons
 - Update: Mozilla Firefox / Thunderbird Theme compatibility Updates
 - Fix: Updater will now simply download the latest Offline-Installer from ZippyShare. No more updating of parts due to bandwith limitations of Dropbox. 

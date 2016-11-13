@@ -318,7 +318,12 @@ Func UpdateTheme($App, $AppExePath, $TargetFolder, $FileToCopy, $ResFile)
 
 			;replace file in target folder
 			If FileCopy($ResFile, $TargetFolder & "\" & $FileToCopy, 1) = 0 Then
-			   MoveEx($ResFile, $TargetFolder & "\" & $FileToCopy) ;replace locked file on reboot
+			   ;create a copy in temp to prevent missing files the next time
+			   DirCreate(@ScriptDir & "\temp")
+			   FileCopy($ResFile, @ScriptDir & "\temp\" & $FileToCopy, 1)
+			   MoveEx(@ScriptDir & "\temp\" & $FileToCopy, $TargetFolder & "\" & $FileToCopy) ;replace locked file on reboot
+
+			   ;MoveEx($ResFile, $TargetFolder & "\" & $FileToCopy) ;replace locked file on reboot
 			   $UpdatedFileCount = $UpdatedFileCount + 1 ;tell the patcher to reboot
 			EndIf
 
