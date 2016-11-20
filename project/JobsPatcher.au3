@@ -654,7 +654,6 @@ Func ApplyTheme_Firefox()
 
 	  $FirefoxAppPath = @AppDataDir & "\Mozilla\Firefox\" & StringReplace(IniRead(@AppDataDir & "\Mozilla\Firefox\profiles.ini", "Profile0", "Path", "Error"), "/", "\")
 	  DirCreate($FirefoxAppPath & "\extensions")
-	  FileCopy($ResourcesDir & "\themes\Firefox-Thunderbird\*.xpi", $FirefoxAppPath & "\extensions", 9)
 	  FileCopy($ResourcesDir & "\themes\Firefox\*.xpi", $FirefoxAppPath & "\extensions", 9)
 
 	  InstallMsg("done")
@@ -674,7 +673,6 @@ Func ApplyTheme_Thunderbird()
 
 	  CheckAndCloseProcess("thunderbird.exe", "Mozilla Thunderbird")
 
-	  FileCopy($ResourcesDir & "\themes\Firefox-Thunderbird\*.xpi", $ProgramFiles & "\Mozilla Thunderbird\extensions", 1)
 	  FileCopy($ResourcesDir & "\themes\Thunderbird\*.xpi", $ProgramFiles & "\Mozilla Thunderbird\extensions", 1)
 
 	  InstallMsg("done")
