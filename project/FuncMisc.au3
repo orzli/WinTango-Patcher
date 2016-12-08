@@ -2,7 +2,7 @@ Func Defines()
    ;This defines all the globally used Variables
 
    Global $AppName = "WinTango Patcher"
-   Global $AppVersion = "16.06.XX"
+   Global $AppVersion = "16.12.XX"
    Global $AppPublisher = "heebijeebi"
    Global $AppRegKey = "HKLM\Software\" & $AppName
 
@@ -34,7 +34,8 @@ Func Defines()
    Global $UninstallRegKey = "HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\" & $AppName
 
    ;URLs
-   Global $FilesURL = "https://dl.dropboxusercontent.com/u/825387/WinTango-Patcher"
+   ;Global $FilesURL = "https://dl.dropboxusercontent.com/u/825387/WinTango-Patcher"
+   Global $FilesURL = "https://github.com/heebijeebi/WinTango-Patcher/releases/download"
 
    ;Folders
    Global $ResourcesDir = @ScriptDir & "\Resources"

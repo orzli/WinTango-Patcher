@@ -5,11 +5,7 @@ Func ExtractResources()
 
    ;Extract resources
    InstallMsg("Extracting: " & $sResName)
-   If FileExists($sResFileLocal) Then
-	  RunWait($ToolsDir & '\7z.exe x -yo"' & $ResourcesDir & '" "' & $sResFileLocal & '"', @ScriptDir ,@SW_HIDE)
-   Else
-	  ;Some kind of Errorchecking needed?
-   EndIf
+   ExtractArchive($sResFileLocal, $ResourcesDir)
    InstallMsg("done")
 
    ;Override Feature
@@ -17,134 +13,70 @@ Func ExtractResources()
    #EndRegion
 
 
-   #Region: Icons
-   $sResName = "Icon Resources"
+   #Region: Resources
+   $sResName = "Resources"
+
+   $sResFileLocal = @ScriptDir & '\Themes\res-gnome.7z' ;base for all
+   $sResFileLocal2 = ""
+   $sResFileLocal3 = ""
+   $sResFileLocal4 = ""
+
    If $SelectedTheme = "gnome" Then
-	  $sResFileLocal = @ScriptDir & '\Themes\icons-' & $SelectedTheme & '.7z'
+	  ;use the above
 
-	  $sResFileLocal2 = ""
-	  $sResFileLocal3 = ""
-
-   ElseIf $SelectedTheme = "cheser" or $SelectedTheme = "gnome-brave" or $SelectedTheme = "tango" or $SelectedTheme = "elementary" Then
-	  ;base icons
-	  $sResFileLocal = @ScriptDir & '\Themes\icons-gnome.7z'
-
-	  ;specific icons
-	  $sResFileLocal2 = @ScriptDir & '\Themes\icons-' & $SelectedTheme & '.7z'
-
-	  $sResFileLocal3 = ""
+   ElseIf $SelectedTheme = "cheser" or $SelectedTheme = "gnome-brave" or $SelectedTheme = "elementary" Then
+	  $sResFileLocal2 = @ScriptDir & '\Themes\res-' & $SelectedTheme & '.7z'
 
    Else
-	  ;base icons
-	  $sResFileLocal = @ScriptDir & '\Themes\icons-gnome.7z'
+	  ;2nd base images
+	  $parent_theme = ""
+	  $parent_theme2 = ""
 
-	  ;2nd base icons
-	  If $SelectedTheme = "tangerine" Then
-		 $parent_theme = "Tango"
+	  If $SelectedTheme = "tango" Then
+		 $parent_theme = "gnome-brave"
+
+	  ElseIf $SelectedTheme = "tangerine" Then
+		 $parent_theme = "gnome-brave"
+		 $parent_theme2 = "tango"
+
 	  ElseIf $SelectedTheme = "humanity" Then
-		 $parent_theme = "Elementary"
+		 $parent_theme = "elementary"
+
 	  ElseIf $SelectedTheme = "gnome-human" or $SelectedTheme = "gnome-noble" or $SelectedTheme = "gnome-wine" or $SelectedTheme = "gnome-wise" Then
 		 $parent_theme = "gnome-brave"
-	  EndIf
-	  $sResFileLocal2 = @ScriptDir & '\Themes\icons-' & $parent_theme & '.7z'
 
-	  ;specific icons
-	  $sResFileLocal3 = @ScriptDir & '\Themes\icons-' & $SelectedTheme & '.7z'
+	  EndIf
+
+	  $sResFileLocal2 = @ScriptDir & '\Themes\res-' & $parent_theme & '.7z'
+	  $sResFileLocal3 = @ScriptDir & '\Themes\res-' & $parent_theme2 & '.7z'
+	  $sResFileLocal4 = @ScriptDir & '\Themes\res-' & $SelectedTheme & '.7z' ;specific images
 
    EndIf
 
    ;Extract resources
    InstallMsg("Extracting: " & $sResName)
-   If FileExists($sResFileLocal) Then
-	  RunWait($ToolsDir & '\7z.exe x -yo"' & $ResourcesDir & '" "' & $sResFileLocal & '"', @ScriptDir ,@SW_HIDE)
-	  If $sResFileLocal2 <> "" Then RunWait($ToolsDir & '\7z.exe x -yo"' & $ResourcesDir & '" "' & $sResFileLocal2 & '"', @ScriptDir ,@SW_HIDE)
-	  If $sResFileLocal3 <> "" Then RunWait($ToolsDir & '\7z.exe x -yo"' & $ResourcesDir & '" "' & $sResFileLocal3 & '"', @ScriptDir ,@SW_HIDE)
-   Else
-	  ;Some kind of Errorchecking needed?
-   EndIf
+   ExtractArchive($sResFileLocal, $ResourcesDir)
+   ExtractArchive($sResFileLocal2, $ResourcesDir)
+   ExtractArchive($sResFileLocal3, $ResourcesDir)
+   If $SelectedTheme <> "gnome" Then ExtractResCleanup()
+   ExtractArchive($sResFileLocal4, $ResourcesDir)
    InstallMsg("done")
 
    ;Override Feature
    If FileExists(@DesktopDir & "\Override\icons") Then DirCopy(@DesktopDir & "\Override\icons", $ResourcesDir & "\icons", 1)
-   #EndRegion
-
-
-   #Region: Bitmaps
-   $sResName = "Bitmap Resources"
-   If $SelectedTheme = "gnome" Then
-	  $sResFileLocal = @ScriptDir & '\Themes\bitmaps-' & $SelectedTheme & '.7z'
-
-	  $sResFileLocal2 = ""
-	  $sResFileLocal3 = ""
-
-   ElseIf $SelectedTheme = "cheser" or $SelectedTheme = "gnome-brave" or $SelectedTheme = "tango" or $SelectedTheme = "elementary" Then
-	  ;base icons
-	  $sResFileLocal = @ScriptDir & '\Themes\bitmaps-gnome.7z'
-
-	  ;specific icons
-	  $sResFileLocal2 = @ScriptDir & '\Themes\bitmaps-' & $SelectedTheme & '.7z'
-
-	  $sResFileLocal3 = ""
-
-   Else
-	  ;base icons
-	  $sResFileLocal = @ScriptDir & '\Themes\bitmaps-gnome.7z'
-
-	  ;2nd base icons
-	  If $SelectedTheme = "tangerine" Then
-		 $parent_theme = "Tango"
-	  ElseIf $SelectedTheme = "humanity" Then
-		 $parent_theme = "Elementary"
-	  ElseIf $SelectedTheme = "gnome-human" or $SelectedTheme = "gnome-noble" or $SelectedTheme = "gnome-wine" or $SelectedTheme = "gnome-wise" Then
-		 $parent_theme = "gnome-brave"
-	  EndIf
-	  $sResFileLocal2 = @ScriptDir & '\Themes\bitmaps-' & $parent_theme & '.7z'
-
-	  ;specific icons
-	  $sResFileLocal3 = @ScriptDir & '\Themes\bitmaps-' & $SelectedTheme & '.7z'
-
-   EndIf
-
-   ;Extract resources
-   InstallMsg("Extracting: " & $sResName)
-   If FileExists($sResFileLocal) Then
-	  RunWait($ToolsDir & '\7z.exe x -yo"' & $ResourcesDir & '" "' & $sResFileLocal & '"', @ScriptDir ,@SW_HIDE)
-	  If $sResFileLocal2 <> "" Then RunWait($ToolsDir & '\7z.exe x -yo"' & $ResourcesDir & '" "' & $sResFileLocal2 & '"', @ScriptDir ,@SW_HIDE)
-	  If $sResFileLocal3 <> "" Then RunWait($ToolsDir & '\7z.exe x -yo"' & $ResourcesDir & '" "' & $sResFileLocal3 & '"', @ScriptDir ,@SW_HIDE)
-   Else
-	  ;Some kind of Errorchecking needed?
-   EndIf
-   InstallMsg("done")
-
-   ;Override Feature
    If FileExists(@DesktopDir & "\Override\bitmaps") Then DirCopy(@DesktopDir & "\Override\bitmaps", $ResourcesDir & "\bitmaps", 1)
    If FileExists(@DesktopDir & "\Override\shiki") Then DirCopy(@DesktopDir & "\Override\shiki", $ResourcesDir & "\shiki", 1)
    #EndRegion
+EndFunc
 
-
-   #Region Themes-Apps
-   $sResName = "Application Theme Files"
-
-   ;step1: GNOME base
-   $sResFileLocal = @ScriptDir & '\Themes\theme-apps-gnome.7z'
-
-   ;step2: specific theme
-   If $SelectedTheme <> "gnome" Then
-	  $sResFileLocal2 = @ScriptDir & '\Themes\theme-apps-' & $SelectedTheme & '.7z'
-   Else
-	  $sResFileLocal2 = ""
-   EndIf
-
-   ;Extract
-   InstallMsg("Extracting: " & $sResName)
-   If FileExists($sResFileLocal) Then
-	  RunWait($ToolsDir & '\7z.exe x -yo"' & $ResourcesDir & '" "' & $sResFileLocal & '"', @ScriptDir ,@SW_HIDE)
-	  If $sResFileLocal2 <> "" Then RunWait($ToolsDir & '\7z.exe x -yo"' & $ResourcesDir & '" "' & $sResFileLocal2 & '"', @ScriptDir ,@SW_HIDE)
-   Else
-	  ;Some kind of Errorchecking needed?
-   EndIf
-   InstallMsg("done")
-   #EndRegion
+Func ExtractResCleanup() ;cleanup Themes from other icon themes; at the moment a manual attempt...
+   DirRemove($ResourcesDir & "\themes\Aimp", 1)
+   FileDelete($ResourcesDir & "\themes\Firefox\*.xpi")
+   DirRemove($ResourcesDir & "\themes\jDownloader", 1)
+   DirRemove($ResourcesDir & "\themes\RadioSure\skins", 1)
+   DirRemove($ResourcesDir & "\themes\SMPlayer", 1)
+   FileDelete($ResourcesDir & "\themes\Thunderbird\*.xpi")
+   DirRemove($ResourcesDir & "\themes\Winyl", 1)
 EndFunc
 
 
@@ -204,17 +136,12 @@ EndFunc
 
 Func Apply_Notepad2()
    ;Replace MS Notepad with Notepad2
-
    $sResName = "Notepad2"
-   $sResFileLocal = @ScriptDir & '\Themes\files-notepad2-' & $SelectedTheme & '.7z'
+   $sResFileLocal = @ScriptDir & '\Themes\files-' & $SelectedTheme & '.7z'
 
    ;Extract
    InstallMsg("Extracting: " & $sResName)
-   If FileExists($sResFileLocal) Then
-	  RunWait($ToolsDir & '\7z.exe x -yo"' & $ResourcesDir & '" "' & $sResFileLocal & '"', @ScriptDir ,@SW_HIDE)
-   Else
-	  ;Some kind of Errorchecking needed?
-   EndIf
+   ExtractArchive($sResFileLocal, $ResourcesDir)
    InstallMsg("done")
 
    ;Patch
@@ -237,22 +164,11 @@ EndFunc
 Func Apply_Desktops()
    ;Install Sysinternals Desktops
    $sResName = "Sysinternals Desktops"
-
-   If $SelectedTheme = "gnome" or $SelectedTheme = "cheser" or $SelectedTheme = "elementary" or $SelectedTheme = "tango" Then
-	  $sResFileLocal = @ScriptDir & '\Themes\files-desktops-gnome-brave.7z'
-   ElseIf $SelectedTheme = "tangerine" Then
-	  $sResFileLocal = @ScriptDir & '\Themes\files-desktops-gnome-human.7z'
-   Else
-	  $sResFileLocal = @ScriptDir & '\Themes\files-desktops-' & $SelectedTheme & '.7z'
-   EndIf
+   $sResFileLocal = @ScriptDir & '\Themes\files-' & $SelectedTheme & '.7z'
 
    ;Extract
    InstallMsg("Extracting: " & $sResName)
-   If FileExists($sResFileLocal) Then
-	  RunWait($ToolsDir & '\7z.exe x -yo"' & $ResourcesDir & '" "' & $sResFileLocal & '"', @ScriptDir ,@SW_HIDE)
-   Else
-	  ;Some kind of Errorchecking needed?
-   EndIf
+   ExtractArchive($sResFileLocal, $ResourcesDir)
    InstallMsg("done")
 
    ;Install
@@ -309,11 +225,7 @@ Func ApplyTheme_Wallpapers()
 
    ;Extract
    InstallMsg("Extracting: " & $sResName)
-   If FileExists($sResFileLocal) Then
-	  RunWait($ToolsDir & '\7z.exe x -yo"' & $ResourcesDir & '" "' & $sResFileLocal & '"', @ScriptDir ,@SW_HIDE)
-   Else
-	  ;Some kind of Errorchecking needed?
-   EndIf
+   ExtractArchive($sResFileLocal, $ResourcesDir)
    InstallMsg("done")
 
    ;Install
@@ -331,11 +243,7 @@ Func ApplyTheme_Cursors($Cursor_Style)
 
    ;Extract
    InstallMsg("Extracting: " & $sResName)
-   If FileExists($sResFileLocal) Then
-	  RunWait($ToolsDir & '\7z.exe x -yo"' & $ResourcesDir & '" "' & $sResFileLocal & '"', @ScriptDir ,@SW_HIDE)
-   Else
-	  ;Some kind of Errorchecking needed?
-   EndIf
+   ExtractArchive($sResFileLocal, $ResourcesDir)
    InstallMsg("done")
 
    ;Install
@@ -396,11 +304,7 @@ Func ApplyTheme_VisualStyle($VS_Name)
 
    ;Extract
    InstallMsg("Extracting: " & $sResName)
-   If FileExists($sResFileLocal) Then
-	  RunWait($ToolsDir & '\7z.exe x -yo"' & $ResourcesDir & '" "' & $sResFileLocal & '"', @ScriptDir ,@SW_HIDE)
-   Else
-	  ;Some kind of Errorchecking needed?
-   EndIf
+   ExtractArchive($sResFileLocal, $ResourcesDir)
    InstallMsg("done")
 
    ;Install

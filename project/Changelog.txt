@@ -3,10 +3,7 @@ Changelog:
 
 16.12.XX:
 - Update: elementary icon theme
-- Update: Gnome/Adwaita icon theme
 - Update: AIMP3 Icons
 - Update: Mozilla Firefox / Thunderbird Theme compatibility Updates. Also uploaded to Mozilla Addons due to the need of AddOns to be signed and for easier updating. Signed files are inclued.
 - Fix: Updater will now simply download the latest Offline-Installer from GitHub. No more updating of parts due to bandwith limitations of Dropbox.
 - Fix: Error during extraction of resources on x86 OS.
-- Update: Improved Errorlogging.
-- Update: Notepad2 EN/DE 4.2.25.985

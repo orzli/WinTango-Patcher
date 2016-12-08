@@ -4,23 +4,23 @@ Func _CheckForUpdate()
    ;[1] = URL
 
    ;Check Database for new Version
-   $sUrl = $FilesURL & "/LatestVersion.ini"
+   $sUrl = $FilesURL & "/v0.0/LatestVersion.ini"
    $sDest = @TempDir & "\LatestVersion.ini"
+   If FileExists($sDest) Then FileDelete($sDest)
 
    InetGet($sUrl,$sDest) ;Download the Infofile
 
    $sData = IniRead($sDest, "Updater", "MainApp", "") ;Version Latest
    $sVer = RegRead($AppRegKey, "Version") ;Version Installed
 
-   FileDelete($sDest) ;Delete the Infofile
-
    If $sData = "" Then
 	  ;MsgBox(0, "error", "download error")
 	  $sVerLatest[0] = $sVer
 
    ElseIf $sData <> $sVer Then
-	  $sUrlChangelog = $FilesURL & "/Changelog.txt"
+	  $sUrlChangelog = $FilesURL & "/v" & $sData & "/Changelog.txt"
 	  $sDestChangelog = @ScriptDir & "\Changelog.txt"
+	  If FileExists($sDestChangelog) Then FileDelete($sDestChangelog)
 
 	  InetGet($sUrlChangelog,$sDestChangelog) ;Download Changelog to view
 
@@ -33,12 +33,16 @@ Func _CheckForUpdate()
 
    $sVerLatest[1] = IniRead($sDest, "Updater", "URL", "") ;URL for Installer
 
+   FileDelete($sDest) ;Delete the Infofile
+
    Return $sVerLatest ;Return Latest Version Number
 EndFunc
 
 
 Func _DownloadLatestVersion($sUrl, $sDest)
    ;Progressbar muss "prgbarUpdate" heissen, damit es keine Fehler gibt!
+
+   If FileExists($sDest) Then FileDelete($sDest)
 
    $iSize = InetGetSize($sUrl)
    $hDL = InetGet($sURL, $sDest, 1, 1)

@@ -8,7 +8,7 @@ set "FILENAME=WinTango-Patcher-LATEST"
 cd /d ".\project\_Resources"
 
 echo Compressing Resources...
-CALL _BuildRessources.exe
+CALL _BuildResources.exe
 md "%CURRDIR%\project\Themes"
 move "%CURRDIR%\project\_Resources\_ARCHIVES\*.7z" "%CURRDIR%\project\Themes"
 

@@ -92,6 +92,15 @@ Func InstallFont($sSourceFile, $sFontDescript="", $sFontsPath="")
 EndFunc
 
 
+;7Zip extract
+Func ExtractArchive($sArchive, $sOutputDir)
+   If FileExists($sArchive) Then
+	  RunWait($ToolsDir & '\7z.exe x -y "' & $sArchive & '" -o"' & $sOutputDir & '"', @ScriptDir ,@SW_HIDE)
+   Else
+	  ;Some kind of Errorchecking needed?
+   EndIf
+EndFunc
+
 ;Write Debug File
 Func Debug($Text)
    $DebugFileName = @ScriptDir & "\" & $Modus & ".log"

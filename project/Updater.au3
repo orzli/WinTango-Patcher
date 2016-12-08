@@ -52,7 +52,7 @@ EndIf
 If $AppVersionInst <> $AppVersionLatest[0] Then
    $sDataChangelog = FileRead(@ScriptDir & "\Changelog.txt")
 
-   $queryUpdate = MsgBox(4, $string_msgYesUpdate, $AppName & " " & $AppVersionLatest & " " & $string_msgYesUpdate_msg1 & @LF & @LF & $string_msgYesUpdate_msg2 & @LF & @LF & $sDataChangelog)
+   $queryUpdate = MsgBox(4, $string_msgYesUpdate, $AppName & " " & $AppVersionLatest[0] & " " & $string_msgYesUpdate_msg1 & @LF & @LF & $string_msgYesUpdate_msg2 & @LF & @LF & $sDataChangelog)
    If $queryUpdate = 6 Then
 	  ;ja - weitermachen!
    Else

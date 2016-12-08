@@ -42,6 +42,7 @@ RegWrite("HKLM\SYSTEM\CurrentControlSet\Control\Session Manager", "AllowProtecte
 
 ;Defines
 Defines() ;Global Standards
+$errorFlag = 0
 
 ;Define Windows Version for further usage & make sure that the Patcher only runs on supported Windows Versions
 Global $WinName = _GetWinVer()
@@ -245,6 +246,10 @@ While 1
 		 ElseIf $CurrentStatus = "done" Then
 			If $UpdatedFileCount > 0 Then Shutdown(6) ;Neustarten erzwingen
 			ExitPatcher()
+		 ElseIf $CurrentStatus = "error" Then
+			ShellExecute($AppBugReport)
+			ShellExecute("Patcher.log")
+			ExitPatcher()
 		 EndIf
 
 
@@ -397,91 +402,109 @@ Func Patch()
    ;Download all the needed resources
    Debug("=== Extract Basics Start ===")
    ExtractResources()
+   Local $iSize = DirGetSize($ResourcesDir)
+   Debug("Resources DirSize: " & Round($iSize / 1024 / 1024) & " MB")
+   ;Error-Check
+   If $iSize = -1 or $iSize = 0 Then
+	  InstallMsg("Error: Resources Dir empty or not existing!")
+	  $errorFlag = 1
+   EndIf
+   ;Error-Check End
    Debug("=== Extract Basics End ===")
 
    ;The patching magic:
-   Debug("=== ApplyOptions Start ===")
-   If $OptTrayIcons = 1 Then
-	  If GUICtrlRead($comboTrayIcons) = "Symbolic" Then Apply_SymbolicTray()
-   Else
-	  Apply_NoTray()
+   If $errorFlag = 0 Then
+	  Debug("=== ApplyOptions Start ===")
+	  If $OptTrayIcons = 1 Then
+		 If GUICtrlRead($comboTrayIcons) = "Symbolic" Then Apply_SymbolicTray()
+	  Else
+		 Apply_NoTray()
+	  EndIf
+
+	  If $OptStartOrb = 0 Then Apply_NoStartOrb()
+
+	  If $OptVisualStyle = 1 Then ApplyTheme_VisualStyle(GUICtrlRead($comboVisualStyle))
+	  If $OptWallpapers = 1 Then ApplyTheme_Wallpapers()
+	  If $OptCursors = 1 Then ApplyTheme_Cursors(GUICtrlRead($comboCursors))
+
+	  If $OptNotepad2 = 1 Then Apply_Notepad2()
+	  If $OptDesktops = 1 Then Apply_Desktops()
+
+	  If $OptUpdater = 1 Then Apply_UpdaterStartup()
+	  If $OptReloader = 1 Then Apply_ReloaderStartup()
+	  Debug("=== ApplyOptions End ===")
+
+	  Debug("=== ApplyAdvancedOptions Start ===")
+	  If GUICtrlRead($chkNoShell32) = 1 Then
+		 Global $NotPatchShell32 = 1 ;Don't patch shell32.dll
+	  Else
+		 Global $NotPatchShell32 = 0
+	  EndIf
+
+	  If GUICtrlRead($chkUsingIE) = 1 Then
+		 Global $keepIEusable = 1 ;Internet Explorer Usability
+	  Else
+		 Global $keepIEusable = 0
+	  EndIf
+
+	  If GUICtrlRead($chkUniversalThemePatcher) = 1 Then ApplyTheme_UXThemePatch("direct")
+	  If GUICtrlRead($chkUniversalThemeService) = 1 Then ApplyTheme_UXThemePatch("service")
+	  Debug("=== ApplyAdvancedOptions Start ===")
+
+	  Debug("=== PatchWindowsFiles Start ===")
+	  If GUICtrlRead($chkBranding) = 1 Then ApplyTheme_Branding()
+	  PatchWindowsFiles()
+	  Debug("=== PatchWindowsFiles End ===")
+
+	  Debug("=== ApplyAppearanceApps Start ===")
+	  If GUICtrlRead($chkAimpTheme) = 1 Then ApplyTheme_Aimp() ;Aimp Shiki-Colors Theme
+	  If GUICtrlRead($chkDiskInfoTheme) = 1 Then ApplyTheme_DiskInfo() ;CrystalDiskInfo Shiki-Colors Theme
+	  If GUICtrlRead($chkfoobar2000Theme) = 1 Then ApplyTheme_Foobar2000() ;foobar2000 File Type Icons
+	  If GUICtrlRead($chkGimpTheme) = 1 Then ApplyTheme_Gimp() ;Gimp Theme/Images
+	  If GUICtrlRead($chkInkscapeTheme) = 1 Then ApplyTheme_Inkscape() ;Inkscape Theme
+	  If GUICtrlRead($chkjDownloaderTheme) = 1 Then ApplyTheme_jDownloader() ;jDownloader Theme
+	  If GUICtrlRead($chkLibreOfficeTheme) = 1 Then ApplyTheme_LibreOffice() ;LibreOffice Images
+	  If GUICtrlRead($chkMPCTheme) = 1 Then ApplyTheme_MPC() ;Media Player Classic HC Theme
+	  If GUICtrlRead($chkMSOfficeTheme) = 1 Then  ApplyTheme_MSOffice() ;Microsoft Office
+	  If GUICtrlRead($chkFirefoxTheme) = 1 Then ApplyTheme_Firefox() ;Mozilla Firefox Theme
+	  If GUICtrlRead($chkThunderbirdTheme) = 1 Then ApplyTheme_Thunderbird() ;Mozilla Thunderbird Theme
+	  If GUICtrlRead($chkPidginTheme) = 1 Then ApplyTheme_Pidgin() ;Pidgin Theme
+	  If GUICtrlRead($chkRadioSureTheme) = 1 Then ApplyTheme_RadioSure() ;RadioSure Theme
+	  If GUICtrlRead($chkRainlendarTheme) = 1 Then ApplyTheme_Rainlendar() ;Rainlendar Theme
+	  If GUICtrlRead($chkSMPlayerTheme) = 1 Then ApplyTheme_SMPlayer() ;SMPlayer Theme
+	  If GUICtrlRead($chkUTorrentTheme) = 1 Then ApplyTheme_uTorrent() ;uTorrent 2.x Theme
+	  If GUICtrlRead($chkVLCTheme) = 1 Then ApplyTheme_VLC() ;VLC Theme
+	  If GUICtrlRead($chkWinylTheme) = 1 Then ApplyTheme_Winyl() ;Winyl Theme
+	  Debug("=== ApplyAppearanceApps End ===")
+
+	  Debug("=== PatchAppFiles Start ===")
+	  PatchAppFiles()
+	  Debug("=== PatchAppFiles End ===")
+
+	  InstallMsg("Clearing Icon-/Thumbnail-Cache...")
+	  ClearIconCache()
+	  InstallMsg("done")
+
+	  PostInstall()
    EndIf
-
-   If $OptStartOrb = 0 Then Apply_NoStartOrb()
-
-   If $OptVisualStyle = 1 Then ApplyTheme_VisualStyle(GUICtrlRead($comboVisualStyle))
-   If $OptWallpapers = 1 Then ApplyTheme_Wallpapers()
-   If $OptCursors = 1 Then ApplyTheme_Cursors(GUICtrlRead($comboCursors))
-
-   If $OptNotepad2 = 1 Then Apply_Notepad2()
-   If $OptDesktops = 1 Then Apply_Desktops()
-
-   If $OptUpdater = 1 Then Apply_UpdaterStartup()
-   If $OptReloader = 1 Then Apply_ReloaderStartup()
-   Debug("=== ApplyOptions End ===")
-
-   Debug("=== ApplyAdvancedOptions Start ===")
-   If GUICtrlRead($chkNoShell32) = 1 Then
-	  Global $NotPatchShell32 = 1 ;Don't patch shell32.dll
-   Else
-	  Global $NotPatchShell32 = 0
-   EndIf
-
-   If GUICtrlRead($chkUsingIE) = 1 Then
-	  Global $keepIEusable = 1 ;Internet Explorer Usability
-   Else
-	  Global $keepIEusable = 0
-   EndIf
-
-   If GUICtrlRead($chkUniversalThemePatcher) = 1 Then ApplyTheme_UXThemePatch("direct")
-   If GUICtrlRead($chkUniversalThemeService) = 1 Then ApplyTheme_UXThemePatch("service")
-   Debug("=== ApplyAdvancedOptions Start ===")
-
-   Debug("=== PatchWindowsFiles Start ===")
-   If GUICtrlRead($chkBranding) = 1 Then ApplyTheme_Branding()
-   PatchWindowsFiles()
-   Debug("=== PatchWindowsFiles End ===")
-
-   Debug("=== ApplyAppearanceApps Start ===")
-   If GUICtrlRead($chkAimpTheme) = 1 Then ApplyTheme_Aimp() ;Aimp Shiki-Colors Theme
-   If GUICtrlRead($chkDiskInfoTheme) = 1 Then ApplyTheme_DiskInfo() ;CrystalDiskInfo Shiki-Colors Theme
-   If GUICtrlRead($chkfoobar2000Theme) = 1 Then ApplyTheme_Foobar2000() ;foobar2000 File Type Icons
-   If GUICtrlRead($chkGimpTheme) = 1 Then ApplyTheme_Gimp() ;Gimp Theme/Images
-   If GUICtrlRead($chkInkscapeTheme) = 1 Then ApplyTheme_Inkscape() ;Inkscape Theme
-   If GUICtrlRead($chkjDownloaderTheme) = 1 Then ApplyTheme_jDownloader() ;jDownloader Theme
-   If GUICtrlRead($chkLibreOfficeTheme) = 1 Then ApplyTheme_LibreOffice() ;LibreOffice Images
-   If GUICtrlRead($chkMPCTheme) = 1 Then ApplyTheme_MPC() ;Media Player Classic HC Theme
-   If GUICtrlRead($chkMSOfficeTheme) = 1 Then  ApplyTheme_MSOffice() ;Microsoft Office
-   If GUICtrlRead($chkFirefoxTheme) = 1 Then ApplyTheme_Firefox() ;Mozilla Firefox Theme
-   If GUICtrlRead($chkThunderbirdTheme) = 1 Then ApplyTheme_Thunderbird() ;Mozilla Thunderbird Theme
-   If GUICtrlRead($chkPidginTheme) = 1 Then ApplyTheme_Pidgin() ;Pidgin Theme
-   If GUICtrlRead($chkRadioSureTheme) = 1 Then ApplyTheme_RadioSure() ;RadioSure Theme
-   If GUICtrlRead($chkRainlendarTheme) = 1 Then ApplyTheme_Rainlendar() ;Rainlendar Theme
-   If GUICtrlRead($chkSMPlayerTheme) = 1 Then ApplyTheme_SMPlayer() ;SMPlayer Theme
-   If GUICtrlRead($chkUTorrentTheme) = 1 Then ApplyTheme_uTorrent() ;uTorrent 2.x Theme
-   If GUICtrlRead($chkVLCTheme) = 1 Then ApplyTheme_VLC() ;VLC Theme
-   If GUICtrlRead($chkWinylTheme) = 1 Then ApplyTheme_Winyl() ;Winyl Theme
-   Debug("=== ApplyAppearanceApps End ===")
-
-   Debug("=== PatchAppFiles Start ===")
-   PatchAppFiles()
-   Debug("=== PatchAppFiles End ===")
-
-   InstallMsg("Clearing Icon-/Thumbnail-Cache...")
-   ClearIconCache()
-   InstallMsg("done")
-
-   PostInstall()
 
    GUICtrlSetData($lstPatchStatus, @LF)
-   InstallMsg($string_msgPatchingDone) ;Patching completed.
-   InstallMsg($string_msgPatchingDoneRestart) ;In order to apply these changes you have to restart your system!
 
-   GUICtrlSetData($btnPatch, $string_btnRestart)
+   If $errorFlag = 0 Then
+	  InstallMsg($string_msgPatchingDone) ;Patching completed.
+	  InstallMsg($string_msgPatchingDoneRestart) ;In order to apply these changes you have to restart your system!
+	  GUICtrlSetData($btnPatch, $string_btnRestart)
+	  $CurrentStatus = "done"
+   Else
+	  InstallMsg("The Patcher ended with an error!")
+	  InstallMsg("Please report this Bug to me by clicking the button above!")
+	  GUICtrlSetData($btnPatch, "Bugreport")
+	  GUICtrlSetColor($btnPatch, "0xff0000")
+	  $CurrentStatus = "error"
+   EndIf
+
    GuiCtrlSetState($btnPatch, $GUI_ENABLE)
    GuiCtrlSetState($btnPatch, $GUI_FOCUS)
-
-   $CurrentStatus = "done"
 EndFunc
 #EndRegion
 
