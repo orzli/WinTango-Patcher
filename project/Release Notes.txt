@@ -23,7 +23,7 @@ CREDITS
 - Resource Hacker and 7-Zip are included as a necessity of operation.
 - 7-Zip is released under the GNU LGPL.
 - The Gnome Colors icon library was created by the Gnome Colors Project and is released under the GNU General Public License, and my converted material based on the Gnome Colors icons implicitly inherits this license.
-- The Gnome-Icon-Theme 2 was created by the Gnome Desktop Project and is released under the GNU General Public license.
+- The Gnome-Icon-Theme was created by the Gnome Desktop Project and is released under the GNU General Public license.
 - The Tango icon library was created by the Tango Desktop Project and is released under the Creative Commons Attribution Share-Alike license, and my converted material based on the Tango icons implicitly inherits this license.
 - Unless they contain portions of resources distributed under a specific license, my icon creations may be used under the terms of the CC-by-SA license, or the GNU GPL - whichever license is more convenient for you.
 
