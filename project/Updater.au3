@@ -65,8 +65,10 @@ EndIf
 GUICtrlSetData($lblCurrent, $string_msgDownloading)
 
 $sUrl = $AppVersionLatest[1]
+$sUrlMirror = $AppVersionLatest[2]
 $sDest = @TempDir & "\" & StringReplace($AppName, " ", "-") & "-LATEST.exe"
 _DownloadLatestVersion($sUrl, $sDest)
+If not FileExists($sDest) Then _DownloadLatestVersion($sUrlMirror, $sDest) ;retry with mirror
 
 GUICtrlSetData($lblOverall, $string_msgDownloadDone)
 Sleep(2000)

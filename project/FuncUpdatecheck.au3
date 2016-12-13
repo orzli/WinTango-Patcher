@@ -32,6 +32,7 @@ Func _CheckForUpdate()
    EndIf
 
    $sVerLatest[1] = IniRead($sDest, "Updater", "URL", "") ;URL for Installer
+   $sVerLatest[2] = IniRead($sDest, "Updater", "URL2", "") ;URL for Installer (Mirror)
 
    FileDelete($sDest) ;Delete the Infofile
 
