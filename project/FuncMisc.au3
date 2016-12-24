@@ -2,7 +2,7 @@ Func Defines()
    ;This defines all the globally used Variables
 
    Global $AppName = "WinTango Patcher"
-   Global $AppVersion = "16.12.XX"
+   Global $AppVersion = "16.12.24"
    Global $AppPublisher = "heebijeebi"
    Global $AppRegKey = "HKLM\Software\" & $AppName
 

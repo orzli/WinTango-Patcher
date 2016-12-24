@@ -1,11 +1,17 @@
 Changelog:
 ------------
 
-16.12.XX:
-- Update: elementary icon theme
-- Update: Adwaita/Gnome icon theme
-- Update: AIMP3 Icons
-- Update: Mozilla Firefox / Thunderbird Theme compatibility Updates. Also uploaded to Mozilla Addons due to the need of AddOns to be signed and for easier updating. Signed files are inclued.
-- Update: SMPlayer Themes for v16.11.0
-- Fix: Updater will now simply download the latest Offline-Installer from GitHub. No more updating of parts due to bandwith limitations of Dropbox.
-- Fix: Error during extraction of resources on x86 OS.
+16.01.07:
+- Update: Several elementary icons & bitmaps
+- Update: elementaryOS Skin for Winyl (source by vicing | http://vicing.deviantart.com/)
+- Update: elementaryOS Visual Style for Windows 7
+- Update: Making the Reloader smarter to reduce reboots
+- Update: Mozilla Firefox Theme compatibility Updates
+- Update: Mozilla Firefox Theme-Extras uploaded to Mozilla Addons due to the need of AddOns to be signed by v43.0. Signed files are inclued.
+- Update: Extending the possibilities for the Overriding-Feature
+- Update: UltraUXThemePatcher v3.0.4
+- New: elementaryOS Skin for AIMP
+- New: elementaryOS Skin for RadioSure (source by vicing | http://vicing.deviantart.com/)
+- New: elementaryOS Skin for VLC (by vicing | http://vicing.deviantart.com/)
+- Fix: Updater can't download latest version
+- Fix: Checking for the right Windows Version didn't work properly anymore in the newest Build of Windows 10 causing the Patcher to patch unsupported files

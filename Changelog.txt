@@ -1,7 +1,7 @@
 Changelog:
 ------------
 
-16.12.XX:
+16.12.24:
 - Update: elementary icon theme
 - Update: Gnome/Adwaita icon theme
 - Update: AIMP3 Icons
