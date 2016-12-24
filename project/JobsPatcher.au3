@@ -558,6 +558,19 @@ Func ApplyTheme_Firefox()
 
 	  $FirefoxAppPath = @AppDataDir & "\Mozilla\Firefox\" & StringReplace(IniRead(@AppDataDir & "\Mozilla\Firefox\profiles.ini", "Profile0", "Path", "Error"), "/", "\")
 	  DirCreate($FirefoxAppPath & "\extensions")
+	  ;Cleanup OLD
+	  FileDelete($FirefoxAppPath & "\extensions\Gnome-Brave@Windows.xpi")
+	  FileDelete($FirefoxAppPath & "\extensions\Gnome-Human@Windows.xpi")
+	  FileDelete($FirefoxAppPath & "\extensions\Gnome-Noble@Windows.xpi")
+	  FileDelete($FirefoxAppPath & "\extensions\Gnome-Wine@Windows.xpi")
+	  FileDelete($FirefoxAppPath & "\extensions\Gnome-Wise@Windows.xpi")
+	  FileDelete($FirefoxAppPath & "\extensions\Gnome@Windows.xpi")
+	  FileDelete($FirefoxAppPath & "\extensions\Cheser@Windows.xpi")
+	  FileDelete($FirefoxAppPath & "\extensions\Tango@Windows.xpi")
+	  FileDelete($FirefoxAppPath & "\extensions\Tangerine@Windows.xpi")
+	  FileDelete($FirefoxAppPath & "\extensions\Elementary@Windows.xpi")
+	  FileDelete($FirefoxAppPath & "\extensions\Humanity@Windows.xpi")
+	  ;Cleanup done
 	  FileCopy($ResourcesDir & "\themes\Firefox\*.xpi", $FirefoxAppPath & "\extensions", 9)
 
 	  InstallMsg("done")

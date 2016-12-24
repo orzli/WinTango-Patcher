@@ -170,6 +170,17 @@ Func UnAppearance()
    FileDelete($FirefoxAppPath & "\extensions\Tangerine@Windows.xpi")
    FileDelete($FirefoxAppPath & "\extensions\Elementary@Windows.xpi")
    FileDelete($FirefoxAppPath & "\extensions\Humanity@Windows.xpi")
+
+   FileDelete($FirefoxAppPath & "\extensions\Gnome-Brave@FX-WinTango.xpi")
+   FileDelete($FirefoxAppPath & "\extensions\Gnome-Human@FX-WinTango.xpi")
+   FileDelete($FirefoxAppPath & "\extensions\Gnome-Noble@FX-WinTango.xpi")
+   FileDelete($FirefoxAppPath & "\extensions\Gnome-Wine@FX-WinTango.xpi")
+   FileDelete($FirefoxAppPath & "\extensions\Gnome-Wise@FX-WinTango.xpi")
+   FileDelete($FirefoxAppPath & "\extensions\Gnome@FX-WinTango.xpi")
+   FileDelete($FirefoxAppPath & "\extensions\Cheser@FX-WinTango.xpi")
+   FileDelete($FirefoxAppPath & "\extensions\Elementary@FX-WinTango.xpi")
+   FileDelete($FirefoxAppPath & "\extensions\Humanity@FX-WinTango.xpi")
+
    FileDelete($FirefoxAppPath & "\extensions\tangofox@haven667.xpi")
    FileDelete($FirefoxAppPath & "\extensions\tangerinefox@haven667.xpi")
 
@@ -184,6 +195,7 @@ Func UnAppearance()
    FileDelete($FirefoxAppPath & "\extensions\Tangerine-Extras@Windows.xpi")
    FileDelete($FirefoxAppPath & "\extensions\Elementary-Extras@Windows.xpi")
    FileDelete($FirefoxAppPath & "\extensions\Humanity-Extras@Windows.xpi")
+
    FileDelete($FirefoxAppPath & "\extensions\tangofox-extras@haven667.xpi")
    FileDelete($FirefoxAppPath & "\extensions\tangerinefox-extras@haven667.xpi")
 
