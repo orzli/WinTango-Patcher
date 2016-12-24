@@ -1,5 +1,7 @@
 Changelog:
 ------------
+17.01.XX:
+- Update: Automatic cleanup of old files in Patcher folder to save space on your harddisk
 
 16.12.24:
 - Update: elementary icon theme
