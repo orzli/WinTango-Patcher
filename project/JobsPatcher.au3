@@ -25,7 +25,7 @@ Func ExtractResources()
 	  ;use the above
 
    ElseIf $SelectedTheme = "cheser" or $SelectedTheme = "gnome-brave" or $SelectedTheme = "elementary" Then
-	  $sResFileLocal2 = @ScriptDir & '\Themes\res-' & $SelectedTheme & '.7z'
+	  $sResFileLocal4 = @ScriptDir & '\Themes\res-' & $SelectedTheme & '.7z'
 
    Else
 	  ;2nd base images
@@ -945,6 +945,7 @@ EndFunc
 
 
 Func PostInstall()
+   ;Cleanup
    FileDelete($ToolsDir & "\ResHacker.ini")
    DirRemove(@DesktopDir & "\Override", 1)
 

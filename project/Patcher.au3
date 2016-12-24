@@ -377,12 +377,21 @@ Func _PreInstall()
 EndFunc
 
 Func _CleanupOld()
+   ;since v16.01.07
    FileDelete(@ScriptDir & "\images.dll")
    FileDelete(@ScriptDir & "\Readme.pdf")
    FileDelete($ToolsDir & "\OpaqueTaskbar*.*")
    FileDelete($ToolsDir & "\UXThemePatchers.txt")
    FileDelete($ToolsDir & "\UltraUXThemePatcher_*.exe")
    FileDelete($ToolsDir & "\UXTheme_Multi-Patcher_*.exe")
+   ;since v16.12.24
+   FileDelete(@ScriptDir & "\Themes\files-desktops-*.7z")
+   FileDelete(@ScriptDir & "\Themes\files-notepad2-*.7z")
+   FileDelete(@ScriptDir & "\Themes\images-*.7z")
+   FileDelete(@ScriptDir & "\Themes\theme-*.7z")
+   FileDelete(@ScriptDir & "\Themes\icons-*.7z")
+   FileDelete(@ScriptDir & "\Themes\bitmaps-*.7z")
+
 EndFunc
 
 Func Patch()
