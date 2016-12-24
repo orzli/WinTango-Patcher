@@ -1,5 +1,5 @@
 Func _CheckForUpdate()
-   Local $sVerLatest[2]
+   Local $sVerLatest[3]
    ;[0] = Version
    ;[1] = URL
 
