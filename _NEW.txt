@@ -1,18 +1,5 @@
-adwaita
--------
+icons
 
-folders (all)
-document-save
-document-save-as
-accessories-text-editor
-utilities-system-monitor
-utilities-terminal
-applications-internet
-applications-system
-drive-harddisk
-multimedia-player
-application-x-executable
-audio-x-generic
 
 
 Fixes
