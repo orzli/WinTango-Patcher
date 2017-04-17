@@ -154,7 +154,7 @@ SaveAs = NewFiles\x64\imageres.dll
 -modify Resources\icons\mimetypes\font-x-generic_+256.ico, ICONGROUP, 159,
 -modify Resources\icons\mimetypes\font-x-generic_+256.ico, ICONGROUP, 160,
 -modify Resources\icons\apps\system-installer_+256.ico, ICONGROUP, 161,
--modify Resources\icons\emblems\emblem-shared_+256.ico, ICONGROUP, 164,
+-modify Resources\icons\overlays\emblem-shared_+256.ico, ICONGROUP, 164,
 -modify Resources\icons\apps\preferences-folder_+24_256.ico, ICONGROUP, 166,
 -modify Resources\icons\mimetypes\image-x-generic_+64_256.ico, ICONGROUP, 168,
 -modify Resources\icons\devices\media-optical-dvdr_+256.ico, ICONGROUP, 172,
