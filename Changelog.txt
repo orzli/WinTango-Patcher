@@ -1,7 +1,10 @@
 Changelog:
 ------------
-17.01.XX:
+17.04.XX:
 - Update: Automatic cleanup of old files in Patcher folder to save space on your harddisk
+- Update: Firefox/Thunderbird Themes
+- Fix: Patcher not recognizing Dropbox correctly
+- Update: Some minor improvements to the elementary VS for Windows 7
 
 16.12.24:
 - Update: elementary icon theme
