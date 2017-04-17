@@ -11,17 +11,8 @@ The included **reloader module** will always re-modify your files if they are ov
 ### Styles
 
 Modifying your system files and applying the matching Themes will change the default look of Windows and several 3rd Party Applications into one of these: 
-* Tango!
-* Tangerine
-* Gnome/Adwaita
-* Cheser
-* Gnome-Brave
-* Gnome-Human
-* Gnome-Noble
-* Gnome-Wine
-* Gnome-Wise
-* elementary
-* Humanity
+
+![Image](https://github.com/heebijeebi/WinTango-Patcher/blob/master/wiki/styles.png)
 
 ### Survey
 
