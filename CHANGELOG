@@ -1,0 +1,303 @@
+### 16.12.24:
+* Update: elementary icon theme
+* Update: Gnome/Adwaita icon theme
+* Update: AIMP3 Icons
+* Update: Mozilla Firefox / Thunderbird Theme compatibility Updates. Also uploaded to Mozilla Addons due to the need of AddOns to be signed and for easier updating. Signed files are inclued.
+* Fix: Updater will now simply download the latest Offline-Installer from GitHub. No more updating of parts due to bandwith limitations of Dropbox.
+* Fix: Error during extraction of resources on x86 OS.
+* Update: Improved Errorlogging.
+* Update: Notepad2 EN/DE 4.2.25.985
+
+### 16.01.07:
+* Update: Several elementary icons & bitmaps
+* Update: elementaryOS Skin for Winyl (source by vicing | http://vicing.deviantart.com/)
+* Update: elementaryOS Visual Style for Windows 7
+* Update: Making the Reloader smarter to reduce reboots
+* Update: Mozilla Firefox Theme compatibility Updates
+* Update: Mozilla Firefox Theme-Extras uploaded to Mozilla Addons due to the need of AddOns to be signed by v43.0. Signed files are inclued.
+* Update: Extending the possibilities for the Overriding-Feature
+* Update: UltraUXThemePatcher v3.0.4
+* New: elementaryOS Skin for AIMP
+* New: elementaryOS Skin for RadioSure (source by vicing | http://vicing.deviantart.com/)
+* New: elementaryOS Skin for VLC (by vicing | http://vicing.deviantart.com/)
+* Fix: Updater can't download latest version
+* Fix: Checking for the right Windows Version didn't work properly anymore in the newest Build of Windows 10 causing the Patcher to patch unsupported files
+
+### 15.11.09:
+* Update: Support for LibreOffice 5.x
+* Update: elementary Icon Theme
+* Update: Mozilla Firefox Theme compatibility Updates
+* Update: Removed Aero Fog on Tabbar of Mozilla Thunderbird
+* Update: WinTango Patcher GUIs
+* Update: Moved the whole documentation on the Homepage
+* Update: Small fixes for the Shiki-Colors Visual Style
+* New: Support for localization of the CPL GUI
+* New: elementaryOS cursors (credits to DMZ Cursors by Nighted)
+* New: RadioSure Skins for the elementary and Shiki-Colors styles
+* New: Support for Winyl and Flat Skins for all icon themes
+* Fix: Disabled patching of VirtualBox due to an error since version 5
+
+### 15.08.19:
+* New: Official Windows 10 x86/x64 RTM Support
+* Fix: The Windows Store crashes on Windows 10 RTM
+* Fix/New: VirtualBox 4/5 fails to launch VirtualMachines when using UltraUXThemePatcher, but works fine when UXTheme Multi-Patcher is used instead. Therefore you can now choose between those two options.
+* New: Option  to  install  the  Tool  “Desktops”  from  Sysinternals to give Windows 7 Users support for up to 4 virtual Desktops
+* Fix: Minor Reloader Bugs
+* Update: UltraUXThemePatcher v2.5.12
+* New: Firefox Addon with further customizations of the icons/images for the about:home page and the Firefox PDF viewer (PDF.js)
+* Update: Elementary Icon Theme to v3.2.1
+* Fix: Firefox / Thunderbird Themes
+
+### 15.04.25:
+* Fix: Bug with Lightning in Thunderbird Theme
+* Update: Further improvements for the Elementary & Humanity icon theme
+* New: Symbolic tray icons
+* Update: Shiki-Dust as the new color theme for Gnome
+* Update: Control Panel Applet icons
+* New: Shiki-Colors Dust Visual Style
+* Update: Several fixes for the Shiki-Colors Visual Style
+* Update: AIMP Elementary/Humanity Shiki-Theme
+
+### 15.03.09:
+* Fix: Uninstallation of the Patcher didn’t remove all files/entrys
+* Update: UltraUXThemePatcher 2.5.4
+* Fix: Firefox / Thunderbird Themes
+* Update: ActionCenter icons got completed (security-*.ico)
+* Update: Some more icons got polished
+* New: elementary Visual Style for Win7 [Beta]
+* New: Completely reworked Shiki-Colors Visual Style for Win7
+* Update: Elementary & Humanity Resources
+
+### 15.02.06:
+* New: BETA Support for Windows 10
+* New: Support for: Crystal Disk Info
+* New: Crystal Disk Info Shiki-Colors Theme
+* Update: Gnome-Icon Theme 3.15; Cheser-Icon Theme 3.14
+* Update: CCleaner 5.x, Firefox & Thunderbird Theme
+* New: Elementary Icon Theme
+* New: Humanity Icon Theme (BETA)
+* Updated: Renamed the Project to “WinTango Patcher”. Because of the inclusion of Elementary & Humanity and due to the icon style focus being on Tango-Styled-Icons this name fits better.
+
+### 14.10.14:
+* Update: OpaqueTaskbar v2.6
+* New: Ability to Reset the Option “Apply Universal Theme Patcher” to apply it even if the Patcher recognizes it as already applied
+
+### 14.10.12:
+* Fix: Files that somehow got patched but shouldn’t be, automatically get restored now
+
+### 14.09.26:
+* New: Option to edit default Paths for 3rd Party Applications
+* Fix: Some minor corrections
+* Update: Re-Added support for PhotoViewer.dll.
+* Update: Notepad2 (CN) 4.2.25.r906.
+* Update: Mozilla Firefox/Thunderbird 32+ Theme.
+
+### 14.05.06:
+* Update: Mozilla Firefox 29+ Theme
+* Fix: Implemented some Error-Checking for the Downloading Part
+* Update: New Option “Don’t Patch shell32.dll”. This enables the user to not patch “shell32.dll” because of possible Sound Problems, but one is still able to patch the other files that only mildly affect the usability of IE10+ (explorerframe.dll, inetcpl.cpl).
+
+### 14.04.01:
+* Update: Due to a request the utorrent 2.x Theme is back.
+* Update: Splitted the resources in order to save some download band-with. Therefore the process of downloading ressources and all the bina-ries doing that got updated.
+* Fix: ResHacker-Script bug affecting all users who choose the option “Don’t Patch StartOrb” or “Don’t Patch Tray Icons”.
+
+### 14.03.25:
+* Fix: Some minor ResHacker-Script bugs.
+* Update: Re-Added support for shell32.dll, SndVol.exe, netshell.dll.
+* New: Option for IE users to prevent the Patcher from patching files which will harm the usability of Internet Explorer (e.g. Bugfix). For now these are: shell32.dll, explorerframe.dll, inetcpl.cpl.
+* Fix: When downloading with IE and choosing “Save as” you get a blank folder picker, which makes it impossible to select where to save the file.
+
+### 14.02.23:
+* Fix: Some more minor Code optimizations
+* Fix: “Error: Unknown function name.” occurs when running the Reload-er (and actually reloading files).
+
+### 14.02.21:
+* Fix: COM-Error: "Queue empty."
+* Fix: Error: "The requsted action with this object has failed."
+* Fix: The Shiki-Colors Theme didn’t install properly for some icon themes
+* Update: Aimp Shiki-Themes
+
+### 14.01.25:
+* Update: Included Universal Theme Patcher
+* Update: Updater will show more details about new releases in the fu-ture.
+* Update: Dropped support for several system files, as most users won’t see these icons anyway. Another reason is that this may reduce possi-ble errors with 3rd Party applications.
+* Update: Some more icons patched under Windows 8.1
+* New: SensorsCpl.dll (Win7)
+* Update: Dropped support for “Waterfox” & “PowerDVD 10”
+
+### 13.11.30:
+* Fix: The Shiki-Colors Theme wasn’t installing properly. Thanks to Jirbytailor for pointing me to the bug.
+* Update: Firefox / Thunderbird Theme
+
+### 13.10.15:
+* Fix: Internet Explorer 10 stopped working. The conflicting file (“urlmon.dll”) will be automatically skipped if IE10 is installed.
+* New: Included the old variations of the Shiki-Wallpapers
+* New: Windows 8.1 support; still very limited
+* Update: Aimp filetype icons: M4A, AAC
+
+### 13.10.11:
+* Update: Notepad2 (De/En) 4.2.25.r870
+* Update: Firefox & Thunderbird Theme.
+* Update: Dropbox paused icon.
+* Fix: Adobe Reader XI won’t start anymore. The conflicting file (“us-er32.dll”) will be automatically skipped if Adobe Reader XI is installed.
+* Fix: Zune & Catalyst Control Center won’t start anymore / cause an er-ror when starting. The conflicting file (“urlmon.dll”) will be automatically skipped if these applications are installed.
+* New: Updating improvements like automatic theme selection
+
+### 13.06.20:
+* New: AutoPlay icon
+* New: SumatraPDF file type icons
+* Updated: Notepad2 Chinese added
+* Fix: Firefox Theme Installation
+* New: Office 2010 file type icons (Word, PowerPoint, Excel)
+* Updated: Icons for Windows Mobility Center, Microsoft Sync Center
+* Updated: Inkscape “icons.svg”
+
+### 13.05.28:
+* Fix: Constant reloading of “setupapi.dll”
+* Updated: Windows 7 Logon Screen
+* Updated: Inkscape “icons.svg”
+
+### 13.05.26:
+* New: jDownloader Themes
+* Updated: Renamed the Project to just “Gnome-Colors Patcher”, because now it patches Windows 7/8, which are the common Windows Versions at that time, and also (some) 3rd Party Applications all in one. No need for different Patchers anymore.
+* New: Windows 8 support: very limited, but hey it’s there!
+* New: Option to replace the Microsoft Notepad with a pre-patched Note-pad2 (by Florian Balmer) (only EN & DE versions included!)
+* Updated: Some minor icon improvements
+* Updated: GIMP file type icons
+* Updated: LibreOffice 4.0 support
+* New: Support for Media Player Classic HC, NVIDIA Control Panel
+* New: Ported the installer from NSIS Code to AutoIt
+* New: Merged the System Patcher with the Apps Patcher. Brings the ad-vantage of needing only one Installer/Reloader/Uninstaller.
+
+### 13.04:
+* Fix: This Patcher won’t work on Windows 8. When trying to install it on Win8 anyway, it will refuse to do so by now.
+* New: sorted the files by categories and components they belong to, making it easier to narrow down bugs.
+* Fix: Several Bugs introduced by IE10:
+    * The Installer caused IE 10 to not work anymore. As a result the installer will check for IE10 and automatically skip patching all the risky files.
+    * “user32.dll” and “shell32.dll” have been moved to “Risky Files” and will be automatically skipped if IE10 is installed.
+    * Video playback also suffered from IE10; therefore “setupapi.dll” has been moved to “Risky Files”, too.
+* Update: Readme converted to PDF
+
+### 13.03:
+* New: Ability to check/uncheck every individual file for patching, which should make it easier to narrow down bugs
+
+### 12.12:
+* New: Systemdrive Icon for Tango/Tangerine
+* Fix: Wrong icon for Systemdrive in Tangerine
+* Fix: Shiki-Colors Theme didn’t install properly
+
+### 12.05:
+* New: Shiki-Colors Themes for Windows 7 created by winplayboy
+* New: Patch for UxTheme.dll so that 3rd party visual styles can be used.
+* New: Classic Navigation/Category Panel Mod by Saarineames
+* New: Ubuntu Cursor Theme
+* Update: Gnome Icon for the Systemdrive
+* Update: New and better fitting icon for Security Center
+
+### 11.11:
+* Update: Some 256px Gnome Icons
+
+### 11.10:
+* Fix: Removed “wfpdisable.exe” from Patcher. There should be no more Virus warnings!
+
+### 11.08-1:
+* New: Option to exclude Cursors from being patched
+* Update: Gnome Icon Theme to 3.1.4
+* Update: Cheser Icon Theme to 3.0
+* Update: System Files: wmploc.dll
+* Fix: Start Orb patching failed
+* Fix: Zune, CCC and other apps won’t work after patching. This is caused by “urlmon.dll”. Therefore there is the new category “Risky Files”, where files that may cause problems can be excluded from patching.
+* Fix: Patching “urlmon.dll” is now unchecked by default
+
+### 11.05:
+* New: Support for ActionCenterCPL.dll, ActionCenter.dll
+* New: Start Orb patching
+* Update: Gnome Icon Theme to 3.0
+* Update: Cheser Icon Theme to 2.32.0
+* Update: System files vault.dll
+
+### 11.03:
+* New: Shiki-Colors Wallpapers
+* Update: Some icons for Tangerine
+* Update: Gnome Icon Theme to 2.91.7
+* Update: Cheser Icon Theme to 2.9
+* Update: Gnome-Colors folder icons (videos, downloads, music, docu-ments, pictures)
+* Update: 256px Gnome "media-disk-optical-video"
+* Update: 256px Gnome-Colors "audio-volume-high"
+* Update: 256px Gnome-Colors icons with the display in it
+* Fix: Compatibility with Internet Explorer 9
+
+### 11.02:
+* New: Support for: sdcpl.dll
+* New: Tangerine Icon Theme
+* Update: System files: taskbarcpl.dll, imageres.dll, setupapi.dll, help-pane.exe, imagesp1.dll, wmploc.dll, shell32.dll, mspaint.exe, word-pad.exe
+* Fix: Bug in Reloader causing to permanently reload files that have been changed after installation of the Patcher
+* Fix: Mistake in the "ieframe.dll (x64)" script
+
+### 11.01:
+* New: Support for 64-Bit to the NSIS-Patcher. This Patcher now patches both 32- and 64-Bit.
+* Update: System files: wmploc.dll
+* Update: Reworked the Folder-Preview Icons for Gnome-Colors and Tango!
+* Update: Reorganized the installer options, adding more freedom to choose which files should be patched.
+* Fix: Proper clearing of the Icon/Thumbnail Cache
+
+### 10.12:
+* Update: System files: imageress.dll, wmploc.dll
+* Update: Some resources for the Icon Themes
+* Update: Reworked the Folder-Preview Icons for Gnome
+* New: Support for: srchadmin.dll, vault.dll
+* New: Icon Theme Cheser
+
+### 10.11:
+* Update: Finished converting all the icons for the Gnome Icon Theme.
+* Update: System files: imageress.dll
+* Update: Some resources for Gnome Icon Theme
+* Update: Some resources for Tango! Icon Theme
+
+### 10.10:
+* Update: System files:
+* Update: Lots of resources for Gnome Icon Theme
+* Update: Some resources for Tango! Icon Theme
+* New: Support for: VAN.dll
+* Fix: Not patching SndVolSSO.dll
+
+### 10.09:
+* Update: System files: wmploc.dll
+* Update: Gnome Icon Theme 2.31.0
+* Update: Some resources for Tango!
+* New: Option to not patch the tray icons
+* New: Gnome Icon Set
+
+### 10.07:
+* Update: New Icons for 256x256 size
+* Update: Replaced the Gnome-Colors Logo with the Windows Flag (where used)
+* Update: System files: ieframe.dll, inetcpl.cpl, wmploc.dll
+* New: Tango! Icon Theme
+* New: Support for: shellbrd.dll
+
+### 10.01:
+* Update: New Battery Icons
+* Update: Ressources for the following files: DDORes.dll, hdwwiz.cpl, pnidui.dll, devmgr.dll, DiagCpl.dll, fxsresm.dll, pnidui.dll, powercpl.dll, inetcpl.dll, imageres.dll
+* New: Support for: DeviceCenter.dll, icardres.dll.mui
+* Fix: Transparency of Resources in “ieframe.dll”
+
+### 9.12:
+* Update: Resources for: batmeter.dll, taskbarcpl.dll, pnidui.dll, mmres.dll, imageres.dll, colorui.dll
+* New: Support for: fxsresm.dll, SndVol.exe, mobsync.exe, Sync-Center.dll, colorcpl.exe, TSWorkspace.dll, fvecpl.dll
+
+### 9.11:
+* Final Version 9.11. Changed the name to make it clearer, which Ver-sion of Windows it addresses.
+* Update: Icons to Version 5.5.1
+* New: Human, Noble, Wine and Wise color themes.
+* Fix: Now the Installer checks the EditionID of Windows for the right “branding”
+
+### 9.11.03-RC1:
+* Update: Resources for Wordpad, Paint
+* New: Support for Snipping Tool, Windows Mobility Center, Windows Photo Viewer, Windows Defender (deactivated due to a Bug)
+
+### 9.10.23-BETA:
+First public BETA-Release. So far only the Gnome-Brave Icon Theme is included for testing.
+
+### 9.08:
+Started the Project based on vertigosity's great Tango Patcher 2600 (8.06).
