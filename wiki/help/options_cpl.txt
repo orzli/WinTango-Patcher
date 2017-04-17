@@ -1,0 +1,28 @@
+# Control Panel App
+
+### Actions Tab
+
+Generally the switches turn the specific option ON / OFF
+
+1. The included reloader module will re-modify your files if they are overwritten, allowing system updates to be performed without breaking the theme. You can either run it manually by clicking on "Reload" or enable the Option to run it on system startup.
+2. Re-Installing the Patcher may solve bugs or makes sure that applications that were installed after applying the WinTango Patcher for the first time get modified, too. Another purpose is to fulffill the urge to change the icon theme. To do so you only have to pick the desired icon theme and hit "Re-Install".
+3. This section gives you some options to stay up to date:
+
+To manually check for updates via this CPL Tool hit "Check now".
+
+If the installed version is the same as the Version on the server, it is indicated by turning the installed version text green. No further steps are taken.
+
+If the installed version differs from the latest version online, it is indicated by the color red. To apply this new version you can now hit the new "Apply Update" button to do so. This will download the latest installer and run it afterwards to install this new version.
+
+Automatically checking for Updates on system startup presents you with a Dialog to Update everytime there is a new version available.
+
+4. This section more or less explains itself: By clicking "Uninstall", the Uninstaller will restore all modifications to its original state and completely remove all of the Patchers files.
+
+### Help Tab
+
+1. Visit this Readme Page to learn about the WinTango Patcher and all of its options.
+1. If you're having problems, it's probably something I haven't anticipated; If I had thought of it, I would have either documented or coded a workaround for it. So, if you encounter a problem you please file a Bug Report by clicking on this button.
+
+### About Tab
+
+This Page provides some basic information on the WinTango Patcher and links to contact me. 

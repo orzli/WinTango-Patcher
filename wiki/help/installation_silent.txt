@@ -1,0 +1,14 @@
+The following commandline switches allow for silent, unattended installation, and allow the patcher to be used as part of an unattended installation script. 
+
+    /S  -  The universal "silent operation" switch. 
+    /theme=gnome  -  Sets the selected theme to Gnome. 
+    /theme=gnome-brave  -  Sets the selected theme to Gnome-Brave. 
+    /theme=gnome-human  -  Sets the selected theme to Gnome-Human. 
+    /theme=gnome-noble  -  Sets the selected theme to Gnome-Noble. 
+    /theme=gnome-wine  -  Sets the selected theme to Gnome-Wine. 
+    /theme=gnome-wise  -  Sets the selected theme to Gnome-Wise. 
+    /theme=cheser  -  Sets the selected theme to Cheser. 
+    /theme=tango  -  Sets the selected theme to Tango. 
+    /theme=tangerine  -  Sets the selected theme to Tangerine. 
+    /theme=elementary  -  Sets the selected theme to Elementary. 
+    /theme=humanity  -  Sets the selected theme to Humanity.

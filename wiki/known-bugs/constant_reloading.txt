@@ -1,0 +1,8 @@
+# Constant Reloading
+
+If the Reloader constantly keeps telling you there are files that need to be reloaded, there may be an error with the ResHacker-Script.
+
+Please check the following steps:
+1. Check `C:\Program Files (x86)\WinTango Patcher\Logs\<filename>.log` for any possible explanation
+1. If all operations are listed as completing successfully, check the file in a Resource Hacker to see if the resources attempted to be modded exist in the file. If they do not exist, ResHacker will not add them (that's the difference between the -modify command and the -addoverwrite command) and will report the operation as successful.
+1. If you can trace down the problem to one of the two, pass a copy of the `<filename>.log` and the affected file to me.

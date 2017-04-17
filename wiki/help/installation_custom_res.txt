@@ -1,0 +1,25 @@
+There are two options for providing your own resources for the patcher to use. You may supply pre-modified or alternative versions of the files themselves (I use this functionality to put pre-reshacked versions of Notepad2 in place of the normal notepad.exe on my own machine.), or supply alternate graphics and resource scripts. 
+
+To use either function, create a folder on your desktop named "override" and follow the instruction in the following section.
+
+### Direct File
+> Note: Your pre-modified files will be ignored if they are not something the WinTango Patcher would normally modify. Either replace it manually, or submit a modification request for that file. During a reload, it will not check files that the original install did not modify.
+
+1. Place your prepared file directly in the override folder (e.g. notepad.exe: `"%userprofile%\Desktop\Override\notepad.exe"`). 
+
+> Important Note for 64-Bit users:
+> Place (e.g. notepad.exe) the 32-Bit file in `"%userprofile%\Desktop\Override\x64\notepad.exe"` and the 64-Bit file in `"%userprofile%\Desktop\Override\notepad.exe"`! 
+
+2. If you're already using the patcher, run the reloader, otherwise, run the installer. 
+
+If you want to go back to the Windows original: 
+* Uninstall the pack to restore the originally backed-up version
+* Copy the version in the patcher's Backup folder to the patcher's Override folder. Run the reloader and reboot, then delete it from the Override subfolder of the Patcher's folder. The reloader will then recognize the file as a new version, reapply the Tango theme, and all will be back to normal. 
+
+### Resources
+> Note: New scripts will be ignored if they are not something the WinTango Patcher already modifies. Either replace the file manually, or submit a modification request for that file.
+
+1. Place your substitute files in the override folder, arranged in an analagous structure to their locations in the Patcher's Resources folder. For example, to provide a custom file to reside in "C:\Program Files\WinTango Patcher \Resources\icons\devices\computer.ico", place it in `"%userprofile%\Desktop\Override\icons\devices\"`.
+2. Run the installer. The reloader does not support resource overloading - it cannot keep track of which resources need to be inserted into which files. 
+
+The files will be moved into the Patcher's resource folder after the installer has copied the selected theme. You will need to re-provide them every time you run the installer. 

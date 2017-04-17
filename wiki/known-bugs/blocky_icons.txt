@@ -1,0 +1,3 @@
+# Blocky Icons
+
+Some programs ask for a specific offset of an icon group, rather than a specific icon size, and then pixel-resize it to fit. Contact me and explain which dialog(s) is(are) affected, and what icon is being displayed incor-rectly sized, and I'll try to get fixed in a later release. Some icons, such as Windows Firewall and the Wireless Network Setup Wizard, are often displaying icons using incorrect sized source images even with the default icon set, and the Patcher may just be exposing these flaws.

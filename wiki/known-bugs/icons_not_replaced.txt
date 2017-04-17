@@ -1,0 +1,8 @@
+# Icons not replaced
+
+There are several potential reasons why various icons may remain un-changed after the Patcher has run:
+
+* If you have used some other piece of icon customization software such as IconPackager to apply an icon set, those settings will continue to take prece-dence over the default theme in your system files. Reset any affected icons to their default setting using the software you used to perform the customization.
+* Some icons simply aren't set to be changed yet, because the Tango icon theme or its derivatives don't include appropriate icons, or they do, I haven't gotten to using it yet. If you're pretty sure an appropriate resource is available, bring it to my attention and I'll try to get it replaced in the next point release.
+* The Patcher may have failed to completely clear the icon cache.
+* The resource hacker may have failed to modify a file. If you know the name of the file, check for a file named ".log" in the Logs subdirectory of the patcher folder, and if it contains an error, pass it along to me for analysis.

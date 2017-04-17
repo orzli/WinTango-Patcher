@@ -1,0 +1,4 @@
+# Reloader
+
+If you checked "Run the Reloader on startup" this handy little tool will be executed at system startup and check for modified files to re-patch. This makes sure that for example after system updates the theme won't be broken.
+You can also run the Reloader manually via the Control Panel App whenever you want. 

@@ -1,0 +1,25 @@
+# Incomplete Uninstallation
+
+Sometimes the Uninstaller may fail to completely remove all the leftovers of the Patcher.
+
+If you face this problem, here is a quick guide on where you can find all the possible files & entries:
+
+### Files & Folders
+The Patcher saves its files in the main installation folder: C:\Program Files (x86)\WinTango Patcher
+If you successfully ran the Uninstaller and this folder is still there, you can safely remove it.
+
+### Registry
+The Patcher also uses the registry to store some information.
+Again, if you successfully ran the Uninstaller and these entries are still there, you can safely remove them.
+
+Main Reg-Paths:
+* HKEY_LOCAL_MACHINE\SOFTWARE\WinTango Patcher 
+* HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\WinTango Patcher 
+
+Control Panel Icon:
+* HKEY_CLASSES_ROOT\CLSID\{77708248-f839-436b-8919-527c410f48b9} 
+* HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ControlPanel\NameSpace\{77708248-f839-436b-8919-527c410f48b9} 
+
+As some users may not be very familiar with editing the registry by themselves, here is a REG-File which will do the job for you. Just double-click it and press "Yes".
+
+Afterwards your system should be cleared of all traces of the Patcher.

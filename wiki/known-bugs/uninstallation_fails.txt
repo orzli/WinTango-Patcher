@@ -1,0 +1,15 @@
+# Uninstallation fails
+
+In the event that the Uninstaller fails to restore your backup files (or the functions responsible for keeping the backup files up to date have gotten confused and stuck a patched file in by mistake), leaving Tango! icons behind after you have uninstalled it, here are some suggestions for restoring your system:
+
+### 1. Repair Windows System Files via Console 
+Open the Command Prompt (as an Admin) and run:
+`sfc /scannow`
+
+This will restore 99% of your system files to their original versions. You will need to reapply any hotfixes that you have installed.
+
+### 2. Make a Repair Install
+Boot your system from the Windows CD, and perform a repair install. This will be necessary if the patcher leaves the system in an unbootable state, anyways. You'll need to reinstall your drivers, and some software, but your user data will remain intact.
+
+### 3. Re-Install latest Service Pack 
+If you have a fast internet connection, download and install the latest Service Pack (if available) from Microsoft.

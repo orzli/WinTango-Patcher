@@ -1,0 +1,3 @@
+# Updatechecker
+
+From time to time I will release a new version of the WinTango Patcher, which may include new features or further improvements on existing modifications. Anyway, to make sure you stay up to date you can either set the Updatechecker to run on startup (see Setup Options) or manually run it via the Control Panel App. 

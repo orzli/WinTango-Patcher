@@ -1,0 +1,37 @@
+# Installation Guide
+
+Follow this step by step instruction on how to install the WinTango Patcher and learn all about the Options during Installation.
+
+### Main Screen
+1. Pick the main icon package the Patcher will draw its resources from. 
+1. This is a preview of some sample icons for the selected icon theme.
+1. Click this button to start patching. For the average user this is usually all it takes to start modifying your system.
+1. Still, some of you might want to take a look at some of the available options before hitting "Patch"!
+
+### Options
+In gneral the switches turn the specific option ON / OFF.
+
+1. Choose between patching the tray icons with symbolic (white) or the normal (colorfull) icons. Switch the option off to not patch the tray icons.
+1. Enables/Disables patching of the Start Orb.
+1. Replace the included Windows Notepad with Notepad2, which has way more features like Code Folding or various other Text Operations to make life easier. **Please Note: only the English, German and Chinese versions are currently included!**
+1. Install Sysinternals Desktops to add support for multiple Desktops to Windows 7. This is similar to what Linux supports natively.
+1. Checks for the latest version of the Patcher at system startup to provide you with the latest modifications.
+1. Set the Reloader to run automatically every time you log in, performing a quick check for modified system files and re-replacing them if they have been updated since the Patcher last touched them.
+1. Chosse between some Visual Styles (Shiki-Colors, elementary, Ubuntu) which match the included icon themes. By default the Visual Style which matches the chosen Icon Theme as closely as possible is selected.
+1. Installs the Cursor-Theme known from early Ubuntu. It includes a white and a dark version.
+1. Copies matching Wallpapers for the included Visual Styles: Shiki-Colors, elementary and Ubuntu.
+
+### Advanced Options
+1. This section enables you to either patch those files and risk that some functions of windows might not work anymore or don't patch them and life on the save side.
+1. When selecting to install a Visual Style on the Options Page you can choose which UXTheme Patcher method you prefer. When the Patcher recognizes that your system is already patched this option won't be available (like in this screenshot). **Important: If you are using VirtualBox you need to use the Service Method. Otherwise your VirtualMachines won't start anymore!**
+1. When using custom paths for installing your applications you have to edit those paths for the patcher. Otherwise your applications won't be patched!
+1. This section enables you to select/deselect any Theme you want or don't want to apply. **Note: If the Patcher doesn't find a selected Application on your system, no files will be copied! Keeping this option active won't clutter your OS.**
+
+This description also applies on the following sections:
+* 3rd Party Applications: Files
+* Windows: System Files
+
+### About Page
+This Page provides some basic information on the WinTango Patcher.
+
+By clicking on the respective link you can either contact me or open the latest Changelog as well as the Release Notes.

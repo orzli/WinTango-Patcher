@@ -1,0 +1,3 @@
+# Uninstaller 
+
+To remove all modifications and files of the WinTango Patcher, it includes an Uninstaller which should do the job for you. Sometimes there may be some [leftovers](https://github.com/heebijeebi/WinTango-Patcher/wiki/Problems:-Incomplete-Uninstallation), which can be safely removed after running the Uninstaller and rebooting Windows.
