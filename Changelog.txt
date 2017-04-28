@@ -5,6 +5,7 @@ Changelog:
 - Update: Firefox/Thunderbird Themes
 - Fix: Patcher not recognizing Dropbox correctly
 - Update: Some minor improvements to the elementary VS for Windows 7
+- Update: Several icons updated
 
 16.12.24:
 - Update: elementary icon theme
