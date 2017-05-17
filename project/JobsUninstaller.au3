@@ -303,6 +303,11 @@ Func UnAppearance()
    FileDelete($ProgramFiles & "\Winyl\Skin\Flat elementary.wzp")
    FileDelete($ProgramFiles & "\Winyl\Skin\elementary.wzp")
    FileDelete($ProgramFiles & "\Winyl\Skin\Flat Humanity.wzp")
+
+   ;FreeFileSync
+   CheckAndCloseProcess("FreeFileSync.exe", "FreeFileSync")
+   UninstallTheme("FreeFileSync", $ProgramFiles & "\FreeFileSync\FreeFileSync.exe", $ProgramFiles & "\FreeFileSync", "Resources.zip", $ResourcesDir & "\themes\FreeFileSync\Resources.zip")
+   UninstallTheme("FreeFileSync", $ProgramFiles64 & "\FreeFileSync\FreeFileSync.exe", $ProgramFiles64 & "\FreeFileSync", "Resources.zip", $ResourcesDir & "\themes\FreeFileSync\Resources.zip")
 EndFunc
 
 

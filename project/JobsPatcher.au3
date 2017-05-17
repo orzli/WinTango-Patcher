@@ -548,6 +548,15 @@ Func ApplyTheme_jDownloader()
    EndIf
 EndFunc
 
+Func ApplyTheme_FreeFileSync()
+   If FileExists($ProgramFiles & "\FreeFileSync\FreeFileSync.exe") or FileExists($ProgramFiles64 & "\FreeFileSync\FreeFileSync.exe") Then
+	  ;Install
+	  CheckAndCloseProcess("FreeFileSync.exe", "FreeFileSync")
+
+	  InstallTheme("FreeFileSync", $ProgramFiles & "\FreeFileSync\FreeFileSync", $ProgramFiles & "\FreeFileSync", "Resources.zip", $ResourcesDir & "\themes\FreeFileSync\Resources.zip")
+   EndIf
+EndFunc
+
 Func ApplyTheme_Firefox()
    ;Theme - no need for a backup
    If FileExists($ProgramFiles & "\Mozilla Firefox\firefox.exe") or FileExists($ProgramFiles64 & "\Mozilla Firefox\firefox.exe") Then

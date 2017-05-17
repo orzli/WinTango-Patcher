@@ -37,6 +37,10 @@ Func ReAppearance()
    UpdateTheme("Mozilla Thunderbird", $ProgramFiles & "\Mozilla Thunderbird\thunderbird.exe", $ProgramFiles & "\Mozilla Thunderbird\chrome\icons\default", "addressbookWindow.ico", $ResourcesDir & "\themes\Thunderbird\icons\addressbookWindow.ico")
    UpdateTheme("Mozilla Thunderbird", $ProgramFiles & "\Mozilla Thunderbird\thunderbird.exe", $ProgramFiles & "\Mozilla Thunderbird\chrome\icons\default", "messengerWindow.ico", $ResourcesDir & "\themes\Thunderbird\icons\messengerWindow.ico")
    UpdateTheme("Mozilla Thunderbird", $ProgramFiles & "\Mozilla Thunderbird\thunderbird.exe", $ProgramFiles & "\Mozilla Thunderbird\chrome\icons\default", "msgcomposeWindow.ico", $ResourcesDir & "\themes\Thunderbird\icons\msgcomposeWindow.ico")
+
+   ;FreeFileSync
+   UpdateTheme("FreeFileSync", $ProgramFiles & "\FreeFileSync\FreeFileSync.exe", $ProgramFiles & "\FreeFileSync", "Resources.zip", $ResourcesDir & "\themes\FreeFileSync\Resources.zip")
+   UpdateTheme("FreeFileSync", $ProgramFiles64 & "\FreeFileSync\FreeFileSync.exe", $ProgramFiles64 & "\FreeFileSync", "Resources.zip", $ResourcesDir & "\themes\FreeFileSync\Resources.zip")
 EndFunc
 
 
