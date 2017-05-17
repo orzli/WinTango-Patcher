@@ -6,51 +6,89 @@ SaveAs=   NewFiles\mpciconlib.dll
 ;ICONGROUP
 -modify Resources\icons\apps\pitivi_+24_256.ico, ICONGROUP, 0, 
 
-;file types - audio
+;aac
 -modify Resources\icons\mimetypes\audio-x-generic_+256.ico, ICONGROUP, 1, 
+;ac3
 -modify Resources\icons\mimetypes\audio-x-generic_+256.ico, ICONGROUP, 2, 
+;aiff
 -modify Resources\icons\mimetypes\audio-x-generic_+256.ico, ICONGROUP, 3, 
+;alac
 -modify Resources\icons\mimetypes\audio-x-generic_+256.ico, ICONGROUP, 4, 
+;amr
 -modify Resources\icons\mimetypes\audio-x-generic_+256.ico, ICONGROUP, 5, 
+;ape
 -modify Resources\icons\mimetypes\audio-x-generic_+256.ico, ICONGROUP, 6, 
+;au
 -modify Resources\icons\mimetypes\audio-x-generic_+256.ico, ICONGROUP, 7, 
--modify Resources\icons\mimetypes\audio-x-generic_+256.ico, ICONGROUP, 10, 
--modify Resources\icons\mimetypes\audio-x-generic_+256.ico, ICONGROUP, 13, 
--modify Resources\icons\mimetypes\audio-x-generic_+256.ico, ICONGROUP, 14, 
--modify Resources\icons\mimetypes\audio-x-generic_+256.ico, ICONGROUP, 19, 
--modify Resources\icons\mimetypes\audio-x-generic_+256.ico, ICONGROUP, 20, 
--modify Resources\icons\mimetypes\audio-x-generic_+256.ico, ICONGROUP, 23, 
--modify Resources\icons\mimetypes\audio-x-generic_+256.ico, ICONGROUP, 25, 
--modify Resources\icons\mimetypes\audio-x-generic_+256.ico, ICONGROUP, 26, 
--modify Resources\icons\mimetypes\audio-x-generic_+256.ico, ICONGROUP, 28, 
--modify Resources\icons\mimetypes\audio-x-generic_+256.ico, ICONGROUP, 29, 
--modify Resources\icons\mimetypes\audio-x-generic_+256.ico, ICONGROUP, 32, 
--modify Resources\icons\mimetypes\audio-x-generic_+256.ico, ICONGROUP, 38, 
--modify Resources\icons\mimetypes\audio-x-generic_+256.ico, ICONGROUP, 40, 
--modify Resources\icons\mimetypes\audio-x-generic_+256.ico, ICONGROUP, 42, 
--modify Resources\icons\mimetypes\audio-x-generic_+256.ico, ICONGROUP, 44, 
-
-;file types - video
+;avi
 -modify Resources\icons\mimetypes\video-x-generic_+256.ico, ICONGROUP, 8, 
+;bink
 -modify Resources\icons\mimetypes\video-x-generic_+256.ico, ICONGROUP, 9, 
+;cda
+-modify Resources\icons\mimetypes\audio-x-generic_+256.ico, ICONGROUP, 10, 
+;dsm
 -modify Resources\icons\mimetypes\video-x-generic_+256.ico, ICONGROUP, 11, 
--modify Resources\icons\mimetypes\video-x-generic_+256.ico, ICONGROUP, 12, 
+;dts
+-modify Resources\icons\mimetypes\audio-x-generic_+256.ico, ICONGROUP, 12, 
+;flac
+-modify Resources\icons\mimetypes\audio-x-generic_+256.ico, ICONGROUP, 13, 
+;flic
+-modify Resources\icons\mimetypes\video-x-generic_+256.ico, ICONGROUP, 14, 
+;flv
 -modify Resources\icons\mimetypes\video-x-generic_+256.ico, ICONGROUP, 15, 
+;ifo
 -modify Resources\icons\mimetypes\video-x-generic_+256.ico, ICONGROUP, 16, 
+;ivf
 -modify Resources\icons\mimetypes\video-x-generic_+256.ico, ICONGROUP, 17, 
--modify Resources\icons\mimetypes\video-x-generic_+256.ico, ICONGROUP, 18, 
+;midi
+-modify Resources\icons\mimetypes\audio-x-generic_+256.ico, ICONGROUP, 18, 
+;mka
+-modify Resources\icons\mimetypes\audio-x-generic_+256.ico, ICONGROUP, 19, 
+;mkv
+-modify Resources\icons\mimetypes\video-x-generic_+256.ico, ICONGROUP, 20, 
+;mov
 -modify Resources\icons\mimetypes\video-x-generic_+256.ico, ICONGROUP, 21, 
--modify Resources\icons\mimetypes\video-x-generic_+256.ico, ICONGROUP, 22, 
--modify Resources\icons\mimetypes\video-x-generic_+256.ico, ICONGROUP, 24, 
--modify Resources\icons\mimetypes\video-x-generic_+256.ico, ICONGROUP, 27, 
+;mp3
+-modify Resources\icons\mimetypes\audio-x-generic_+256.ico, ICONGROUP, 22, 
+;mp4
+-modify Resources\icons\mimetypes\video-x-generic_+256.ico, ICONGROUP, 23, 
+;mpa
+-modify Resources\icons\mimetypes\audio-x-generic_+256.ico, ICONGROUP, 24, 
+;mpc
+-modify Resources\icons\mimetypes\audio-x-generic_+256.ico, ICONGROUP, 25, 
+;mpeg
+-modify Resources\icons\mimetypes\video-x-generic_+256.ico, ICONGROUP, 26, 
+;ofr
+-modify Resources\icons\mimetypes\audio-x-generic_+256.ico, ICONGROUP, 27, 
+;ogg
+-modify Resources\icons\mimetypes\audio-x-generic_+256.ico, ICONGROUP, 28, 
+;ogm
+-modify Resources\icons\mimetypes\video-x-generic_+256.ico, ICONGROUP, 29, 
+;playlist
 -modify Resources\icons\mimetypes\video-x-generic_+256.ico, ICONGROUP, 30, 
+;ra
+-modify Resources\icons\mimetypes\audio-x-generic_+256.ico, ICONGROUP, 31, 
+;rm
+-modify Resources\icons\mimetypes\video-x-generic_+256.ico, ICONGROUP, 32, 
+;rt
 -modify Resources\icons\mimetypes\video-x-generic_+256.ico, ICONGROUP, 33, 
+;smk
 -modify Resources\icons\mimetypes\video-x-generic_+256.ico, ICONGROUP, 34, 
+;swf
 -modify Resources\icons\mimetypes\video-x-generic_+256.ico, ICONGROUP, 35, 
+;ts
 -modify Resources\icons\mimetypes\video-x-generic_+256.ico, ICONGROUP, 36, 
--modify Resources\icons\mimetypes\video-x-generic_+256.ico, ICONGROUP, 37, 
--modify Resources\icons\mimetypes\video-x-generic_+256.ico, ICONGROUP, 39, 
--modify Resources\icons\mimetypes\video-x-generic_+256.ico, ICONGROUP, 41, 
--modify Resources\icons\mimetypes\video-x-generic_+256.ico, ICONGROUP, 43, 
-
-;file types - playlist
+;tta
+-modify Resources\icons\mimetypes\audio-x-generic_+256.ico, ICONGROUP, 37, 
+;vob
+-modify Resources\icons\mimetypes\video-x-generic_+256.ico, ICONGROUP, 38, 
+;wav
+-modify Resources\icons\mimetypes\audio-x-generic_+256.ico, ICONGROUP, 39, 
+;webm
+-modify Resources\icons\mimetypes\video-x-generic_+256.ico, ICONGROUP, 40, 
+;wma
+-modify Resources\icons\mimetypes\audio-x-generic_+256.ico, ICONGROUP, 41, 
+;wmv
+-modify Resources\icons\mimetypes\video-x-generic_+256.ico, ICONGROUP, 42, 
+;wv
+-modify Resources\icons\mimetypes\audio-x-generic_+256.ico, ICONGROUP, 43, 
