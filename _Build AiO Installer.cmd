@@ -48,7 +48,7 @@ xcopy "%CURRDIR%\project\Themes" "%tmpDir%\Themes" /S /Y
 .\project\_Sfx\7z a -mx9 "%FILENAME%-offline.7z" "%tmpDir%\*"
 copy /b ".\project\_Sfx\7zsd_All.sfx" + ".\project\_Sfx\7zSfxCode.txt" + "%FILENAME%-offline.7z" "%FILENAME%-offline.exe"
 .\project\_Sfx\upx\upx --best "%FILENAME%-offline.exe"
-del "%FILENAME%-offline.7z"
+::del "%FILENAME%-offline.7z"
 
 
 :cleanup

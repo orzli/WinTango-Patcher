@@ -1,10 +1,13 @@
 Changelog:
 ------------
-17.04.XX:
+17.05.XX:
 - Update: Automatic cleanup of old files in Patcher folder to save space on your harddisk
 - Update: Firefox/Thunderbird Themes
 - Fix: Patcher not recognizing Dropbox correctly
 - Update: Some minor improvements to the elementary VS for Windows 7
+- Update: Several icons updated
+- Fix: MPC filetype icons correction
+- New: Support for FreeFileSync
 
 16.12.24:
 - Update: elementary icon theme
