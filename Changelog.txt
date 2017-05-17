@@ -6,8 +6,11 @@ Changelog:
 - Fix: Patcher not recognizing Dropbox correctly
 - Update: Some minor improvements to the elementary VS for Windows 7
 - Update: Several icons updated
+<<<<<<< HEAD
 - Fix: MPC filetype icons correction
 - New: Support for FreeFileSync
+=======
+>>>>>>> origin/master
 
 16.12.24:
 - Update: elementary icon theme
