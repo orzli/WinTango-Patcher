@@ -1,0 +1,18 @@
+1. Open Registry Editor and go to following key:
+
+HKEY_CLASSES_ROOT\CLSID\{679f85cb-0220-4080-b29b-5540cc05aab6}\DefaultIcon
+
+2. Now take ownership of DefaultIcon key using the following guide:
+
+http://www.askvg.com/guide-how-to-take-ownership-permission-of-a-registry-key-in-windows/
+
+3. Once Permission is gained in both regestry keys click on the 'to fav icon.reg' file.
+
+4. Changes should be immediate once you close an explorer window and reopen it.
+
+5. To Revert to the old icon use the 'default.reg' file.
+
+ENJOY!
+
+JAMIE
+aka neiio

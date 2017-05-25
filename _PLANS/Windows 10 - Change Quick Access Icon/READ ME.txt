@@ -1,0 +1,7 @@
+Included are two seperate versions. 
+
+ x64 is for 64 bit systems
+ 
+ x86 is for 32 bit systems
+
+Use the one appropriate for your system.
