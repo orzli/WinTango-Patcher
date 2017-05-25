@@ -1,0 +1,9 @@
+[FILENAMES]  
+Exe = Backup\x64\FreeFileSync.exe  
+SaveAs = NewFiles\x64\FreeFileSync.exe
+  
+[COMMANDS]  
+;ICONGROUP
+-modify Resources\icons\apps\freefilesync_+128_256.ico, ICONGROUP, A_FFS_ICON,
+-modify Resources\icons\apps\utilities-terminal_+128_256.ico, ICONGROUP, B_BATCH_ICON,
+-modify Resources\icons\mimetypes\freefilesync-database_+128_256.ico, ICONGROUP, C_SYNC_DB_ICON,
