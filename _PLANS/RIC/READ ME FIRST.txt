@@ -1,0 +1,10 @@
+Ribbon Icons Customizer
+
+First run the Resources.reg registry fix. 
+
+Then run the .exe file as admin.
+
+Details at http://www.thewindowsclub.com/ribbon-icons-customizer-windows-8
+
+
+
