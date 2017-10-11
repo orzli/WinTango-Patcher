@@ -424,6 +424,8 @@ Func Patch()
    ;The patching magic:
    If $errorFlag = 0 Then
 	  Debug("=== ApplyOptions Start ===")
+	  Apply_OS_Res()
+
 	  If $OptTrayIcons = 1 Then
 		 If GUICtrlRead($comboTrayIcons) = "Symbolic" Then Apply_SymbolicTray()
 	  Else

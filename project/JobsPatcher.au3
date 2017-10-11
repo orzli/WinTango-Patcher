@@ -81,6 +81,17 @@ EndFunc
 
 
 #Region Options
+Func Apply_OS_Res()
+   ;Copy some OS specific ressources
+
+   If $WinName = "Win7" Then
+	  ;SnippingTool
+	  FileCopy($ResourcesDir & "\bitmaps\tweaked\SnippingTool.exe\Win7\130.bmp", $ResourcesDir & "\bitmaps\tweaked\SnippingTool.exe\130.bmp", 1)
+	  FileCopy($ResourcesDir & "\bitmaps\tweaked\SnippingTool.exe\Win7\131.bmp", $ResourcesDir & "\bitmaps\tweaked\SnippingTool.exe\131.bmp", 1)
+	  FileCopy($ResourcesDir & "\bitmaps\tweaked\SnippingTool.exe\Win7\134.bmp", $ResourcesDir & "\bitmaps\tweaked\SnippingTool.exe\134.bmp", 1)
+   EndIf
+EndFunc
+
 ;General Options
 Func Apply_NoTray()
    ;Don't patch Tray Icons
